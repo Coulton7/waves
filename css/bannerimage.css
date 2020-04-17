@@ -23,6 +23,43 @@ li {
   display: inline-block;
 }
 
+a {
+  color: #dd1e25;
+  text-decoration: none;
+}
+
+a:link {
+  color: #dd1e25;
+  border-bottom: 1px dashed #888c8f;
+}
+
+a:visited {
+  color: #dd1e25;
+  border-bottom: 1px dashed #b5b6b9;
+}
+
+a:hover {
+  color: #fa010a;
+  border-bottom: 1px dashed #fa010a;
+  text-decoration: none;
+}
+
+.no-underline a{
+  border-bottom: none;
+}
+
+.no-underline a:hover{
+  border-bottom: none;
+}
+
+a.no-dash{
+  border-bottom: none;
+}
+
+a.no-dash:hover{
+  border-bottom: none;
+}
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
