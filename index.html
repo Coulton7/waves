@@ -1,117 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/bannerimage.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/bannerimage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    (function($) {
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          controlNav: false,
+          directionNav: false
+        });
+      })
+    })(jQuery);
+  </script>
 </head>
 
 <header>
 
-<div class="container-fluid bannercontainer">
-	<div class="row bannerimage">
+  <body class="navbar-is-fixed-top">
+    <div class="container-fluid bannercontainer">
+      <div class="row bannerimage">
+        <div class="row waveupper row-eq-height">
+          <div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
+            <a>
+              <div class="wavelogo">
+                <img class="wavelogo" src="Images/logo.svg" img alt="logo"></img>
+              </div>
+            </a>
+            <img class="uppercurve" src="Images/wave-upper.svg" img alt="uppercurve"></img>
+            <a class="logo navbar-btn pull-left" title="">
+              <img src="Images/textonlylogo.svg" class="textlogo img-adaptive" alt="image responsive" />
+            </a>
+          </div>
 
-				<div class="row waveupper row-eq-height">
-					<div class="col-sm-2 col-xs-2 no-padding">
+          <div class="col-sm-10 col-xs-11 fullscreen">
+            <header id="navbar" role="banner" class="navbar navbar-fixed-top navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+              </div>
+              <div class="navbar-collapse collapse">
+                <div class="container-fluid navbar-container">
+                  <nav role="navigation">
+                    <ul class="menu nav navbar-nav">
+                      <li><a href="#" id="ind-selector">Industry</a></li>
+                      <li><a href="#" id="prod-selector">Product</a></li>
+                      <li><a href="#">Media Centre</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">About Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </header>
+          </div>
+        </div>
 
-					<img class= "uppercurve" src = "Images\wave-upper.svg" img alt ="uppercurve"></img>
 
-					<img class= "textonlylogo" class= "img-responsive" src="Images\textonlylogo.png" img alt="textonlylgo" alt="image-responsive"></img>
-
-						<div class="logo">
-							<img class="logo" src = "Images\logo.svg" img alt ="logo">
-						</div>
-					</div>
-
-					<div class="col-sm-10 col-xs-10 no-padding">
-						<div class="navigation" id="myNavigation">
-							<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Product Range</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Solutions</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Location</a></li>
-							<li><a href="#">Key Branches</a></li>
-                <a href="javascript:void(0);" style="font-size:2em;" class="icon" onclick="myFunction()">&#9776;</a>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="row wavecenter">
-          <div class="col-sm-12">
-            <div class="gap">
+        <div class="navigation_col">
+          <div class="row">
+            <div class="shadow-back">
+              <div class="col-lg-2 col-md-1">
+              </div>
+              <div class="col-lg-10 col-md-11">
+                <div class="action-menu text-center">
+                  <div class="col-sm-2 col-xs-0 fullscreen">
+                  </div>
+                  <div class="col-sm-10 col-xs-12 fullscreen">
+                    <div class="region region-navigation-col fit-menu">
+                      <div class="col-md-6">
+                        <div class="lang-switch">
+                          <select class="chzn-select" select data-placeholder="Choose a Language..." style="width:110px;">
+                            <option value="English"></option>
+                            <option value="Francais"></option>
+                            <option value="Deutsch"></option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="cust-portal">
+                          <p><a href="/en/customer-portal" class="cust-portal-text" rel="nofollow">Customer Portal</a>&nbsp;<a href="/en/customer-portal"><i class="fas fa-sign-in-alt fa-2x"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-							<div class="col-sm-8">
-								<div class="text">
-									<h1>Global</h1>
-									<p>We Operate from 230 locations worldwide, and supply customers in all sectors,
-									and in some 104 countries</p>
-								</div>
-							</div>
-				</div>
+        </div>
 
-			<div class="row wavelower row-eq-height">
-				<div class="col-sm-9 col-xs-2 no-padding">
+        <div class="preface front__flex-margin">
+          <div class="flex-container">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="Images/AESGlobal.png" class="img-responsive " alt="Global">
+                  <p class="flex-header visible-desktop visible-md visible-lg">Global</p>
+                  <p class="flex-caption visible-desktop visible-md visible-lg">We operate from 230 locations worldwide, and supply customers in all sectors, and in some 104 countries</p>
+                </li>
+                <li>
+                  <img src="Images/Modular.png" class="img-responsive" alt="Modular">
+                  <p class="flex-header visible-desktop visible-md visible-lg">Modular</p>
+                  <p class="flex-caption visible-desktop visible-md visible-lg">Our patented modular seals technology means we’re able to respond to even the most demanding technical challenge or delivery deadline</p>
+                </li>
+                <li>
+                  <img src="Images/Simplicity.png" class="img-responsive" alt="Simplicity">
+                  <p class="flex-header visible-desktop visible-md visible-lg">Simplicity</p>
+                  <p class="flex-caption visible-desktop visible-md visible-lg">Our product inventory and modular seals technology mean a streamlined ordering process and quicker delivery</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row wavelower row-eq-height">
+          <div class="col-sm-9 col-xs-2 no-padding">
             <div class="bottom-gap">
             </div>
-				</div>
+            <div class="social-id">
+              <p class="fade_text">Find Us</p>
+              <p class="fade_text">Follow Us</p>
+              <p class="fade_text">Contact Us</p>
+            </div>
+          </div>
 
-				<div class="col-sm-3 col-xs-8 no-padding">
+          <div class="col-sm-3 col-xs-8 no-padding">
 
-					<img class="curve-down" src = "Images\wave-lower.svg" img alt ="curve-down"></img>
+            <img class="curve-down" src="Images/wave-lower.svg" img alt="curve-down"></img>
 
-
-					<div class="socialmedia">
-
-            <div class="icons">
-
-						<a href = "https://twitter.com/AESSEALplc">
-							<i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
-						<a href="http://www.linkedin.com/company/aesseal">
-							<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-
-						<a href="#">
-							<i class="fa fa-map-marker fa-3x" aria-hidden="true"></i></a>
-
-						<a href="#">
-							<i class="fa fa-globe fa-3x" aria-hidden="true"></i></a>
-
-
-						<a href="#">
-							<i class="fa fa-phone-square fa-3x" aria-hidden="true"></i></a>
-
+            <div class="socialmedia text-center">
+              <ul>
+                <li> <a href="https://twitter.com/AESSEALplc" target="_self" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
+                <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
+                <li class="contact_icon"> <a href="#" target="_self" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
+                <li class="contact_icon" style="display:none"> <a href="#" target="_self" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
+                <li> <a href="#" target="_self" title="Browse all Locations"> <i class="fas fa-globe"></i></a></li>
+                <li> <a href="#" target="_self" title="View UK Headquarters"> <i class="fas fa-map-marker-alt"></i></a></li>
+              </ul>
             </div>
 
-					</div>
+          </div>
+        </div>
 
-				</div>
-			</div>
-
-	</div>
-</div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myNavigation");
-    if (x.className === "navigation") {
-        x.className += " responsive";
-    } else {
-        x.className = "navigation";
-    }
-}
-</script>
-</header>
-
-&nbsp;
-
-<body>
+      </div>
+    </div>
 
 	<div class="container-fluid">
 		<div class="row">
