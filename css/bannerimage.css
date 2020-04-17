@@ -397,6 +397,16 @@ p a[target="_blank"]:after {
   padding: 0;
 }
 
+.blue-background {
+  background: #002A5B;
+  color: #FFFFFF;
+  padding: 10px 5px 10px 5px;
+}
+
+.white-background{
+	background-color: #ffffff;
+}
+
 .social-body {
   background: #ffffff;
   padding: 5px 15px 12px;
