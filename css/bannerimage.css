@@ -328,7 +328,7 @@ p a[target="_blank"]:after {
 }
 
 #forestBackground{
-  /*background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg);*/
+  /*background: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg);*/
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
