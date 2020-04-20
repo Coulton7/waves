@@ -327,6 +327,13 @@ p a[target="_blank"]:after {
   height: 100%;
 }
 
+.forest-background{
+  background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom;
+}
+
 .cust-portal a {
   border-bottom: none;
   color: #ffffff;
