@@ -2,9 +2,7 @@
   $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
-})(jQuery);
 
-(function($){
   $(document).ready(function(){
     var forestBackground = document.getElementById('forestBackground');
 
