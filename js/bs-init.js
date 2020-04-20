@@ -11,7 +11,6 @@
     });
 
     function loadImgs() {
-      console.log('Loading images ...');
       var src1;
       if (window.matchMedia("only screen and (max-width:991px)").matches){
         var src1 = forestBackground.getAttribute('data-src-small');
