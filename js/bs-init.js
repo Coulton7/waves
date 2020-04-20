@@ -4,7 +4,8 @@
   });
 })(jQuery);
 
-
+(function($){
+  $(document).ready(function(){
     var forestBackground = document.getElementById('forestBackground');
 
     var myLazyLoad = new LazyLoad({
@@ -26,9 +27,8 @@
 
       myLazyLoad.update();
     }
-    (function($){
-      $(document).ready(function(){
-        loadImgs();
+
+    loadImgs();
 
     var lastWindowSize = window.innerWidth;
 
