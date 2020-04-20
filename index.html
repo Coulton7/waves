@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/bs-init.js"></script>
   <script type="text/javascript" charset="utf-8">
     (function($) {
       $(window).load(function() {
@@ -172,42 +173,38 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="forest-background" style="background-image: url(Images/Forest.jpg); background-repeat: no-repeat; background-size: cover; background-position:bottom">
+        <div class="forest-background" data-src-small="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest-sm.jpg" data-src-large="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg" style="background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg); background-repeat: no-repeat; background-size: cover; background-position:bottom">
           <div class="row-eq-height">
             <div class="col-sm-5 col-xs-12 white-background no-padding">
-              <br>
+              <br><div class="col-lg-9 col-lg-offset-3 col-sm-10 col-sm-offset-1">
               <h2 class="text-center">Sustainable Engineering...</h2>
+      </div>
             </div>
             <div class="col-md-1 col-sm-2 hidden-xs no-padding">
-              <img class="img-responsive" src="Images/wave-upper.svg" img alt="uppercurve"></img>
-            </div>
+              <img class="img-responsive" src="Images/wave-upper.svg" img="" alt="uppercurve" style="margin-top:-1px; margin-left:-1px;"></div>
           </div>
           <div class="row-eq-height" style="border-bottom:0.5em solid #002a5b;">
-            <div class="col-sm-5 hidden-xs">
+            <div class="col-md-5 col-sm-2 hidden-xs">
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-              <br>
-              <h3 class="h2 text-center"><a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-dash" style="color:#002a5b">Download Report</a></h3>
+            <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+              <br><h3 class="h2 text-center"><a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-dash" style="color:#002a5b">Download Report <i class="fas fa-caret-right fa-lg"></i></a></h3>
             </div>
             <div class="col-md-1 col-sm-2 hidden-xs no-padding">
-              <img class="img-responsive" src="Images/blue-lower-wave.svg" img alt="lowerwave"></img>
-            </div>
-            <div class="col-sm-3 no-padding hidden-xs">
+              <img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/blue-lower-wave.svg" img="" alt="lowerwave" style="margin-bottom:-1px;"></div>
+            <div class="col-sm-5 col-md-3 no-padding hidden-xs">
               <div class="blue-background fit-space">
-                <div class="col-md-7 col-sm-9">
-                  <div class="sustain-cover"  style="position:absolute;z-index:5;bottom: 7.5em;height: 100%;">
-                    <a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-underline"><img class="img-responsive" src="Images/Front-Cover.png"></img></a>
+                <div class="col-md-8 col-sm-8">
+                  <div class="sustain-cover" style="position:absolute;z-index:5;bottom: 9.75em;height: 100%;">
+                    <a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-underline"><img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Front-Cover.png"></a>
                   </div>
                   </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="grey-gradient col-xs-12 padding-1em">
-            <div class="col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
-              <p>AES Engineering is committed to providing safe and rewarding workplace, operating ethically, supporting its local communities, minimizing it's impact on the environemnt and engaing its stakeholders.</p>
-            </div>
+        <div class="row blue-background">
+          <div class="col-sm-10 col-lg-6 col-sm-offset-1 col-lg-offset-2">
+              <p>AES Engineering is committed to providing safe and rewarding workplace, operating ethically, supporting its local communities, minimizing it's impact on the environment and engaging its stakeholders.</p>
           </div>
         </div>
       </div>
