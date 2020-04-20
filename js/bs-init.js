@@ -28,8 +28,7 @@
     }
     (function($){
       $(document).ready(function(){
-
-    loadImgs();
+        loadImgs();
 
     var lastWindowSize = window.innerWidth;
 
