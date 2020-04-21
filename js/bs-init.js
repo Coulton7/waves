@@ -3,36 +3,51 @@
     $('[data-toggle="tooltip"]').tooltip();
   });
 
-  $(document).ready(function(){
-    var forestBackground = document.getElementById('forestBackground');
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;
 
-    function loadImgs() {
-      var src1;
-      if (window.matchMedia("only screen and (max-width:991px)").matches){
-        var src1 = forestBackground.getAttribute('data-src-small');
-      } else {
-        var src1 = forestBackground.getAttribute('data-src-large');
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
       }
 
-      forestBackground.setAttribute('data-src', src1);
-
-      forestBackground.removeAttribute('data-was-processed');
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) {
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
     }
 
-    loadImgs();
-
-    var lastWindowSize = window.innerWidth;
-
-    window.onresize = function (event){
-      var currentWindowSize = window.innerWidth;
-      if ((lastWindowSize <= 991 && currentWindowSize > 991) || (lastWindowSize > 991 && currentWindowSize <= 991)){
-        loadImgs();
-      }
-
-      lastWindowSize = currentWindowSize;
-    };
-    $(function(){
-      $('.lazy').lazyload();
-    });
-  });
-})(jQuery);
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
