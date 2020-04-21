@@ -6,8 +6,6 @@
   $(document).ready(function(){
     var forestBackground = document.getElementById('forestBackground');
 
-      var myLazyLoad = $('.lazy').lazy();
-
     function loadImgs() {
       var src1;
       if (window.matchMedia("only screen and (max-width:991px)").matches){
@@ -19,8 +17,6 @@
       forestBackground.setAttribute('data-src', src1);
 
       forestBackground.removeAttribute('data-was-processed');
-
-      myLazyLoad.update();
     }
 
     loadImgs();
@@ -35,6 +31,8 @@
 
       lastWindowSize = currentWindowSize;
     };
-
+    $(function(){
+      $('.lazy').lazy();
+    })
   });
 })(jQuery);
