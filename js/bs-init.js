@@ -32,7 +32,7 @@
       lastWindowSize = currentWindowSize;
     };
     $(function(){
-      $('.lazy').lazy();
+      $('.lazy').lazyload();
     });
   });
 })(jQuery);
