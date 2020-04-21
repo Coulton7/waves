@@ -6,9 +6,7 @@
   $(document).ready(function(){
     var forestBackground = document.getElementById('forestBackground');
 
-    var myLazyLoad = new LazyLoad({
-      elements_selector: ".lazy"
-    });
+      var myLazyLoad = $('.lazy').lazy();
 
     function loadImgs() {
       var src1;
