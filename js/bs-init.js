@@ -33,6 +33,6 @@
     };
     $(function(){
       $('.lazy').lazy();
-    })
+    });
   });
 })(jQuery);
