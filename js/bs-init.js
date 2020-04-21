@@ -50,4 +50,5 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
   }
-})
+});
+});
