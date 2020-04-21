@@ -2,7 +2,9 @@
   $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
   });
+});
 
+(function($){
   document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
 
