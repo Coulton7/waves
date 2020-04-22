@@ -4,7 +4,6 @@
   });
 });
 
-(function($){
   document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
 
@@ -53,4 +52,3 @@
       window.addEventListener("orientationChange", lazyload);
     }
   });
-});
