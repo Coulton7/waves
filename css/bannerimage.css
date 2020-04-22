@@ -1290,7 +1290,7 @@ max-width: 25%;
   .grey-upper-curve{
     border-bottom-left-radius: 8%;
   }
-  #forestBackground{
+  .forest-background{
     background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest-sm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1384,7 +1384,7 @@ max-width: 25%;
   .grey-upper-curve{
     border-bottom-left-radius: 8%;
   }
-  #forestBackground{
+  .forest-background{
     background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg);
   }
 }
