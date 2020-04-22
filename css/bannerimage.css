@@ -336,6 +336,12 @@ p a[target="_blank"]:after {
   background-position:bottom;
 }
 
+
+#forestBackground.lazy{
+  background-image: none;
+  background-color: #ffffff;
+}
+
 .cust-portal a {
   border-bottom: none;
   color: #ffffff;
