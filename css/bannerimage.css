@@ -367,7 +367,12 @@ p a[target="_blank"]:after {
 }
 
 .social-id p:nth-child(1){
-  right: -18.5em;
+  right: 15%;
+  position: absolute;
+}
+
+.social-id p:nth-child(1){
+  left: 15%;
   position: absolute;
 }
 
