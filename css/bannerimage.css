@@ -1094,6 +1094,14 @@ max-width: 25%;
     width: 100%;
   }
 
+  .socialmedia {
+  background-color: transparent;
+  position: initial;
+  right: 0;
+  width: 100%;
+  bottom: inherit;
+}
+
   .socialmedia ul li{
   width: 18%;
   text-align: center;
