@@ -366,6 +366,10 @@ p a[target="_blank"]:after {
   color: #535354;
 }
 
+.fade-text:nth-child(1){
+  right: 2em;
+}
+
 .socialmedia {
   width: 100%;
   height: 7.57em;
