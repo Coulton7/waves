@@ -1322,6 +1322,7 @@ max-width: 25%;
   .socialmedia ul{
     top: 15%;
     height: 100%;
+    right: 0;
   }
 
   .social-id p:nth-child(1){
