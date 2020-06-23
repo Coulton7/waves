@@ -357,8 +357,7 @@ p a[target="_blank"]:after {
 
 .social-id {
   position: absolute;
-  top: -3.8em;
-  right: 5em;
+  top: 5.8em;
   z-index: 2;
 }
 
