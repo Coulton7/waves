@@ -387,6 +387,9 @@ p a[target="_blank"]:after {
 }
 
 .socialmedia ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -1309,6 +1312,11 @@ max-width: 25%;
   .front__flex-margin{
     margin: -4.3em 0 0 0;
     position: relative;
+  }
+
+  .socialmedia ul{
+    top: 15%;
+    height: 100%;
   }
 
   .social-id p:nth-child(1){
