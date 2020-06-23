@@ -8,9 +8,9 @@
     function showNextQuote() {
         ++quoteIndex;
         fade_text.eq(quoteIndex % fade_text.length)
-            .fadeIn(900)
-            .delay(900)
-            .fadeOut(900, showNextQuote);
+            .fadeIn(810)
+            .delay(810)
+            .fadeOut(810, showNextQuote);
     }
 
     showNextQuote();
