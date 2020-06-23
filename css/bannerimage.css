@@ -279,12 +279,12 @@ p a[target="_blank"]:after {
 
 .curve-down {
   width: 8em;
-  height: 6.3em;
+  height: 6.185em;
   right: 6.5em;
   position: relative;
   bottom: -0.2em;
   margin-top: -7.9em;
-  z-index: 2;
+  }
 }
 
 .navigation {
