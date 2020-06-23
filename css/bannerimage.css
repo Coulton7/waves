@@ -1326,7 +1326,7 @@ max-width: 25%;
   }
 
   .social-id p:nth-child(1){
-    right: 28%;
+    right: 20%;
     position: absolute;
   }
 
@@ -1335,8 +1335,8 @@ max-width: 25%;
     position: absolute;
   }
   .social-id p:nth-child(3){
-    right: initial;
-    position: relative;
+    right: 32%;
+    position: absolute;
   }
 
 
@@ -1472,6 +1472,20 @@ max-width: 25%;
     top: 50%;
     height: 75%;
     right: 1em;
+  }
+
+  .social-id p:nth-child(1){
+    right: 28%;
+    position: absolute;
+  }
+
+  .social-id p:nth-child(2){
+    left: 18%;
+    position: absolute;
+  }
+  .social-id p:nth-child(3){
+    right: initial;
+    position: relative;
   }
 
   .textonlylogo {
