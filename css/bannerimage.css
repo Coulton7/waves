@@ -372,7 +372,7 @@ p a[target="_blank"]:after {
   position: absolute;
 }
 
-.social-id p:nth-child(1){
+.social-id p:nth-child(2){
   left: 15%;
   position: absolute;
 }
