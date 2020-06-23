@@ -367,7 +367,8 @@ p a[target="_blank"]:after {
 }
 
 .social-id p:nth-child(1){
-  right: 2em;
+  right: -18.5em;
+  position: absolute;
 }
 
 .socialmedia {
