@@ -1099,6 +1099,29 @@ max-width: 25%;
   text-align: center;
   transform: translate(25%);
 }
+.socialmedia ul li:nth-child(1) a {
+  font-size: 3em;
+}
+
+.socialmedia ul li:nth-child(2) a {
+  font-size: 3em;
+}
+
+.socialmedia ul li:nth-child(3) a {
+  font-size: 3em;
+}
+
+.socialmedia ul li:nth-child(4) a {
+  font-size: 3em;
+}
+
+.socialmedia ul li:nth-child(5) a {
+  font-size: 3em;
+}
+
+.socialmedia ul li:nth-child(6) a {
+  font-size: 3em;
+}
 
   .front__flex-margin{
     margin: 4.3em 0 0 0;
