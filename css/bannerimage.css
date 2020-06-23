@@ -1471,6 +1471,7 @@ max-width: 25%;
     transform: translateY(-40%);
     top: 50%;
     height: 75%;
+    right: 1em;
   }
 
   .textonlylogo {
