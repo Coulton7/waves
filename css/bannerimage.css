@@ -366,7 +366,7 @@ p a[target="_blank"]:after {
   color: #535354;
 }
 
-.social-id:nth-child(1){
+.social-id p:nth-child(1){
   right: 2em;
 }
 
