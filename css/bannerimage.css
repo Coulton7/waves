@@ -364,6 +364,7 @@ p a[target="_blank"]:after {
 
 .fade_text {
   color: #535354;
+  display: none;
 }
 
 .social-id p:nth-child(1){
