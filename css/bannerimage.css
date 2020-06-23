@@ -1130,6 +1130,21 @@ max-width: 25%;
   font-size: 3em;
 }
 
+.social-id p:nth-child(1){
+  right: 18%;
+  position: absolute;
+}
+
+.social-id p:nth-child(2){
+  left: 26%;
+  position: absolute;
+}
+
+.social-id p:nth-child(3){
+  right: 38%;
+  position: absolute;
+}
+
   .front__flex-margin{
     margin: 2em 0 0 0;
     position: relative;
@@ -1294,6 +1309,21 @@ max-width: 25%;
     margin: -4.3em 0 0 0;
     position: relative;
   }
+
+  .social-id p:nth-child(1){
+    right: 28%;
+    position: absolute;
+  }
+
+  .social-id p:nth-child(2){
+    left: 18%;
+    position: absolute;
+  }
+  .social-id p:nth-child(3){
+    right: initial;
+    position: relative;
+  }
+
 
   .icons a:nth-child(1) i {
     margin-left: 0.35em;
