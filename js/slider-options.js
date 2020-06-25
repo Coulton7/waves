@@ -20,6 +20,7 @@
       animationLoop: true,
       pauseOnHover: true,
       itemWidth: 210,
+      itemMargin: 10,
       maxItems: 5,
       move: 1
 
