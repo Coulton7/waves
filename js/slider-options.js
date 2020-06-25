@@ -13,14 +13,14 @@
     });
 
     $('.carousel-slider').flexslider({
-      controlNav: true,
+      controlNav: false,
       directionNav: true,
       animation: "slide",
       easing: "swing",
       animationLoop: true,
       pauseOnHover: true,
       itemWidth: 210,
-      minItems: 5,
+      maxItems: 5,
       move: 1
 
     });
