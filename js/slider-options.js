@@ -29,10 +29,10 @@
     $('.product-slider').flexslider({
       controlNav: false,
       directionNav: false,
-      animation: "slide",
+      animation: "fade",
       easing: "swing",
       animationLoop: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
     });
 
     $('.directionNav').flexslider({
