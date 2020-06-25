@@ -15,8 +15,8 @@
     $('.carousel-slider').flexslider({
       controlNav: true,
       directionNav: true,
-      animation: slide,
-      easing: swing,
+      animation: "slide",
+      easing: "swing",
       animationLoop: true,
       pauseOnHover: true,
       maxItems: 5,
