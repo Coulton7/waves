@@ -19,7 +19,7 @@
       easing: "swing",
       animationLoop: true,
       pauseOnHover: true,
-      maxItems: 5,
+      minItems: 5,
       move: 1
 
     });
