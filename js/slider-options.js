@@ -19,6 +19,7 @@
       easing: "swing",
       animationLoop: true,
       pauseOnHover: true,
+      itemWidth: 210,
       minItems: 5,
       move: 1
 
