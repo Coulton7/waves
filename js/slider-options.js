@@ -26,6 +26,15 @@
 
     });
 
+    $('.product-slider').flexslider({
+      controlNav: false,
+      directionNav: false,
+      animation: "slide",
+      easing: "swing",
+      animationLoop: true,
+      pauseOnHover: true,
+    });
+
     $('.directionNav').flexslider({
       controlNav: false,
       directionNav: true
