@@ -1494,14 +1494,11 @@ max-width: 25%;
     position: relative;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: color .5s;
-    background-color: #fcfcfc;
-    background: -moz-linear-gradient(top, #FCFCFC 0, #FCFCFC 70%, #e5e5e7 100%);
-    background: -webkit-linear-gradient(top, #FCFCFC 0, #FCFCFC 70%, #e5e5e7 100%);
-    background: linear-gradient(to bottom, #FCFCFC 0, #FCFCFC 70%, #e5e5e7 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
+    marign: 1em;
     padding: 0;
   }
 
