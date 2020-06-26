@@ -148,6 +148,7 @@ p a[target="_blank"]:after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .front__flex-margin {
