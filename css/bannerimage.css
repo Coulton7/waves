@@ -1488,7 +1488,7 @@ max-width: 25%;
     position: relative;
   }
 
-  .prod-image-slider {
+  a.prod-image-slider {
     text-align: center;
     display: inline-block;
     position: relative;
@@ -1497,12 +1497,12 @@ max-width: 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #535354!important;
+    color: #535354;
     height: 100%;
     padding: 0;
   }
 
-  .prod-image-slider:hover{
+  a.prod-image-slider:hover{
     background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
     background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
     background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
