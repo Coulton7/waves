@@ -1045,6 +1045,28 @@ max-width: 25%;
   font-size: 1.5em;
 }
 
+a.prod-image-slider {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: color .5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #535354;
+  height: 100%;
+  padding: 0;
+}
+
+a.prod-image-slider:hover{
+  background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
+  background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+  color: #dd1e25;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 30px;
@@ -1494,26 +1516,9 @@ max-width: 25%;
     position: relative;
   }
 
-  a.prod-image-slider {
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: color .5s;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #535354;
-    height: 100%;
-    padding: 0;
-  }
-
-  a.prod-image-slider:hover{
-    background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
-    background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
-    background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
-    color: #dd1e25
+    .prod-slider-row > [class*='col-']{
+      padding-bottom: 1em;
+    }
   }
 
   .textonlylogo {
