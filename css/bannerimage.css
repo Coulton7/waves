@@ -1498,8 +1498,16 @@ max-width: 25%;
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    marign: 1em;
+    margin: 1em;
     padding: 0;
+  }
+
+  .prod-image-slider:hover{
+    background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
+    background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
+    background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+    color: #dd1e25
   }
 
   .textonlylogo {
