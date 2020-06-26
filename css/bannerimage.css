@@ -1498,6 +1498,7 @@ max-width: 25%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #535354!important;
+    height: 100%;
     padding: 0;
   }
 
