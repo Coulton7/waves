@@ -1271,7 +1271,7 @@ a.prod-image-slider:hover{
     border-bottom-left-radius: 12%;
   }
   .prod-slider-row > [class*='col-']{
-    padding-bottom: 1em;
+    padding:1em 0.5em;
   }
 }
 
