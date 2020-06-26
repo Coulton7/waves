@@ -1601,7 +1601,7 @@ max-width: 25%;
     border-bottom-left-radius: 10%;
   }
   .prod-slider-row > [class*='col-']{
-    padding: 0.2em;
+    padding: 0.4em;
   }
 }
 
