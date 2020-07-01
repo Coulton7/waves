@@ -142,7 +142,7 @@ p a[target="_blank"]:after {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002a5b', endColorstr='#004a8c', GradientType=1);
   background-attachment: fixed;
   padding-top: 7em;
-  padding-bottom: 4em;
+  padding-bottom: 7em;
 }
 
 .flex-header {
