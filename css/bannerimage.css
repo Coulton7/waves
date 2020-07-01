@@ -184,6 +184,7 @@ p a[target="_blank"]:after {
     padding: 0 5px;
     color: #ccc;
     content: "/\00a0";
+  }
 
 .row-eq-height {
   display: -webkit-box;
