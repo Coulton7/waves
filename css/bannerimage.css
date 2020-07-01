@@ -128,6 +128,21 @@ p a[target="_blank"]:after {
   -webkit-backface-visibility: visible;
 }
 
+.flex-gradient {
+  overflow: initial;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #004a8c;
+  background-image: -moz-linear-gradient(-45deg, #002a5b 0%, #193f6b 41%, #002A5B 100%);
+  background-image: -webkit-linear-gradient(-45deg, #002a5b 0%, #193f6b 41%, #002A5B 100%);
+  background-image: linear-gradient(135deg, #002A5B 0%, #193f6b 41%, #002A5B 100%);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002a5b', endColorstr='#004a8c', GradientType=1);
+  background-attachment: fixed;
+}
+
 .flex-header {
   color: #ffffff;
   position: relative;
