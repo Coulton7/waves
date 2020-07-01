@@ -1495,12 +1495,12 @@ a.prod-image-slider:hover{
     display: block;
   }
 
-  .flex-header {
+  .flex-header h1 {
     font-size: 3em;
     line-height: 58px;
   }
 
-  .flex-caption h1 {
+  .flex-caption {
     font-size: 1.5em;
     line-height: 30px;
   }
@@ -1601,12 +1601,12 @@ a.prod-image-slider:hover{
 
 /* lg */
 @media screen and (min-width: 1200px) {
-  .flex-header {
+  .flex-header h1 {
     font-size: 3.5em;
     line-height: 58px;
   }
 
-  .flex-caption h1 {
+  .flex-caption {
     font-size: 1.5em;
     line-height: 36px;
   }
