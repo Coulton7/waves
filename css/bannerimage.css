@@ -143,6 +143,33 @@ p a[target="_blank"]:after {
   text-align: center;
 }
 
+.breadcrumb-wrap {
+    margin-bottom: 1em;
+    padding: 0.3em;
+    padding-left: 1.5em;
+}
+
+.breadcrumb {
+    display: inline;
+    background: transparent;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+}
+
+.breadcrumb>li {
+    display: inline-block;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
