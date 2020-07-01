@@ -129,18 +129,18 @@ p a[target="_blank"]:after {
 }
 
 .flex-header {
-  padding-left: 0.5em;
-  color: #dd1e25;
-  bottom: 2em;
-  position: absolute;
+  color: #ffffff;
+  position: relative;
+  bottom: unset;
+  text-align: center;
 }
 
 .flex-caption {
-  padding-left: 1em;
-  color: #ffffff;
-  width: 60%;
-  bottom: 0.5em;
-  position: absolute;
+  margin-top: 0.2em;
+  position: relative;
+  bottom: unset;
+  width: auto;
+  text-align: center;
 }
 
 .row-eq-height {
