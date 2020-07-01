@@ -141,8 +141,8 @@ p a[target="_blank"]:after {
   background-image: linear-gradient(135deg, #002A5B 0%, #193f6b 41%, #002A5B 100%);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002a5b', endColorstr='#004a8c', GradientType=1);
   background-attachment: fixed;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  padding-top: 7em;
+  padding-bottom: 4em;
 }
 
 .flex-header {
