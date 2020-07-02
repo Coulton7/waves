@@ -141,7 +141,7 @@ p a[target="_blank"]:after {
   background-image: linear-gradient(135deg, #002A5B 0%, #193f6b 41%, #002A5B 100%);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#002a5b', endColorstr='#004a8c', GradientType=1);
   background-attachment: fixed;
-  padding-top: 7em;
+  padding-top: 6em;
   padding-bottom: 5em;
 }
 
@@ -1535,6 +1535,10 @@ a.prod-image-slider:hover{
 
 /* md */
 @media screen and (min-width: 992px) {
+  .flex-gradient{
+    padding-top: 7em;
+  }
+
   .navbar-default {
     background: none;
     border: none;
@@ -1655,6 +1659,10 @@ a.prod-image-slider:hover{
 
 /* lg */
 @media screen and (min-width: 1200px) {
+  .flex-gradient{
+    padding-top: 6em;
+  }
+
   .flex-header h1 {
     font-size: 3.5em;
     line-height: 63px;
