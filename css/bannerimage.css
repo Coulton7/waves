@@ -215,7 +215,6 @@ p a[target="_blank"]:after {
 }
 
 .breadcrumb>li+li:before {
-    padding: 0 5px;
     color: #4c698c;
     content: " ";
     transform: skew(0);
