@@ -184,56 +184,37 @@ p a[target="_blank"]:after {
 
 .breadcrumb>li a{
     display: inline-block;
-    color: #001e42;
+    color: #667f9c;
 }
 
 .breadcrumb>li a:hover{
     display: inline-block;
-    color: #667f9c;
-    background-color: #004a8c;
-    transform: skew(25deg);
+    color: #ffffff;
 }
 
-.breadcrumb>li:hover a{
+.breadcrumb>li a{
   transform: skew(25deg);
 }
 
-.breadcrumb>li:hover{
+.breadcrumb>li{
     display: inline-block;
     color: #667f9c;
     background-color: #004a8c;
     transform: skew(-25deg);
 }
 
-.breadcrumb>li:first-child:hover{
-    display: inline-block;
-    background-color: #667f9c;
-    color: #667f9c;
-    transform: skew(0);
-}
-
-.breadcrumb>li:first-child a:hover{
-    transform: skew(0);
-}
-
-.breadcrumb>li:last-child:hover{
+.breadcrumb>li:last-child{
     display: inline-block;
     background-color: transparent;
     color: #000000;
     transform: skew(0);
 }
 
-
-.breadcrumb>li {
-    display: inline-block;
-    color: #000000;
-}
-
 .breadcrumb>li+li:before {
     padding: 0 5px;
     color: #4c698c;
     content: "/\00a0";
-    pointer-events: none;
+    transform: skew(0);
   }
 
 .row-eq-height {
