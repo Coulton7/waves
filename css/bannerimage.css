@@ -189,7 +189,7 @@ p a[target="_blank"]:after {
 
 .breadcrumb>li+li:before {
     padding: 0 5px;
-    color: #667f9c;
+    color: #4c698c;
     content: "/\00a0";
   }
 
