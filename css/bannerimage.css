@@ -157,7 +157,6 @@ p a[target="_blank"]:after {
   position: relative;
   bottom: unset;
   width: auto;
-  text-align: center;
 }
 
 .page-header{
