@@ -193,6 +193,12 @@ p a[target="_blank"]:after {
     background-color: #004a8c
 }
 
+.breadcrumb>li:hover{
+    display: inline-block;
+    color: #667f9c;
+    background-color: #004a8c
+}
+
 
 .breadcrumb>li {
     display: inline-block;
