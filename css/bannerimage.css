@@ -185,6 +185,7 @@ p a[target="_blank"]:after {
 .breadcrumb>li a{
     display: inline-block;
     color: #667f9c;
+    padding-right: 9px;
     border-bottom: none;
 }
 
@@ -203,6 +204,7 @@ p a[target="_blank"]:after {
     color: #667f9c;
     background-color: #004a8c;
     transform: skew(-25deg);
+    margin: 0 0.15em 0 0.15em;
 }
 
 .breadcrumb>li:last-child{
@@ -215,7 +217,7 @@ p a[target="_blank"]:after {
 .breadcrumb>li+li:before {
     padding: 0 5px;
     color: #4c698c;
-    content: "/\00a0";
+    content: " ";
     transform: skew(0);
   }
 
