@@ -149,7 +149,7 @@ p a[target="_blank"]:after {
   color: #ffffff;
   position: relative;
   bottom: unset;
-  text-align: center;
+  text-align: left;
 }
 
 .flex-caption {
