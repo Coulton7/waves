@@ -190,13 +190,15 @@ p a[target="_blank"]:after {
 .breadcrumb>li a:hover{
     display: inline-block;
     color: #667f9c;
-    background-color: #004a8c
+    background-color: #004a8c;
+    transform: skew(-10deg);
 }
 
 .breadcrumb>li:hover{
     display: inline-block;
     color: #667f9c;
-    background-color: #004a8c
+    background-color: #004a8c;
+    transform: skew(10deg);
 }
 
 .breadcrumb>li:last-child:hover{
