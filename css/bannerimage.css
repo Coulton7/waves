@@ -199,6 +199,12 @@ p a[target="_blank"]:after {
     background-color: #004a8c
 }
 
+.breadcrumb>li:last-child:hover{
+    display: inline-block;
+    background-color: transparent;
+    color: #000000;
+}
+
 
 .breadcrumb>li {
     display: inline-block;
