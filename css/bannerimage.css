@@ -222,12 +222,12 @@ p a[target="_blank"]:after {
     transform: skew(0);
   }
 
-  .breadcrumb-sitemap{
+  .breadcrumb-sitemap li a{
     color: #667f9c;
     border-bottom: none;
   }
 
-  .breadcrumb-sitemap li a{
+  .breadcrumb-sitemap li a:hover{
     color: #ffffff;
     border-bottom: none;
   }
