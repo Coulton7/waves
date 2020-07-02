@@ -194,6 +194,10 @@ p a[target="_blank"]:after {
     transform: skew(25deg);
 }
 
+.breadcrumb>li:hover a{
+  transform: skew(25deg);
+}
+
 .breadcrumb>li:hover{
     display: inline-block;
     color: #667f9c;
