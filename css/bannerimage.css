@@ -205,6 +205,13 @@ p a[target="_blank"]:after {
     transform: skew(-25deg);
 }
 
+.breadcrumb>li:first-child:hover{
+    display: inline-block;
+    background-color: #667f9c;
+    color: #667f9c;
+    transform: skew(0);
+}
+
 .breadcrumb>li:last-child:hover{
     display: inline-block;
     background-color: transparent;
