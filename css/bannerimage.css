@@ -191,14 +191,14 @@ p a[target="_blank"]:after {
     display: inline-block;
     color: #667f9c;
     background-color: #004a8c;
-    transform: skew(-10deg);
+    transform: skew(25deg);
 }
 
 .breadcrumb>li:hover{
     display: inline-block;
     color: #667f9c;
     background-color: #004a8c;
-    transform: skew(10deg);
+    transform: skew(-25deg);
 }
 
 .breadcrumb>li:last-child:hover{
