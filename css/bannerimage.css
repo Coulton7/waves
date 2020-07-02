@@ -222,6 +222,7 @@ p a[target="_blank"]:after {
     padding: 0 5px;
     color: #4c698c;
     content: "/\00a0";
+    pointer-events: none;
   }
 
 .row-eq-height {
