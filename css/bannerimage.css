@@ -185,11 +185,13 @@ p a[target="_blank"]:after {
 .breadcrumb>li a{
     display: inline-block;
     color: #667f9c;
+    border-bottom: none;
 }
 
 .breadcrumb>li a:hover{
     display: inline-block;
     color: #ffffff;
+    border-bottom: none;
 }
 
 .breadcrumb>li a{
