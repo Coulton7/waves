@@ -1328,10 +1328,6 @@ a.prod-image-slider:hover{
 @media screen and (min-width:501px) and (max-width: 767px) {
 
   .front__flex-margin {
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    transform-origin: top;
     margin-bottom: 16%;
   }
 }
