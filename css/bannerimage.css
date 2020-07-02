@@ -1497,6 +1497,7 @@ a.prod-image-slider:hover{
   .flex-caption {
     font-size: 1.5em;
     line-height: 30px;
+    top:1.5em;
   }
 
   h1 {
@@ -1603,6 +1604,7 @@ a.prod-image-slider:hover{
   .flex-caption {
     font-size: 1.5em;
     line-height: 36px;
+    top:1.5em;
   }
 
   h1 {
