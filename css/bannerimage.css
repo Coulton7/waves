@@ -182,9 +182,20 @@ p a[target="_blank"]:after {
     border-radius: 4px;
 }
 
+.breadcrumb>li a{
+    display: inline-block;
+    color: #b7b7b8;
+}
+
+.breadcrumb>li a:hover{
+    display: inline-block;
+    color: #e5e5e7;
+}
+
+
 .breadcrumb>li {
     display: inline-block;
-    color: #ffffff;
+    color: #000000;
 }
 
 .breadcrumb>li+li:before {
