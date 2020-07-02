@@ -184,11 +184,12 @@ p a[target="_blank"]:after {
 
 .breadcrumb>li {
     display: inline-block;
+    color: #ffffff;
 }
 
 .breadcrumb>li+li:before {
     padding: 0 5px;
-    color: #ccc;
+    color: #193f6b;
     content: "/\00a0";
   }
 
