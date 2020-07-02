@@ -222,6 +222,16 @@ p a[target="_blank"]:after {
     transform: skew(0);
   }
 
+  .breadcrumb-sitemap{
+    color: #667f9c;
+    border-bottom: none;
+  }
+
+  .breadcrumb-sitemap li a{
+    color: #ffffff;
+    border-bottom: none;
+  }
+
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
