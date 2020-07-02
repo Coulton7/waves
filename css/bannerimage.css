@@ -212,6 +212,10 @@ p a[target="_blank"]:after {
     transform: skew(0);
 }
 
+.breadcrumb>li:first-child a:hover{
+    transform: skew(0);
+}
+
 .breadcrumb>li:last-child:hover{
     display: inline-block;
     background-color: transparent;
