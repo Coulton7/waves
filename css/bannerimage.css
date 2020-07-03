@@ -171,7 +171,6 @@ p a[target="_blank"]:after {
 
 .breadcrumb-wrap {
     padding: 0.3em;
-    padding-left: 1em;
 }
 
 .breadcrumb {
@@ -227,14 +226,13 @@ p a[target="_blank"]:after {
   }
 
   .breadcrumb-sitemap li{
-    margin-top: 0.3em; 
+    margin-top: 0.3em;
   }
 
   .breadcrumb-sitemap li a{
     color: #667f9c;
     border-bottom: none;
-    padding-left: 0.5em;
-    margin-top:0.3em;
+    margin-left: 0.4em;
   }
 
   .breadcrumb-sitemap li a:hover{
