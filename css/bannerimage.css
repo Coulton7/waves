@@ -225,7 +225,7 @@ p a[target="_blank"]:after {
   .breadcrumb-sitemap li a{
     color: #667f9c;
     border-bottom: none;
-    padding-left: 0.2em
+    padding-left: 1em;
   }
 
   .breadcrumb-sitemap li a:hover{
