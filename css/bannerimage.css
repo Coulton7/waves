@@ -250,6 +250,11 @@ p a[target="_blank"]:after {
   display: flex;
 }
 
+.prod-slider-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .prod-slider-row > [class*='col-']{
   display: flex;
   flex-direction: column;
