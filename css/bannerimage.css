@@ -218,6 +218,7 @@ p a[target="_blank"]:after {
     background-color: transparent;
     color: #000000;
     transform: skew(0);
+    max-width: 85%;
 }
 
 .breadcrumb>li+li:before {
