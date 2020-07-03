@@ -166,7 +166,7 @@ p a[target="_blank"]:after {
 }
 
 .breadcrumb-sitemap{
-  display: inline-block;
+  display: inline;
 }
 
 .breadcrumb-wrap {
