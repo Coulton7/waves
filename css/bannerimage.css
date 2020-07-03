@@ -149,7 +149,7 @@ p a[target="_blank"]:after {
   color: #ffffff;
   position: relative;
   bottom: unset;
-  text-align: center;
+  text-align: left;
 }
 
 .flex-caption {
@@ -1167,7 +1167,7 @@ a.prod-image-slider:hover{
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .flex-caption{
@@ -1570,7 +1570,7 @@ a.prod-image-slider:hover{
 
   .flex-header{
     top: 0.2em;
-    text-align: center;
+    text-align: left;
   }
 
   .flex-header h1 {
