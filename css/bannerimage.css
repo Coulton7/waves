@@ -165,6 +165,10 @@ p a[target="_blank"]:after {
   padding:0
 }
 
+.breadcrumb-sitemap{
+  display: inline-block;
+}
+
 .breadcrumb-wrap {
     padding: 0.3em;
     padding-left: 1em;
