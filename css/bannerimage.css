@@ -1177,6 +1177,10 @@ a.prod-image-slider:hover{
     text-align: left;
   }
 
+  .breadcrumb>li:last-child{
+      max-width: 87%;
+  }
+
   .flex-caption{
     top: 0;
     font-size: 16px;
@@ -1406,6 +1410,10 @@ a.prod-image-slider:hover{
     text-align: left;
   }
 
+  .breadcrumb>li:last-child{
+      max-width: 87%;
+  }
+
   .flex-header h1 {
     font-size: 2.5em;
     line-height: 52px;
@@ -1566,6 +1574,10 @@ a.prod-image-slider:hover{
     padding-top: 7em;
   }
 
+  .breadcrumb>li:last-child{
+      max-width: 87%;
+  }
+
   .navbar-default {
     background: none;
     border: none;
@@ -1700,6 +1712,10 @@ a.prod-image-slider:hover{
     font-size: 1.5em;
     line-height: 36px;
     top:0.2em;
+  }
+
+  .breadcrumb>li:last-child{
+      max-width: 100%;
   }
 
   h1 {
