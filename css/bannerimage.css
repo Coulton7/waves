@@ -1711,7 +1711,7 @@ a.prod-image-slider:hover{
   .flex-caption {
     font-size: 1em;
     line-height: 36px;
-    top:0.2em;
+    top:1em;
   }
 
   .breadcrumb>li:last-child{
