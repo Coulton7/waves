@@ -1774,13 +1774,6 @@ a.prod-image-slider:hover{
 }
 
 @media (max-width: 992px) {
-  .logo img {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
 
   .uppercurve {
     display: none;
