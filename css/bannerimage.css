@@ -1170,11 +1170,11 @@ max-width: 25%;
   color: #dd1e25;
 }
 
-a.prod-image-slider + .prod-image-slider-text{
+a.prod-image-slider + .prod-image-slider-text p{
   color: #535454;
 }
 
-a.prod-image-slider:hover + .prod-image-slider-text{
+a.prod-image-slider:hover + .prod-image-slider-text p{
   color: #dd1e25;
 }
 
