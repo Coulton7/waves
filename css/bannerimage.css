@@ -1172,6 +1172,7 @@ max-width: 25%;
 
 a.prod-image-slider + .prod-image-slider-text p{
   color: #535454;
+  transition: color .5s;
 }
 
 a.prod-image-slider:hover + .prod-image-slider-text p{
