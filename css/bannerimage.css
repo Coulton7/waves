@@ -1171,10 +1171,16 @@ a.prod-image-slider:hover{
   color: #dd1e25;
 }
 
-.prod-image-slider p {
-    align-self: flex-end;
-    position: relative;
-    bottom: 0;
+a.prod-image-slider + .prod-image-slider-text{
+  color: #535454;
+}
+
+a.prod-image-slider:hover + .prod-image-slider-text{
+  color: #dd1e25;
+}
+
+.prod-image-slider-text{
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
