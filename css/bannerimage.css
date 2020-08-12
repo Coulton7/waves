@@ -1171,6 +1171,13 @@ a.prod-image-slider:hover{
   color: #dd1e25;
 }
 
+.prod-image-slider p {
+    align-self: flex-end;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+}
+
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
