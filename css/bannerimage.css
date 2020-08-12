@@ -1409,6 +1409,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   .prod-slider-row > [class*='col-']{
     padding:1em 0.5em;
   }
+  .mobile-slide-padding{
+    padding-top: 21%;
+    padding-bottom: 21;
+  }
 }
 
 @media screen and (min-width:501px) and (max-width: 767px) {
@@ -1583,6 +1587,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   .prod-slider-row > [class*='col-']{
     padding-bottom: 1em;
   }
+  .mobile-slide-padding{
+    padding-top: 21%;
+    padding-bottom: 21;
+  }
 }
 
 /* md */
@@ -1711,6 +1719,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   }
   .forest-background{
     background-image: url(https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Forest.jpg);
+  }
+  .mobile-slide-padding{
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
