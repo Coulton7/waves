@@ -1149,7 +1149,11 @@ max-width: 25%;
   font-size: 1.5em;
 }
 
-a.prod-image-slider {
+.prod-image-slider{
+  height: 100%;
+}
+
+.product-slider {
   text-align: center;
   display: inline-block;
   position: relative;
@@ -1162,7 +1166,7 @@ a.prod-image-slider {
   padding: 0;
 }
 
-a.prod-image-slider:hover{
+.product-slider:hover{
   background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
   background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
   background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
@@ -1180,7 +1184,7 @@ a.prod-image-slider:hover + .prod-image-slider-text{
 
 .prod-slide-padding{
   padding-top: 20%;
-  padding-bottom: 20%;
+  padding-bottom: 21%;
 }
 
 .prod-image-slider-text{
