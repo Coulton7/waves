@@ -32,7 +32,6 @@
       animation: "fade",
       easing: "swing",
       animationLoop: true,
-      pauseOnHover: false,
     });
 
     $('.directionNav').flexslider({
