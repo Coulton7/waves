@@ -1771,6 +1771,9 @@ a.prod-image-slider:hover{
   .prod-slider-row > [class*='col-']{
     padding: 0 0.4em;
   }
+  .col-lg-x8 {
+  width: 12.5%;
+}
 }
 
 @media (max-width: 992px) {
