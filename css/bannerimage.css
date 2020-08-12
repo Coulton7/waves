@@ -1185,6 +1185,7 @@ a.prod-image-slider:hover + .prod-image-slider-text{
 
 .prod-image-slider-text{
   position: relative;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
