@@ -1149,7 +1149,7 @@ max-width: 25%;
   font-size: 1.5em;
 }
 
-.product-slider {
+a.prod-image-slider, .product-slider {
   text-align: center;
   display: inline-block;
   position: relative;
@@ -1162,7 +1162,7 @@ max-width: 25%;
   padding: 0;
 }
 
-.product-slider:hover{
+a.prod-image-slider:hover, .product-slider:hover{
   background: -moz-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
   background: -webkit-linear-gradient(top, #fff 0, #fff 70%, #fff 100%);
   background: linear-gradient(to bottom, #fff 0, #fff 70%, #fff 100%);
