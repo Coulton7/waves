@@ -1410,6 +1410,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     padding-left: 0em;
   }
 
+  .dropdown ul{
+    overflow: initial;
+  }
+
   .gap {
     height: 5.95em;
   }
