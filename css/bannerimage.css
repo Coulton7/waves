@@ -1194,6 +1194,31 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   max-width: 2em;
 }
 
+.nav-tabs.blue-tabs {
+  border-bottom: 5px solid #5B82AD;
+}
+
+.nav-tabs.blue-tabs li a {
+  background: #002A5B;
+  color: #ffffff;
+  border: 2px solid #5B82AD;
+  border-bottom: 2px solid #002A5B !important;
+}
+
+.nav-tabs.blue-tabs li a:hover {
+  background: #004a8c;
+  color: #ffffff;
+  border: 2px solid #5B82AD;
+  border-bottom: 2px solid #004a8c !important;
+}
+
+.nav-tabs.blue-tabs li.active a {
+  background: #004a8c;
+  color: #ffffff;
+  border: 2px solid #5B82AD;
+  border-bottom: 2px solid #004a8c !important;
+}
+
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
