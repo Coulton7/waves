@@ -196,15 +196,13 @@
             <li><a data-toggle="tab" href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>  Rockford</a>
           </ul>
 
-          <div class="dropdown hidden-md hidden-lg hidden-sm visible-xs">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose Location
-              <span class="caret"></span>
-            </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" data-toggle="tab" href="#millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>Rotherham</a></li>
-                <li><a class="dropdown-item" data-toggle="tab" href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>Rockford</a></li>
-              </ul>
-            </div>
+          <div class="form-item form-item-jump form-type-select form-group hidden-md hidden-lg hidden-sm visible-xs">
+            <select id="country-select" data-placeholder="Choose location" class="form-control form-select">
+              <option></option>
+              <option value="#millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>Rotherham</option>
+              <option href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>Rockford</option>
+            </select>
+          </div>
 
           <div class="tab-content">
             <div class="tab-pane" id="millclose">
