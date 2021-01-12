@@ -54,6 +54,10 @@
   });
   (function($) {
     $(document).ready(function() {
+      $('#country-tour a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
       $('#country-select').on('change', function (e) {
         $('.blue-tabs li a').eq($(this).val()).tab('show');
     });
