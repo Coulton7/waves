@@ -1227,6 +1227,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
+.blue-tabs .dropdown-menu{
+  background-color: #002a5b;
+}
+
 .blue-tabs .open>a:focus{
   background-color: #044a8c;
 }
