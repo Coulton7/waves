@@ -1194,11 +1194,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   max-width: 2em;
 }
 
-.nav-tabs.blue-tabs {
+.blue-tabs {
   border-bottom: 5px solid #5B82AD;
 }
 
-.nav-tabs.blue-tabs li a {
+.blue-tabs li a {
   background: #002A5B;
   color: #ffffff;
   border: 2px solid #5B82AD;
@@ -1206,7 +1206,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
-.nav-tabs.blue-tabs li a:hover {
+.blue-tabs li a:hover {
   background: #004a8c;
   color: #ffffff;
   border: 2px solid #5B82AD;
@@ -1214,7 +1214,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
-.nav-tabs.blue-tabs li.active a {
+.blue-tabs li.active a {
   background: #004a8c;
   color: #ffffff;
   border: 2px solid #5B82AD;
