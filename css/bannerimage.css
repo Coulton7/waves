@@ -1227,6 +1227,10 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
+.blue-tabs .open>a:focus{
+  background-color: #044a8c;
+}
+
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
