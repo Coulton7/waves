@@ -1206,6 +1206,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
+.blue-tabs .dropdown-menu li{
+  width: 100%;
+  background-color: #002A5B;
+}
+
 .blue-tabs li a:hover {
   background: #004a8c;
   color: #ffffff;
