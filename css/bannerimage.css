@@ -1219,7 +1219,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   padding: 10px 15px;
 }
 
-.blue-tabs li.active a {
+.blue-tabs li.active>a, .blue-tabs li.active>a:focus, .blue-tabs li.active>a:hover {
   background: #004a8c;
   color: #ffffff;
   border: 2px solid #5B82AD;
