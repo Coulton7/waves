@@ -1404,13 +1404,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     text-align: left;
   }
 
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #ffffff;
-    padding-left: 0em;
-  }
-
   .dropdown ul{
     overflow: initial;
   }
@@ -1526,13 +1519,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   body {
     font-size: 16px;
     line-height: 26px;
-  }
-
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #ffffff;
-    padding-left: 0em;
   }
 
   .socialmedia {
@@ -1704,13 +1690,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   body {
     font-size: 17px;
     line-height: 28px;
-  }
-
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #ffffff;
-    padding-left: 4em;
   }
 
   .socialmedia ul {
