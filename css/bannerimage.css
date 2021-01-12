@@ -1210,6 +1210,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   color: #ffffff;
   border: 2px solid #5B82AD;
   border-bottom: 2px solid #004a8c !important;
+  padding: 10px 15px;
 }
 
 .nav-tabs.blue-tabs li.active a {
@@ -1217,6 +1218,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   color: #ffffff;
   border: 2px solid #5B82AD;
   border-bottom: 2px solid #004a8c !important;
+  padding: 10px 15px;
 }
 
 @media screen and (max-width: 767px) {
