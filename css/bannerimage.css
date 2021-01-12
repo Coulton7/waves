@@ -657,7 +657,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-linkedin {
-  background-image: url('/js-safari-test/Images/linkedin-panel.png');
+  background-image: url('/images/linkedin-panel.png');
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -676,7 +676,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-instagram {
-  background-image: url('/js-safari-test/Images/instagram-panel.png');
+  background-image: url('/images/instagram-panel.png');
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -695,7 +695,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-youtube {
-  background-image: url('/js-safari-test/Images/youtube-panel.png');
+  background-image: url('/images/youtube-panel.png');
   background-size: contain;
   background-color: #f5f5f5;
   background-repeat: no-repeat;
@@ -714,7 +714,7 @@ p a[target="_blank"]:after {
 }
 
 .css-fade-twitter {
-  background-image: url('/js-safari-test/Images/twitter-panel.png');
+  background-image: url('/images/twitter-panel.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #f5f5f5;
