@@ -191,18 +191,22 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
-          <ul class="nav nav-tabs blue-tabs visible-md visible-lg visible-sm hidden-xs" id="country-tour">
-            <li><a data-toggle="tab" href="#millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>  Rotherham</a>
-            <li><a data-toggle="tab" href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>  Rockford</a>
-          </ul>
+          <ul class="nav nav-tabs blue-tabs">
+            <li class="visible-md visible-lg visible-sm hidden-xs"><a data-toggle="tab" href="#millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>  Rotherham</a></li>
 
-          <div class="form-item form-item-jump form-type-select form-group hidden-md hidden-lg hidden-sm visible-xs">
-            <select id="country-select" data-placeholder="Choose Location" class="form-control form-select">
-              <option></option>
-              <option value="millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>Rotherham</option>
-              <option value="rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>Rockford</option>
-            </select>
-          </div>
+            <li class="visible-md visible-lg visible-sm hidden-xs"><a data-toggle="tab" href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>  Rockford</a></li>
+
+            <li class="hidden-md hidden-lg hidden-sm visible-xs">
+              <a href="#" role="dropdown-toggle" id="countryDropdown" data-toggle="dropdown">
+                <span class="caret"></span>
+              </a>
+                <ul class="dropdown-menu" id="countryDropdown-contents">
+                  <li><a class="dropdown-item" data-toggle="tab" href="#millclose"><img class="country-icon" src="images/icon/flag/GB.svg"/>Rotherham</a></li>
+                  <li><a class="dropdown-item" data-toggle="tab" href="#rockford"><img class="country-icon" src="images/icon/flag/US.svg"/>Rockford</a></li>
+                </ul>
+              </li>
+              </div>
+          </ul>
 
           <div class="tab-content">
             <div class="tab-pane" id="millclose">
