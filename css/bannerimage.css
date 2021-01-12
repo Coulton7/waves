@@ -1189,6 +1189,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   text-align: center;
 }
 
+.country-icon {
+  max-height: 2em;
+  max-width: 2em;
+}
+
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
