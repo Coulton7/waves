@@ -1405,6 +1405,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 
   ul {
     list-style-type: none;
+    overflow: hidden;
     background-color: #ffffff;
     padding-left: 0em;
   }
