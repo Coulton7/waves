@@ -1203,6 +1203,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   color: #ffffff;
   border: 2px solid #5B82AD;
   border-bottom: 2px solid #002A5B !important;
+  padding: 10px 15px;
 }
 
 .nav-tabs.blue-tabs li a:hover {
