@@ -4,6 +4,11 @@
   });
 });
 
+$(".dropdown-menu li a").click(function(){
+  $(this).parents(".dropdown").find('#countryDropdown').html($(this).text() + ' <span class="caret"></span>');
+  $(this).parents(".dropdown").find('#countryDropdown').val($(this).data('value'));
+});
+
   document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
 
