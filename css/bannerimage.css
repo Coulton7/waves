@@ -767,6 +767,29 @@ p a[target="_blank"]:after {
   margin-bottom: 0;
 }
 
+.btn-primary {
+  list-style-type: none;
+  display: inline-block;
+  background: #dd1e25;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0;
+}
+
+.btn-primary a {
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #ad1c1c;
+  margin-bottom: 0;
+  color: #ffffff !important;
+  outline-offset: 1px;
+  outline-style: solid;
+  outline-color: #ffffff;
+  outline-width: 1px;
+}
+
 .btn-red {
   list-style-type: none;
   display: inline-block;
