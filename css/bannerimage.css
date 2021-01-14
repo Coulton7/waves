@@ -74,6 +74,11 @@ a.no-dash:hover{
   margin: 0 auto;
 }
 
+.row-deep {
+  padding-bottom: 3em;
+  padding-top: 2.5em;
+}
+
 .fullscreen {
   padding: 0 !important;
   margin: 0 !important;
@@ -633,6 +638,10 @@ p a[target="_blank"]:after {
 
 .padding-1em {
   padding: 1em;
+}
+
+.padding-top-2em{
+  padding-top: 2em;
 }
 
 .white-background{
