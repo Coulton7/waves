@@ -9,10 +9,6 @@ $(function(){
   if(hash !=""){
     $('.nav-tabs [href="' + hash + '"]').tab('show');
     $(hash).addClass('active');
-
-    var scrollmem = $('body').scrollTop() || $('html').scrollTop();
-    window.location.hash = this.hash;
-    $('html,body').scrollTop(scrollmem);
     }
 });
 
