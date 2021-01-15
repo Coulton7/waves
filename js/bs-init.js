@@ -6,14 +6,14 @@
 
 $(function(){
   var hash = window.location.hash;
-  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+  if(hash !=""){
+    $('.nav-tabs [href="' + hash + '"]').tab('show');
+    $(hash).addClass('active');
 
-  $('.nav-tabs a').on('shown.bs.tab', function (e) {
-    $(this).tab('show');
     var scrollmem = $('body').scrollTop() || $('html').scrollTop();
     window.location.hash = this.hash;
     $('html,body').scrollTop(scrollmem);
-  });
+    }
 });
 
   document.addEventListener("DOMContentLoaded", function() {
