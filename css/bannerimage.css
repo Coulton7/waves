@@ -130,8 +130,6 @@ a:hover {
 p a[target="_blank"]:after {
   font-family: "Font Awesome 5 Free";
   content: "\f35d";
-  font-weight: 900;
-  display: none;
 }
 
 .flexslider .slides>li:first-child {
