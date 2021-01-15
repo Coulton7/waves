@@ -15,6 +15,7 @@ $(function(){
     $('html,body').scrollTop(scrollmem);
   });
 });
+
   document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages;
 
