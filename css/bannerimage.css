@@ -1316,6 +1316,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   animation: title linear 2s;
   animation-delay: 9s;
   visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 @keyframes title {
