@@ -1301,7 +1301,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 
 .spin::after{
   content: "";
-  animation: spin 8s linear;
+  animation: spin 8s ease-in;
 }
 
 @keyframes spin{
