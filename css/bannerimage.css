@@ -1539,7 +1539,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   }
 
   .flex-caption {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 26px;
     top: 3.7em;
     display: block;
@@ -1710,6 +1710,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     line-height: 58px;
   }
 
+  .flex-caption {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
   h1 {
     font-size: 34px;
     line-height: 55px;
@@ -1813,7 +1818,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   }
 
   .flex-caption {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 36px;
     top:0;
   }
