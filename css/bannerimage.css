@@ -1321,7 +1321,8 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 @keyframes title {
-  25%{visibility: hidden; opacity: 0}
+  0%{position: relative;}
+  25%{visibility: hidden; opacity: 0; position: relative;}
   100%{visibility: visible; opacity: 1; position: relative;}
 }
 
