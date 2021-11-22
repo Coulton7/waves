@@ -1317,12 +1317,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   animation-delay: 8s;
   visibility: hidden;
   animation-fill-mode: forwards;
-  display: none;
 }
 
 @keyframes title {
   0%{visibility: hidden; opacity: 0}
-  100%{display: block; visibility: visible; opacity: 1}
+  100%{visibility: visible; opacity: 1}
 }
 
 @media screen and (max-width: 767px) {
