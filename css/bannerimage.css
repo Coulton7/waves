@@ -198,6 +198,7 @@ p a[target="_blank"]:after {
   position: relative;
   bottom: unset;
   width: auto;
+  padding-left: 0;
 }
 
 .page-header{
