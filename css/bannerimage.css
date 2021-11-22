@@ -251,14 +251,6 @@ p a[target="_blank"]:after {
     overflow-wrap: break-word;
 }
 
-.breadcrumb>li:last-child{
-    display: inline-block;
-    background-color: transparent;
-    color: #000000;
-    transform: skew(0);
-    max-width: 87%;
-}
-
 .breadcrumb>li+li:before {
   padding: 0;
     color: #4c698c;
@@ -1306,10 +1298,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     text-align: left;
   }
 
-  .breadcrumb>li:last-child{
-      max-width: 87%;
-  }
-
   .flex-caption{
     top: 0;
     font-size: 16px;
@@ -1540,10 +1528,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     text-align: left;
   }
 
-  .breadcrumb>li:last-child{
-      max-width: 87%;
-  }
-
   .flex-header h1 {
     font-size: 2.5em;
     line-height: 52px;
@@ -1701,10 +1685,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     padding-top: 7em;
   }
 
-  .breadcrumb>li:last-child{
-      max-width: 87%;
-  }
-
   .navbar-default {
     background: none;
     border: none;
@@ -1836,10 +1816,6 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
     font-size: 1em;
     line-height: 36px;
     top:1em;
-  }
-
-  .breadcrumb>li:last-child{
-      max-width: 100%;
   }
 
   h1 {
