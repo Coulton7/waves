@@ -1304,6 +1304,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   visibility: hidden;
   animation-fill-mode: forwards;
   position: absolute;
+  color: #667f9c;
 }
 
 .spin-2{
