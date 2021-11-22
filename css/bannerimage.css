@@ -1307,15 +1307,15 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .spin-2{
-  animation-delay: 2.5s
+  animation-delay: 2.25s
 }
 
 .spin-3{
-  animation-delay: 5s
+  animation-delay: 4.5s
 }
 
 .spin-4{
-  animation-delay: 7.5s
+  animation-delay: 6.75s
 }
 
 @keyframes spin {
@@ -1326,7 +1326,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 
 .title{
   animation: title linear 1s;
-  animation-delay: 10s;
+  animation-delay: 9s;
   visibility: hidden;
   animation-fill-mode: forwards;
   position: absolute;
