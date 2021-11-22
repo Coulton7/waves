@@ -1341,7 +1341,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .text-holder{
-  min-height: 10em;
+  min-height: 5em;
 }
 
 @media screen and (max-width: 767px) {
