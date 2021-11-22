@@ -188,6 +188,9 @@ p a[target="_blank"]:after {
   position: relative;
   bottom: unset;
   text-align: left;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000;
+  padding-left: 0;
 }
 
 .flex-caption {
