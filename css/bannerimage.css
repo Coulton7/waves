@@ -1299,7 +1299,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   background-color: #044a8c;
 }
 
-.spin-1, .spin-2, .spin-3, .spin4 {
+.spin-1, .spin-2, .spin-3, .spin-4 {
   animation: spin linear 2s;
   visibility: hidden;
   animation-fill-mode: forwards;
