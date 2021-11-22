@@ -1299,6 +1299,29 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   background-color: #044a8c;
 }
 
+.spin::after{
+  content: "";
+  animation: spin 8s linear;
+}
+
+@keframes spin{
+  0%{content: "We care about the environment"}
+  25%{content:"We care about reliability"}
+  50%{content:"We care about sustainability,"}
+  75%{content:"We care about customer service"}
+  100%{display: none;}
+}
+
+.title{
+  animation: title linear 2s;
+  animation-delay: 9s;
+}
+
+@keyframes title {
+  0%{display: none; visibility: hidden;}
+  100%{display: block; visibility: visible;}
+}
+
 @media screen and (max-width: 767px) {
   .flex-header{
     top: 0;
