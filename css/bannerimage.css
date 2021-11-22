@@ -196,7 +196,7 @@ p a[target="_blank"]:after {
 }
 
 .flex-caption {
-  margin-top: 0.2em;
+  margin-top: -0.2em;
   position: relative;
   bottom: unset;
   width: auto;
