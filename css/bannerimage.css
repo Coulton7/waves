@@ -1313,7 +1313,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .title{
-  animation: title linear 2s;
+  animation: title linear 1s;
   animation-delay: 8s;
   visibility: hidden;
   animation-fill-mode: forwards;
