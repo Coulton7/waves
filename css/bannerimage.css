@@ -1311,11 +1311,11 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .spin-3{
-  animation-delay: 3.5s
+  animation-delay: 3s
 }
 
 .spin-4{
-  animation-delay: 5.5s
+  animation-delay: 4.5s
 }
 
 @keyframes spin {
