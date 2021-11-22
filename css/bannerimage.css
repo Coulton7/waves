@@ -1525,7 +1525,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 @media screen and (min-width: 768px) {
 
   .flex-header{
-    top: 4em;
+    top: 0.2em;
     text-align: left;
   }
 
@@ -1696,7 +1696,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   }
 
   .flex-header{
-    top: 1em;
+    top: 0.2em;
     text-align: left;
   }
 
