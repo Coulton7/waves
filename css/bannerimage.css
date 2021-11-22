@@ -1320,7 +1320,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 
 @keyframes spin {
   0%{visibility: hidden; opacity: 0; position: relative;}
-  35%{visibility: visible; opacity: 1; position: relative;}
+  75%{visibility: visible; opacity: 1; position: relative;}
   100%{visibility: hidden; opacity: 0; position: absolute;}
 }
 
