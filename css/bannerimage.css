@@ -1326,7 +1326,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 
 .title{
   animation: title linear 1s;
-  animation-delay: 8s;
+  animation-delay: 6s;
   visibility: hidden;
   animation-fill-mode: forwards;
   position: absolute;
