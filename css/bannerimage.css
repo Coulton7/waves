@@ -2,6 +2,8 @@ body {
   font-size: :14px;
   line-height: :1.618rem;
   color: #535454;
+  font-family: "HelveticaNeue","Helvetica Neue","HelveticaNeueRoman","HelveticaNeue-Roman","Helvetica Neue Roman","Arial","TeXGyreHerosRegular","Helvetica","Tahoma","Geneva",sans-serif;
+  font-weight: 300
 }
 
 /* sets the text color and base height and size*/
