@@ -1313,14 +1313,14 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .title{
-  animation: title ease-in 2s;
+  animation: title linear 2s;
   animation-delay: 9s;
   visibility: hidden;
 }
 
 @keyframes title {
-  0%{visibility: hidden;}
-  100%{visibility: visible;}
+  0%{visibility: hidden; opacity: 0}
+  100%{visibility: visible; opacity: 1}
 }
 
 @media screen and (max-width: 767px) {
