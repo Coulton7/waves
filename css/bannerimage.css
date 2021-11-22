@@ -1307,15 +1307,15 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
 }
 
 .spin-2{
-  animation-delay: 1.75s
+  animation-delay: 1.5s
 }
 
 .spin-3{
-  animation-delay: 3.75s
+  animation-delay: 3.5s
 }
 
 .spin-4{
-  animation-delay: 5.75s
+  animation-delay: 5.5s
 }
 
 @keyframes spin {
