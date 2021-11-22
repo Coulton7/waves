@@ -1299,7 +1299,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   background-color: #044a8c;
 }
 
-.spin::after{
+.spin {
   content: "";
   animation: spin 8s ease-in;
 }
