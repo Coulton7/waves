@@ -1304,7 +1304,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   animation: spin 8s linear;
 }
 
-@keframes spin{
+@keyframes spin{
   0%{content: "We care about the environment"}
   25%{content:"We care about reliability"}
   50%{content:"We care about sustainability,"}
