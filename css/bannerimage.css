@@ -200,7 +200,7 @@ p a[target="_blank"]:after {
 .page-header{
   border-bottom: none;
   margin:0;
-  padding:0
+  padding-top: 20px;
 }
 
 .breadcrumb-sitemap{
