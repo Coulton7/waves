@@ -1305,6 +1305,7 @@ a.prod-image-slider:hover + .prod-image-slider-text p{
   animation-fill-mode: forwards;
   position: absolute;
   color: #667f9c;
+  bottom: 0;
 }
 
 .spin-2{
