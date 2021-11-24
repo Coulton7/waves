@@ -1380,7 +1380,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .virtual-tour:hover {
-  background-image: url("/images/360-tour-inverse-over.svg");
+  background-image: url("../images/360-tour-inverse-over.svg");
   background-size: 100%;
   opacity: 1;
   background-repeat: no-repeat;
@@ -1617,9 +1617,9 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     padding-top: 0;
     padding-bottom: 0;
   }
-  
+
   .virtual-tour-banner {
-    background-image: url("/images/360-tour-background-520.png");
+    background-image: url("../images/360-tour-background-520.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1797,7 +1797,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   }
 
   .virtual-tour-banner {
-    background-image: url("/images/360-tour-background-520.png");
+    background-image: url("../images/360-tour-background-520.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
