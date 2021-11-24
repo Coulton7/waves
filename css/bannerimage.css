@@ -1384,6 +1384,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   background-size: 50%;
   opacity: 1;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .virtual-tour:hover img {
@@ -1627,6 +1628,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   .virtual-tour-logo{
     max-width: 50%;
   }
+
+  .virtual-tour:hover {
+    background-size: 50%;
+  }
 }
 
 @media screen and (min-width:501px) and (max-width: 767px) {
@@ -1810,6 +1815,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   .virtual-tour-logo{
     max-width: 50%;
   }
+
+  .virtual-tour:hover {
+    background-size: 50%;
+  }
 }
 
 /* md */
@@ -1946,6 +1955,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   .virtual-tour-logo{
     max-width: 33%;
   }
+
+  .virtual-tour:hover {
+    background-size: 33%;
+  }
 }
 
 /* lg */
@@ -2027,6 +2040,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .virtual-tour-logo{
     max-width: 33%;
+  }
+
+  .virtual-tour:hover {
+    background-size: 33%;
   }
 }
 
