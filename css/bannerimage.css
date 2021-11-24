@@ -1623,6 +1623,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .virtual-tour-logo{
+    max-width: 50%;
+  }
 }
 
 @media screen and (min-width:501px) and (max-width: 767px) {
@@ -1802,6 +1806,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .virtual-tour-logo{
+    max-width: 50%;
+  }
 }
 
 /* md */
@@ -1934,6 +1942,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .virtual-tour-logo{
+    max-width: 33%;
+  }
 }
 
 /* lg */
@@ -2011,6 +2023,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .col-lg-x8 {
     width: 12.5%;
+  }
+
+  .virtual-tour-logo{
+    max-width: 33%;
   }
 }
 
