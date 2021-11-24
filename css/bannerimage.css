@@ -1391,6 +1391,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   opacity: 0;
 }
 
+.top-white-lower-blue-background {
+  background-image: linear-gradient(to bottom,#ffffff,#ffffff 50%,#002a5b 50%)
+}
+
 @media screen and (max-width: 767px) {
   .flex-header {
     top: 0;
