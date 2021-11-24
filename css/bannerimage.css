@@ -1395,6 +1395,13 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   background-image: linear-gradient(to bottom,#ffffff,#ffffff 50%,#002a5b 50%)
 }
 
+.footer {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .flex-header {
     top: 0;
@@ -2060,12 +2067,3 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     display: none;
   }
 }
-
-.footer {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-/*footer code for its sizing*/
