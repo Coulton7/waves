@@ -1806,18 +1806,18 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   }
 
   .virtual-tour-banner {
-    background-image: url("../images/360-tour-background-520.png");
+    background-image: url("../images/360-tour-background-1920.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .virtual-tour-logo{
-    max-width: 50%;
+    max-width: 33%;
   }
 
   .virtual-tour:hover {
-    background-size: 50%;
+    background-size: 33%;
   }
 }
 
