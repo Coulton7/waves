@@ -7,3 +7,25 @@ function autocollapse() {
 
 $(document).on('ready', autocollapse);
 $(window).on('resize', autocollapse);
+
+var coverElem = $(".overlay-btn");
+var elemArray = $(".last"));
+
+for(i=0; i< elemArray.length; i++)
+{
+    var currElemOffset = elemArray.offset();
+    var currElemWidth = elemArray.width();
+
+    var currElemStPoint = currElemOffset.left ;
+    var currElemEndPoint = currElemStPoint + currElemWidth;
+
+
+    if(currElemStPoint <= coverElem.offset().left &&  coverElem.offset().left <=  currElemEndPoint)
+    {
+        elemArray.addClass("display-none");
+    }
+    else
+    {
+        elemArray[i].removeClass("display-none");
+    }
+}
