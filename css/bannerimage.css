@@ -1420,6 +1420,22 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   padding-bottom: 10px;
 }
 
+.overlay-btn {
+  float: right;
+  margin-right: 1.5em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: block;
+  color: #535454;
+  padding: 0.7em 1.1em;
+  text-decoration: none;
+  z-index: 1036;
+  border-top: 4px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+}
+
 .footer {
   padding-top: 0px;
   padding-bottom: 0px;
