@@ -9,7 +9,7 @@ $(document).on('ready', autocollapse);
 $(window).on('resize', autocollapse);
 
 var coverElem = $(".overlay-btn");
-var elemArray = $(".last"));
+var elemArray = $(".last");
 
 {
     var currElemOffset = elemArray.offset();
