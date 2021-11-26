@@ -1421,10 +1421,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .overlay-btn {
-
+  float: right;
   margin-right: 1.5em;
-  position: sticky;
-  right: 8%;
+  position: fixed;
+  right: 0;
   top: 0;
   display: block;
   color: #535454;
@@ -1434,7 +1434,6 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   border-top: 4px solid transparent;
   border-bottom: none;
   cursor: pointer;
-  transform: translate3d(92%, -101%, 0);
 }
 
 .overlay-btn:hover,.overlay-btn:focus {
