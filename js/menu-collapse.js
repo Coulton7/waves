@@ -11,7 +11,6 @@ $(window).on('resize', autocollapse);
 var coverElem = $(".overlay-btn");
 var elemArray = $(".last"));
 
-for(i=0; i< elemArray.length; i++)
 {
     var currElemOffset = elemArray.offset();
     var currElemWidth = elemArray.width();
