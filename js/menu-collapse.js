@@ -16,11 +16,11 @@ for(i=0; i< elemArray.length; i++)
     var currElemOffset = elemArray.offset();
     var currElemWidth = elemArray.width();
 
-    var currElemStPoint = currElemOffset.left ;
+    var currElemStPoint = currElemOffset.right ;
     var currElemEndPoint = currElemStPoint + currElemWidth;
 
 
-    if(currElemStPoint <= coverElem.offset().left &&  coverElem.offset().left <=  currElemEndPoint)
+    if(currElemStPoint <= coverElem.offset().right &&  coverElem.offset().right <=  currElemEndPoint)
     {
         elemArray.addClass("display-none");
     }
