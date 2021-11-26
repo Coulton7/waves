@@ -15,7 +15,7 @@ var elemArray = $(".last");
     var currElemOffset = elemArray.offset();
     var currElemWidth = elemArray.width();
 
-    var currElemStPoint = currElemOffset.left ;
+    var currElemStPoint = currElemOffset.left;
     var currElemEndPoint = currElemStPoint + currElemWidth;
 
 
