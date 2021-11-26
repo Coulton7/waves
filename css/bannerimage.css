@@ -1436,6 +1436,19 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   cursor: pointer;
 }
 
+.overlay-btn:hover,.overlay-btn:focus {
+    border-top: 4px solid #dd1e25;
+    border-bottom: none;
+    color: #333;
+    text-decoration: none;
+}
+
+.overlay-btn:focus {
+    border-bottom: none;
+    color: #535454;
+    text-decoration: none;
+}
+
 .inline {
   display: inline;
 }
