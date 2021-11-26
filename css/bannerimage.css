@@ -1436,6 +1436,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   cursor: pointer;
 }
 
+.inline {
+  display: inline;
+}
+
 .footer {
   padding-top: 0px;
   padding-bottom: 0px;
