@@ -1423,7 +1423,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 .overlay-btn {
   float: right;
   margin-right: 1.5em;
-  position: fixed;
+  position: sticky;
   right: 0;
   top: 0;
   display: block;
@@ -1434,6 +1434,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   border-top: 4px solid transparent;
   border-bottom: none;
   cursor: pointer;
+  transform: translateY(-100%);
 }
 
 .overlay-btn:hover,.overlay-btn:focus {
