@@ -15,11 +15,11 @@ var elemArray = $(".last");
     var currElemOffset = elemArray.offset();
     var currElemWidth = elemArray.width();
 
-    var currElemStPoint = currElemOffset.right ;
+    var currElemStPoint = currElemOffset.left ;
     var currElemEndPoint = currElemStPoint + currElemWidth;
 
 
-    if(currElemStPoint <= coverElem.offset().right &&  coverElem.offset().right <=  currElemEndPoint)
+    if(currElemStPoint <= coverElem.offset().left &&  coverElem.offset().left <=  currElemEndPoint)
     {
         elemArray.addClass("display-none");
     }
