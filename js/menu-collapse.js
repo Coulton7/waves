@@ -31,9 +31,9 @@
     }
 
     if (horizontalMatch) {
-      overlayBtn.addClass('display-none')
+      $('#overlayBtn').addClass('display-none')
     } else {
-      overlayBtn.removeClass('display-none')
+      $('#overlayBtn').removeClass('display-none')
     }
   }
 
