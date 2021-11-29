@@ -18,11 +18,10 @@
     var overlayBound = overlayElem.getBoundingClientRect();
     var menuBound = menuItem.getBoundingClientRect();
 
-    console.log(overlayBound);
-    console.log(menuBound);
   }
 
-
+  console.log(overlayBound);
+  console.log(menuBound);
   $(document).on('ready', autocollapse);
   $(window).on('resize', autocollapse);
 })(jQuery);
