@@ -1,29 +1,19 @@
-(function($) {
-
+(function($){
   function autocollapse() {
     var navbar = $('#autocollapse');
-    navbar.removeClass('collapsed'); // set standart view
-    if (navbar.innerHeight() > 60) // check if we've got 2 lines
-      navbar.addClass('collapsed'); // force collapse mode
-  }
-
-  function menuOverlay() {
-    var overlayElem = document.querySelector('.overlay-btn');
-    var menuItem = document.querySelector('.last');
-
-    var overlayBound = overlayElem.getBoundingClientRect();
-    var menuBound = menuItem.getBoundingClientRect();
-
-    if (menuBound.top + menuBound.height > overlayBound.top &&
-      menuBound.left + menuBound.width > overlayBound.left &&
-      menuBound.bottom - menuBound.height < overlayBound.bottom &&
-      menuBound.right - menuBound.width < overlayBound.right) {
-      overlayElem.addClass("display-none");
+    navbar.removeClass('collapsed');
+    if(navbar.innerHeight() > 60) {
+      navbar.addClass('collapsed');
+      $('#overlay-btn').addClass('display-none-important');
+    } else {
+      navbar.removeClass('collapsed');
+      $('#overlay-btn').removeClass('display-none-important');
     }
   }
 
 
+
+
   $(document).on('ready', autocollapse);
   $(window).on('resize', autocollapse);
-});
-(jQuery)
+})(jQuery);
