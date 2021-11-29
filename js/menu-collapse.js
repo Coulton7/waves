@@ -5,26 +5,17 @@ function autocollapse() {
     navbar.addClass('collapsed'); // force collapse mode
 }
 
-$(document).on('ready', autocollapse);
-$(window).on('resize', autocollapse);
+(function($) {
+  var overlayElem = document.querySelector('.overlay-btn');
+  var menuItem = document.querySelector('.last');
 
-var coverElem = $(".overlay-btn");
-var elemArray = $(".last");
+  var overlayBound = overlayElem.getBoundingClientRect();
+  var menuBound = menuItem.getBoundingClientRect();
 
-{
-    var currElemOffset = elemArray.offset();
-    var currElemWidth = elemArray.width();
-
-    var currElemStPoint = currElemOffset.left;
-    var currElemEndPoint = currElemStPoint + currElemWidth;
-
-
-    if(currElemStPoint <= coverElem.offset().left &&  coverElem.offset().left <=  currElemEndPoint)
-    {
-        elemArray.addClass("display-none");
-    }
-    else
-    {
-        elemArray[i].removeClass("display-none");
-    }
-}
+  if (menuBound.top + menuBound.height > overlayBound.top
+      && menuBound.left + menuBound.width > overlayBound.left
+      && menuBound.bottom - menuBound.height < overlayBound.bottom
+      && menuBound.right - menuBound.width < overlayBound.right) {
+          overlayElem.addClass("display-none");
+      }
+    });(jQuery)
