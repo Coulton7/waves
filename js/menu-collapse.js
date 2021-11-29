@@ -13,16 +13,12 @@
 
   function menuOverlay() {
     var overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
-    var overlayBtnTop = overlayBtn.top;
     var overlayBtnLeft = overlayBtn.left;
     var overlayBtnRight = overlayBtn.right
-    var overlayBtnBottom = overlayBtn.bottom
 
     var menuItem = document.querySelector('.last').getBoundingClientRect();
-    var menuItemTop = menuItem.top;
     var menuItemLeft = menuItem.left;
     var menuItemRight = menuItem.right
-    var menuItemBottom = menuItem.bottom
 
     if ((menuItemRight > overlayBtnLeft && menuItemRight < overlayBtnRight) || (menuItemLeft < overlayBtnRight && menuItemLeft > overlayBtnLeft)) {
       var horizontalMatch = true
