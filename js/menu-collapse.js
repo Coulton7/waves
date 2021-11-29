@@ -18,6 +18,8 @@
     var overlayBound = overlayElem.getBoundingClientRect();
     var menuBound = menuItem.getBoundingClientRect();
 
+    console.log(overlayBound);
+    console.log(menuBound);
   }
 
 
