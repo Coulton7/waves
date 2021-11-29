@@ -11,7 +11,14 @@
     }
   }
 
+  function menuOverlay() {
+    var overlayElem = document.querySelector('.overlay-btn');
+    var menuItem = document.querySelector('.last');
 
+    var overlayBound = overlayElem.getBoundingClientRect();
+    var menuBound = menuItem.getBoundingClientRect();
+
+  }
 
 
   $(document).on('ready', autocollapse);
