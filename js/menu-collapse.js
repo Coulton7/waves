@@ -4,24 +4,41 @@
     navbar.removeClass('collapsed');
     if(navbar.innerHeight() > 60) {
       navbar.addClass('collapsed');
-      $('#overlay-btn').addClass('display-none-important');
+      $('#overlayBtn').addClass('display-none-important');
     } else {
       navbar.removeClass('collapsed');
-      $('#overlay-btn').removeClass('display-none-important');
+      $('#overlayBtn').removeClass('display-none-important');
     }
   }
 
   function menuOverlay() {
-    var overlayElem = document.querySelector('.overlay-btn');
-    var menuItem = document.querySelector('.last');
+    let overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
+    let overlayBtnTop = overlayBtn.top;
+    let overlayBtnLeft = overlayBtn.left;
+    let overlayBtnRight = overlayBtn.right
+    let overlayBtnBottom = overlayBtn.bottom
 
-    var overlayBound = overlayElem.getBoundingClientRect();
-    var menuBound = menuItem.getBoundingClientRect();
+    let menuItem = document.querySelector('.last').getBoundingClientRect();
+    let menuItemTop = menuItem.top;
+    let menuItemLeft = menuItem.left;
+    let menuItemRight = menuItem.right
+    let menuItemBottom = menuItem.bottom
 
+    if ((div2Right > div1Left && div2Right < div1Right) || (div2Left < div1Right && div2Left > div1Left)) {
+      let horizontalMatch = true
+    } else {
+      let horizontalMatch = false
+    }
+
+    if (horizontalMatch) {
+      overlayBtn.addClass('display-none')
+    } else {
+      overlayBtn.removeClass('display-none')
+    }
   }
 
-  console.log(overlayBound);
-  console.log(menuBound);
   $(document).on('ready', autocollapse);
+  $(document).on('ready', menuOverlay);
   $(window).on('resize', autocollapse);
+  $(window).on('resize', menuOverlay);
 })(jQuery);
