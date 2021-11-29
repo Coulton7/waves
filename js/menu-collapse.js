@@ -12,22 +12,22 @@
   }
 
   function menuOverlay() {
-    let overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
-    let overlayBtnTop = overlayBtn.top;
-    let overlayBtnLeft = overlayBtn.left;
-    let overlayBtnRight = overlayBtn.right
-    let overlayBtnBottom = overlayBtn.bottom
+    var overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
+    var overlayBtnTop = overlayBtn.top;
+    var overlayBtnLeft = overlayBtn.left;
+    var overlayBtnRight = overlayBtn.right
+    var overlayBtnBottom = overlayBtn.bottom
 
-    let menuItem = document.querySelector('.last').getBoundingClientRect();
-    let menuItemTop = menuItem.top;
-    let menuItemLeft = menuItem.left;
-    let menuItemRight = menuItem.right
-    let menuItemBottom = menuItem.bottom
+    var menuItem = document.querySelector('.last').getBoundingClientRect();
+    var menuItemTop = menuItem.top;
+    var menuItemLeft = menuItem.left;
+    var menuItemRight = menuItem.right
+    var menuItemBottom = menuItem.bottom
 
     if ((menuItemRight > overlayBtnLeft && menuItemRight < overlayBtnRight) || (menuItemLeft < overlayBtnRight && menuItemLeft > overlayBtnLeft)) {
-      let horizontalMatch = true
+      var horizontalMatch = true
     } else {
-      let horizontalMatch = false
+      var horizontalMatch = false
     }
 
     if (horizontalMatch) {
