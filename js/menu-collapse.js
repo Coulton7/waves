@@ -4,10 +4,10 @@
     navbar.removeClass('collapsed');
     if(navbar.innerHeight() > 60) {
       navbar.addClass('collapsed');
-      $('#overlayBtn').addClass('display-none-important');
+      $('#overlay-btn').addClass('display-none-important');
     } else {
       navbar.removeClass('collapsed');
-      $('#overlayBtn').removeClass('display-none-important');
+      $('#overlay-btn').removeClass('display-none-important');
     }
   }
 
@@ -31,9 +31,9 @@
     }
 
     if (horizontalMatch) {
-      $('#overlayBtn').addClass('display-none')
+      $('#overlay-btn').addClass('display-none')
     } else {
-      $('#overlayBtn').removeClass('display-none')
+      $('#overlay-btn').removeClass('display-none')
     }
   }
 
