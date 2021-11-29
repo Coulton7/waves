@@ -22,8 +22,7 @@
     }
   }
 
-  $(document).on('ready', menuOverlay);
-  $(window).on('resize', menuOverlay);
+
   $(document).on('ready', autocollapse);
   $(window).on('resize', autocollapse);
 });
