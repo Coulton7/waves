@@ -24,7 +24,7 @@
     let menuItemRight = menuItem.right
     let menuItemBottom = menuItem.bottom
 
-    if ((div2Right > div1Left && div2Right < div1Right) || (div2Left < div1Right && div2Left > div1Left)) {
+    if ((menuItemRight > overlayBtnLeft && menuItemRight < overlayBtnRight) || (menuItemLeft < overlayBtnRight && menuItemLeft > overlayBtnLeft)) {
       let horizontalMatch = true
     } else {
       let horizontalMatch = false
