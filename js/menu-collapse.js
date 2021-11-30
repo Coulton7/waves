@@ -11,7 +11,7 @@
     }
   }
 
-  function menuOverlay() {
+  function menuItemOverlay() {
     var overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
     var overlayBtnLeft = overlayBtn.left;
     var overlayBtnRight = overlayBtn.right
@@ -34,7 +34,7 @@
   }
 
   $(document).on('ready', autocollapse);
-  $(document).on('ready', menuOverlay);
+  $(document).on('ready', menuItemOverlay);
   $(window).on('resize', autocollapse);
-  $(window).on('resize', menuOverlay);
+  $(window).on('resize', menuItemOverlay);
 })(jQuery);
