@@ -26,7 +26,7 @@
       var horizontalMatch = false
     }
 
-    if (horizontalMatch) {
+    if (horizontalMatch == true) {
       $('#overlay-btn').addClass('display-none')
     } else {
       $('#overlay-btn').removeClass('display-none')
