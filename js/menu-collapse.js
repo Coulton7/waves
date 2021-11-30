@@ -20,7 +20,7 @@
     var menuItemLeft = menuItem.left;
     var menuItemRight = menuItem.right
 
-    if ((menuItemRight >= overlayBtnLeft) && (overlayBtnRight <= menuItemRight) || (menuItemLeft < overlayBtnRight && menuItemLeft > overlayBtnLeft)) {
+    if ((menuItemRight >= overlayBtnLeft) && (overlayBtnRight <= menuItemRight) {
       var horizontalMatch = true
     } else {
       var horizontalMatch = false
