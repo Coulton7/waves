@@ -22,7 +22,10 @@
 
     if ((menuItemRight >= overlayBtnLeft) || (menuItemRight > overlayBtnRight)) {
       var horizontalMatch = true
-    } else {
+    } else if ((menuItemRight < overlayBtnRight)) {
+      var horizontalMatch = false
+    }
+    else {
       var horizontalMatch = false
     }
 
