@@ -14,11 +14,11 @@
   function menuItemOverlay() {
     var overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
     var overlayBtnLeft = overlayBtn.left;
-    var overlayBtnRight = overlayBtn.right
+    var overlayBtnRight = overlayBtn.right;
 
     var menuItem = document.querySelector('.last').getBoundingClientRect();
     var menuItemLeft = menuItem.left;
-    var menuItemRight = menuItem.right
+    var menuItemRight = menuItem.right;
 
     if ((menuItemRight >= overlayBtnLeft) && (menuItemRight <= overlayBtnRight)) {
       var horizontalMatch = true
