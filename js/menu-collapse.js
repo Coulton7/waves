@@ -21,9 +21,9 @@
     var menuItemRight = menuItem.right
 
     if ((menuItemRight > overlayBtnLeft) || (menuItemLeft < overlayBtnRight )) {
-      var horizontalMatch = true
-    } else {
       var horizontalMatch = false
+    } else {
+      var horizontalMatch = true
     }
 
     if (horizontalMatch) {
