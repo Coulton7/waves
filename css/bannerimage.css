@@ -1298,7 +1298,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .spin-1, .spin-2, .spin-3, .spin-4 {
-  animation: spin linear 2s;
+  animation: spin linear 3s;
   visibility: hidden;
   animation-fill-mode: forwards;
   position: absolute;
@@ -1306,45 +1306,23 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   bottom: 0;
 }
 
-.spin-2 {
-  animation-delay: 1.75s
+.spin-2{
+  animation-delay: 2.75s
 }
 
-.spin-3 {
-  animation-delay: 3.5s
+.spin-3{
+  animation-delay: 5.5s
 }
 
-.spin-4 {
-  animation-delay: 5.25s
+.spin-4{
+  animation-delay: 8.25s
 }
 
 @keyframes spin {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    ;
-  }
-
-  25% {
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    ;
-  }
-
-  75% {
-    visibility: visible;
-    opacity: 1;
-    position: absolute;
-    ;
-  }
-
-  100% {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-  }
+  0%{visibility: hidden; opacity: 0; position: absolute;;}
+  25%{visibility: visible; opacity: 1; position: absolute;;}
+  75%{visibility: visible; opacity: 1; position: absolute;;}
+  100%{visibility: hidden; opacity: 0; position: absolute;}
 }
 
 .title {
