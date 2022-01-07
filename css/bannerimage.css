@@ -1302,7 +1302,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   visibility: hidden;
   animation-fill-mode: forwards;
   position: absolute;
-  color: #667f9c;
+  color: #fff;
   bottom: 0;
 }
 
@@ -1440,7 +1440,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   top: 0;
   bottom: 0;
   height: 100%;
-  width: 100%
+  width: 100%;
+  mix-blend-mode: multiply;
 }
 
 @keyframes bannerFadeOut {
