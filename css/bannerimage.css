@@ -1441,6 +1441,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   height: 100%;
   width: 100%;
   mix-blend-mode: multiply;
+  background-color: #002a5b;
   filter: grayscale(100%);
 }
 
