@@ -1454,10 +1454,6 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     opacity: 1;
     visibility: visible;
   }
-  85% {
-    opacity: 0;
-    visibility: hidden;
-  }
   100% {
     opacity: 0;
     visibility: hidden;
