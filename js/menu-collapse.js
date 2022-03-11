@@ -30,13 +30,7 @@
 
   $(document).on('ready', autocollapse);
   $(document).on('ready', menuItemOverlay);
-  $(window).on('resize', function() {
-    if($("#overlay-btn").hasClass("change")) {
-      return;
-    } else {
-      autocollapse();
-    }
-  });
+  $(window).on('resize',  autocollapse);
   $(window).on('resize', function() {
     if($("#overlay-btn").hasClass("change")) {
       return;
