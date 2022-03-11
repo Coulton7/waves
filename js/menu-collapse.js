@@ -30,6 +30,18 @@
 
   $(document).on('ready', autocollapse);
   $(document).on('ready', menuItemOverlay);
-  $(window).on('resize', autocollapse);
-  $(window).on('resize', menuItemOverlay);
+  $(window).on('resize', function() {
+    if($(".change")[0]) {
+      return;
+    } else {
+      autocollapse;
+    }
+  });
+  $(window).on('resize', function() {
+    if($(".change")[0]) {
+      return;
+    } else {
+      menuItemOverlay;
+    }
+  });
 })(jQuery);
