@@ -1475,6 +1475,30 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   pointer-events: none;
 }
 
+.change:after {
+  display: inline-block;
+  content: "\00d7";
+  color: #ffffff;
+  position: fixed;
+  font-size: 3em;
+  float: right;
+  z-index: 1032;
+  top: 2em;
+  right: 1em;
+  height: 1em;
+  width: 1em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.change:hover:after {
+  color: #dd1e25;
+}
+
 .overlay-content {
   position: relative;
   top: 30%;
