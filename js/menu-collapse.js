@@ -31,14 +31,14 @@
   $(document).on('ready', autocollapse);
   $(document).on('ready', menuItemOverlay);
   $(window).on('resize', function() {
-    if($(".change")[0]) {
+    if($("#overlay-btn").hasClass("change")) {
       return;
     } else {
       autocollapse;
     }
   });
   $(window).on('resize', function() {
-    if($(".change")[0]) {
+    if($("#overlay-btn").hasClass("change")) {
       return;
     } else {
       menuItemOverlay;
