@@ -31,5 +31,5 @@
   $(document).on('ready', autocollapse);
   $(document).on('ready', menuItemOverlay);
   $(window).on('resize', autocollapse);
-  $(window).on('resize', menuItemOverlay;);
+  $(window).on('resize', menuItemOverlay);
 })(jQuery);
