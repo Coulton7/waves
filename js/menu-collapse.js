@@ -36,6 +36,8 @@
     if($("#overlay-btn").hasClass("change")) {
       if(overlayNavbar.innerHeight() > 100) {
         overlayNavbar.addClass('overlay-collapse');
+      } else {
+        overlayNavbar.removeClass('overlay-collapse');
       }
     } else {
       autocollapse();
