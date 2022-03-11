@@ -1475,6 +1475,14 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   pointer-events: none;
 }
 
+.overlay-content {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: left;
+  height: 60vh;
+}
+
 .inline {
   display: inline;
 }
