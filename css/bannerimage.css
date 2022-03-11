@@ -398,7 +398,7 @@ p a[target="_blank"]:after {
   background: #ffffff;
   position: absolute;
   border-bottom-right-radius: 4%;
-  z-index: 1032;
+  z-index: 1038;
   width: 11.7em;
   opacity: 1;
   top: 0.24em;
@@ -419,7 +419,7 @@ p a[target="_blank"]:after {
 .uppercurve {
   height: 7.35em;
   left: 11em;
-  z-index: 1030;
+  z-index: 1036;
   position: relative;
   top: 2.95em;
 }
