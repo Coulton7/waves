@@ -1436,6 +1436,45 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     text-decoration: none;
 }
 
+.overlay-content {
+  background-color: none;
+  position: static;
+}
+
+.overlay-gmap {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 480px;
+  top: 480px;
+  margin-top: -480px;
+}
+
+.overlay-main {
+  height: 0%;
+  background-color: rgba(0, 0, 0, .85);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  transition: 0.5s;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.overlay-menu {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+.change {
+  color: transparent;
+  pointer-events: none;
+}
+
 .inline {
   display: inline;
 }
