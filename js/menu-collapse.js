@@ -2,7 +2,7 @@
   function autocollapse() {
     var navbar = $('#autocollapse');
     navbar.removeClass('collapsed');
-    if(navbar.innerHeight() > 60) {
+    if(navbar.innerHeight() > 100) {
       navbar.addClass('collapsed');
       $('#overlay-btn').addClass('display-none-important');
     } else {
