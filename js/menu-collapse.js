@@ -34,7 +34,7 @@
   $(document).on('ready', menuItemOverlay);
   $(window).on('resize', function() {
     if($("#overlay-btn").hasClass("change")) {
-      if(navbar.innerHeight() > 100) {
+      if(overlayNavbar.innerHeight() > 100) {
         overlayNavbar.addClass('overlay-collapse');
       }
     } else {
