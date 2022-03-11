@@ -32,9 +32,11 @@
   $(document).on('ready', menuItemOverlay);
   $(window).on('resize', function() {
     if($("#overlay-btn").hasClass("change")) {
-      return;
+      if(navbar.innerHeight() > 100) {
+        navbar.addClass('overlay-collapse');
     } else {
       autocollapse();
+      navbar.removeClass('overlay-collapse');
     }
   });
   $(window).on('resize', function() {
