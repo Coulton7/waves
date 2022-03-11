@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,96 +22,138 @@
   <script type="text/javascript" src="js/fade-text.js"></script>
   <script type="text/javascript" src="js/bs-init.js"></script>
   <script type="text/javascript" src="js/slider-options.js"></script>
+  <script type="text/javascript" src="js/nav-btn.js"></script>
   <script type="text/javascript" src="js/menu-collapse.js"></script>
   <script type="text/javascript" charset="utf-8">
-      (function($) {
-        $(window).load(function() {
-          $('.flexslider').flexslider({
-            controlNav: false,
-            directionNav: false
-          });
-        })
-      })(jQuery);
-    </script>
-  </head>
+    (function($) {
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          controlNav: false,
+          directionNav: false
+        });
+      })
+    })(jQuery);
+  </script>
+</head>
 
-  <body class="navbar-is-fixed-top">
-    <div class="container-fluid bannercontainer">
-      <div class="row bannerimage">
-        <div class="row waveupper row-eq-height">
-          <div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
-            <a>
-              <div class="wavelogo">
-                <img class="wavelogo" src="images/logo.svg" img alt="logo"></img>
-              </div>
-            </a>
-            <img class="uppercurve" src="images/wave-upper.svg" img alt="uppercurve"></img>
-            <a class="logo navbar-btn pull-left" title="">
-              <img src="images/textonlylogo.svg" class="textlogo img-adaptive" alt="image responsive" />
-            </a>
-          </div>
-
-          <div class="col-sm-10 col-xs-11 fullscreen">
-            <header id="autocollapse" role="banner" class="navbar navbar-fixed-top navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-              </div>
-              <div class="navbar-collapse collapse">
-                <div class="container-fluid navbar-container">
-                  <nav role="navigation">
-                    <ul class="menu nav navbar-nav">
-                      <li class="first leaf"><a href="#" title="Product &amp; Services" class="active-trail active">Product &amp; Services</a></li>
-                      <li class="leaf"><a href="#" title="Advanced Technology">Advanced Technology</a></li>
-                      <li class="leaf"><a href="#" title="Sustainability">Sustainability</a></li>
-                      <li class="leaf"><a href="#" title="Customer Service">Customer Service</a></li>
-                      <li class="last leaf"><a href="#" title="Why AESSEAL">Why AESSEAL</a></li>
-                    </ul>
-                    <div class="region region-navigation">
-                      <section id="block-block-88" class="block block-block contextual-links-region clearfix">
-                        <a class="hidden-xs overlay-btn" id="overlay-btn">
-                          <i class="fas fa-bars"></i><div class="inline hidden-sm hidden-xs">  Menu</div>
-                        </a>
-                      </section>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-            </header>
-          </div>
+<body class="navbar-is-fixed-top">
+  <div class="container-fluid bannercontainer">
+    <div class="row bannerimage">
+      <div class="row waveupper row-eq-height">
+        <div class="col-lg-2 col-md-2 col-xs-1 fullscreen">
+          <a>
+            <div class="wavelogo">
+              <img class="wavelogo" src="images/logo.svg" img alt="logo"></img>
+            </div>
+          </a>
+          <img class="uppercurve" src="images/wave-upper.svg" img alt="uppercurve"></img>
+          <a class="logo navbar-btn pull-left" title="">
+            <img src="images/textonlylogo.svg" class="textlogo img-adaptive" alt="image responsive" />
+          </a>
         </div>
 
-
-        <div class="navigation_col">
-          <div class="row">
-            <div class="shadow-back">
-              <div class="col-lg-2 col-md-1">
+        <div class="col-sm-10 col-xs-11 fullscreen">
+          <header id="autocollapse" role="banner" class="navbar navbar-fixed-top navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
               </div>
-              <div class="col-lg-10 col-md-11">
-                <div class="action-menu text-center">
-                  <div class="col-sm-2 col-xs-0 fullscreen">
-                  </div>
-                  <div class="col-sm-10 col-xs-12 fullscreen">
-                    <div class="region region-navigation-col fit-menu">
-                      <div class="col-md-6">
-                        <div class="lang-switch">
-                          <select class="chzn-select" select data-placeholder="Choose a Language..." style="width:110px;">
-                            <option value="English"></option>
-                            <option value="Francais"></option>
-                            <option value="Deutsch"></option>
-                          </select>
+            </div>
+            <div class="navbar-collapse collapse">
+              <div class="container-fluid navbar-container">
+                <nav role="navigation">
+                  <ul class="menu nav navbar-nav">
+                    <li class="first leaf"><a href="#" title="Product &amp; Services" class="active-trail active">Product &amp; Services</a></li>
+                    <li class="leaf"><a href="#" title="Advanced Technology">Advanced Technology</a></li>
+                    <li class="leaf"><a href="#" title="Sustainability">Sustainability</a></li>
+                    <li class="leaf"><a href="#" title="Customer Service">Customer Service</a></li>
+                    <li class="last leaf"><a href="#" title="Why AESSEAL">Why AESSEAL</a></li>
+                  </ul>
+                  <div class="region region-navigation">
+                    <section id="block-block-88" class="block block-block contextual-links-region clearfix">
+                      <a class="hidden-xs overlay-btn" id="overlay-btn">
+                        <i class="fas fa-bars"></i>
+                        <div class="inline hidden-sm hidden-xs"> Menu</div>
+                      </a>
+                      <div id="myNav" class="overlay-main">
+                        <div class="overlay-content">
+                          <div class="col-md-4 col-md-offset-1 col-sm-6 col-sm-offset-1">
+                            <ul class="product-cats list-unstyled">
+                              <li><a class="no-dash" href="/en/product/bearing-protection">Bearing Protection</a></li>
+                              <li><a class="no-dash" href="/en/product/cartridge-mechanical-seals">Cartridge Mechanical Seals</a></li>
+                              <li><a class="no-dash" href="/en/product/component-seals">Component Seals</a></li>
+                              <li><a class="no-dash" href="/en/product/gas-seals">Gas Seals</a></li>
+                              <li><a class="no-dash" href="/en/product/gland-packing">Gland Packing</a></li>
+                              <li><a class="no-dash" href="/en/product/seal-support-systems">Seal Support System</a></li>
+                              <li><a class="no-dash" href="/en/services/seal-refurbishment">Seal Refurbishment</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3 hidden-sm hidden-xs">
+                            <ul class="about-us-cats list-unstyled">
+                              <li><a class="no-dash" href="/en/careers">Careers</a></li>
+                              <li><a class="no-dash" href="/en/about-us/certifications-and-standards">Certifications and Standards</a></li>
+                              <li><a class="no-dash" href="/contact-us">Contact Us</a></li>
+                              <li><a class="no-dash" href="/en/customer-portal">Customer Portal</a></li>
+                              <li><a class="no-dash" href="/en/services/customer-training">Customer Training</a></li>
+                              <li><a class="no-dash" href="/locations">Locations</a></li>
+                              <li><a class="no-dash" href="/en/article">News</a></li>
+                              <li><a class="no-dash" href="/en/about-us/sustainability">Sustainability</a>
+                              <li>
+                            </ul>
+                          </div>
+                          <div class="col-md-3 col-sm-3">
+                            <ul class="resource-cats list-unstyled">
+                              <li><a class="no-dash" href="/en/resources/academy">Academy</a></li>
+                              <li><a class="no-dash" href="/en/resources/api-plans">API Plans</a></li>
+                              <li><a class="no-dash" href="/en/resources/case-studies">Case Studies</a></li>
+                              <li><a class="no-dash" href="/en/resources/industry-guides">Industry Guides</a></li>
+                              <li><a class="no-dash" href="/en/resources/product-brochure">Product Brochures</a></li>
+                              <li><a class="no-dash" href="/en/resources/video">Video</a></li>
+                              <li><a class="no-dash" href="/en/resources/whitepapers">White Papers</a></li>
+                              <li><a class="no-dash" href="/en/terms-and-conditions">Legal & Policies</a></li>
+                            </ul>
+                          </div>
+                          <div class="sitemap-icon"><a href="/sitemap" class="no-dash"><i class="fas fa-sitemap"></i></a></div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="cust-portal">
-                          <p><a href="/en/customer-portal" class="cust-portal-text" rel="nofollow">Customer Portal</a>&nbsp;<a href="/en/customer-portal"><i class="fas fa-sign-in-alt fa-2x"></i></a></p>
-                        </div>
+                    </section>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+
+
+      <div class="navigation_col">
+        <div class="row">
+          <div class="shadow-back">
+            <div class="col-lg-2 col-md-1">
+            </div>
+            <div class="col-lg-10 col-md-11">
+              <div class="action-menu text-center">
+                <div class="col-sm-2 col-xs-0 fullscreen">
+                </div>
+                <div class="col-sm-10 col-xs-12 fullscreen">
+                  <div class="region region-navigation-col fit-menu">
+                    <div class="col-md-6">
+                      <div class="lang-switch">
+                        <select class="chzn-select" select data-placeholder="Choose a Language..." style="width:110px;">
+                          <option value="English"></option>
+                          <option value="Francais"></option>
+                          <option value="Deutsch"></option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="cust-portal">
+                        <p><a href="/en/customer-portal" class="cust-portal-text" rel="nofollow">Customer Portal</a>&nbsp;<a href="/en/customer-portal"><i class="fas fa-sign-in-alt fa-2x"></i></a></p>
                       </div>
                     </div>
                   </div>
@@ -119,37 +162,177 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="preface front__flex-margin">
-          <div class="flex-gradient position-rel">
-            <img class="img-adaptive banner-fade" src="images/Cartridge-Seals-3.jpeg"/>
-            <div class="row">
-              <div class="col-lg-7 col-lg-offset-2 col-md-8 col-md-offset-1 col-sm-9 text-holder">
-                <div class="flex-header">
-                  <h1 class="page-header" id="page-main-heading">
-                    <span class="spin-1">We care about the environment</span>
-                    <span class="spin-2">We care about reliability</span>
-                    <span class="spin-3">We care about sustainability</span>
-                    <span class="spin-4">We care about customer service</span>
-                    <span class="title">Applying low emission API compliant sealing technology to mature pump machinery</span>
-                  </h1>
+      <div class="preface front__flex-margin">
+        <div class="flex-gradient position-rel">
+          <img class="img-adaptive banner-fade" src="images/Cartridge-Seals-3.jpeg" />
+          <div class="row">
+            <div class="col-lg-7 col-lg-offset-2 col-md-8 col-md-offset-1 col-sm-9 text-holder">
+              <div class="flex-header">
+                <h1 class="page-header" id="page-main-heading">
+                  <span class="spin-1">We care about the environment</span>
+                  <span class="spin-2">We care about reliability</span>
+                  <span class="spin-3">We care about sustainability</span>
+                  <span class="spin-4">We care about customer service</span>
+                  <span class="title">Applying low emission API compliant sealing technology to mature pump machinery</span>
+                </h1>
+              </div>
+            </div>
+            <div class="col-lg-7 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-8">
+              <div class="flex-caption">
+                <div class="breadcrumb-wrap">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <ol class="breadcrumb">
+                        <li><a href="/en">Home</a></li>
+                        <li><a href="/en/product">Resources</a></li>
+                        <li><a href="#">Whitepapers</a></li>
+                      </ol>
+                      <div class="breadcrumb-sitemap">
+                        <li>
+                          <a href="/sitemap">
+                            <i class="fas fa-sitemap" aria-hidden="true"></i>
+                          </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-lg-7 col-lg-offset-2 col-md-7 col-md-offset-1 col-sm-8">
-                <div class="flex-caption">
-                  <div class="breadcrumb-wrap">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row wavelower row-eq-height">
+        <div class="col-md-9 col-sm-8 col-xs-0 no-padding">
+          <div class="bottom-gap">
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-12 no-padding">
+
+          <img class="curve-down" src="images/wave-lower.svg" img alt="curve-down"></img>
+
+          <div class="socialmedia text-center">
+            <ul>
+              <li> <a href="https://twitter.com/AESSEALplc" target="_self" data-toggle="tooltip" data-placement="top" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
+              <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" data-toggle="tooltip" data-placement="top" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
+              <li class="contact_icon"> <a href="#" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
+              <li class="contact_icon" style="display:none"> <a href="#" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
+              <li> <a href="#" target="_self" data-toggle="tooltip" data-placement="top" title="Browse all Locations"> <i class="fas fa-globe"></i></a></li>
+            </ul>
+            <div class="social-id">
+              <p class="fade_text">Find Us</p>
+              <p class="fade_text">Follow Us</p>
+              <p class="fade_text">Contact Us</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="row iceberg-sea top-white-lower-blue-background">
+        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+          <div class="virtual-tour-banner position-rel">
+            <script src="https://fast.wistia.com/embed/medias/3ku1yy4n44.jsonp" async></script>
+            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_3ku1yy4n44 popover=true popoverContent=link" style="display:inline;position:relative"><a
+                class="center-block no-dash virtual-tour" href="#"><img src="images/360-tour-inverse-out.svg" class="center-block virtual-tour-logo img-responsive lazyload" alt="Click here to explore the AESSEAL interactive tour"
+                  title="Click here to explore the AESSEAL interactive tour"></a></span>
+          </div>
+          <p class="text-center white-text">Click here to explore the AESSEAL interactive tour</p>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
+        <h2>AESSEAL DE is currently under maintenance. You will be redirected in <span id="counter">5</span> second(s) <span id="replace">to the global website</span> <a href="https://www.aesseal.com/en" rel="nofollow">https://www.aesseal.com/en</a>
+        </h2>
+
+        <p>WARMAN</p>
+
+        <div>The Warman MSM-1 sensor is a wireless intelligent tri-axial vibration and temperature sensor (patent pending) which connects via a Bluetooth® enabled hand held device to the Warman® software.</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row padding-bottom">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 no-padding">
+          <ul class="nav nav-tabs blue-tabs">
+            <li class="visible-md visible-lg visible-sm hidden-xs active" data-toggle="tooltip" data-placement="top" title="Global Technology Centre Virtual Tour"><a data-toggle="tab" href="#millclose" aria-expanded="true"
+                title="Global Technology Centre Virtual Tour"><img class="country-icon" src="images/icon/flag/GB.svg"> Rotherham</a></li>
+
+            <li class="visible-md visible-lg visible-sm hidden-xs" data-toggle="tooltip" data-placement="top" title="North American Headquarters Virtual"><a data-toggle="tab" href="#rockford" aria-expanded="false"
+                title="North American Headquarters Virtual Tour"><img class="country-icon" src="images/icon/flag/US.svg"> Rockford</a></li>
+
+            <li class="dropdown hidden-md hidden-lg hidden-sm visible-xs"><a href="#" role="dropdown-toggle" id="countryDropdown" data-toggle="dropdown" aria-controls="countryDropdown-contents">Choose Location <span class="caret"></span></a>
+              <ul class="dropdown-menu" id="countryDropdown-contents" aria-labelledby="countryDropdown">
+                <li><a class="dropdown-item" data-toggle="tab" data-value="Rotherham" href="#millclose" title="Global Technology Centre Virtual Tour"><img class="country-icon" src="images/icon/flag/GB.svg">Rotherham</a></li>
+                <li><a class="dropdown-item" data-toggle="tab" data-value="Rockford" href="#rockford" title="North American Headquarters Virtual Tour"><img class="country-icon" src="images/icon/flag/US.svg">Rockford</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="millclose">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 lightgrey-background">
+              <div class="row-deep">
+                <div class="row">
+                  <div class="col-xs-9 fullscreen">
+                    <h3>Global Technology Centre Virtual Tour</h3>
+                    <p>Please remember to turn your speaker sound on / connect your headphones.</p>
+                  </div>
+                  <div class="col-xs-3 fullscreen">
+                    <img src="images/icon/contains-audio.png" class="img-responsive" alt="Video Contains Audio" title="Video Contains Audio">
+                  </div>
+                </div>
+                <p>The Global Technology Centre houses a world class manufacturing facility and is our corporate headquarters. Take our virtual tour to get an in depth look at our facility and see how we are able to deliver what is probably the best
+                  customer service in the industry.</p>
+                <ul class="row list-unstyled text-center" roll="tablist">
+                  <li class="col-xs-6 col-sm-4 col-sm-offset-2" role="tabs"><a class="btn-lg btn-primary" data-toggle="tab" href="#uk-int-tour"><i class="fas fa-film fa-lg"></i> View the summary video</a></li>
+                  <li class="col-xs-6 col-sm-4">
+                    <p><a class="btn-lg btn-primary" target="_blank" href="https://tourmkr.com/F1R7ZDVdPp/5734663p,220003m,24.58h,90.00t">Take the self guided tour</a></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="conatiner-fluid">
+                <div class="tab-content padding-top-2em">
+                  <div class="tab-pane active" id="vid-placeholder">
                     <div class="container-fluid">
                       <div class="row">
-                        <ol class="breadcrumb"><li><a href="/en">Home</a></li>
-                          <li><a href="/en/product">Resources</a></li>
-                          <li><a href="#">Whitepapers</a></li>
-                        </ol>
-                        <div class="breadcrumb-sitemap">
-                          <li>
-                            <a href="/sitemap">
-                              <i class="fas fa-sitemap" aria-hidden="true"></i>
-                            </a>
-                          </li>
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                          <img src="images/360-video-uk-millclose.jpg" class="img-responsive" alt="UK Placeholder" title="UK Video Tour" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="uk-int-tour">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                          <script src="https://fast.wistia.com/embed/medias/f5epqffjda.jsonp" async></script>
+                          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                              <div class="wistia_embed wistia_async_f5epqffjda videoFoam=true" style="height:100%;position:relative;width:100%">
+                                <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/f5epqffjda/swatch"
+                                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -158,229 +341,123 @@
               </div>
             </div>
           </div>
-  		  </div>
-
-        <div class="row wavelower row-eq-height">
-          <div class="col-md-9 col-sm-8 col-xs-0 no-padding">
-            <div class="bottom-gap">
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-4 col-xs-12 no-padding">
-
-            <img class="curve-down" src="images/wave-lower.svg" img alt="curve-down"></img>
-
-            <div class="socialmedia text-center">
-              <ul>
-                <li> <a href="https://twitter.com/AESSEALplc" target="_self" data-toggle="tooltip" data-placement="top" title="AESSEAL Twitter"> <i class="fab fa-twitter "></i></a></li>
-                <li> <a href="http://www.linkedin.com/company/aesseal" target="_self" data-toggle="tooltip" data-placement="top" title="AESEEAL Linkedin"> <i class="fab fa-linkedin-in "></i></a></li>
-                <li class="contact_icon"> <a href="#" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-phone-square "></i></a></li>
-                <li class="contact_icon" style="display:none"> <a href="#" target="_self" data-toggle="tooltip" data-placement="top" title="Contact Us"> <i class="fas fa-envelope-square"></i></a></li>
-                <li> <a href="#" target="_self"data-toggle="tooltip" data-placement="top" title="Browse all Locations"> <i class="fas fa-globe"></i></a></li>
-              </ul>
-              <div class="social-id">
-                <p class="fade_text">Find Us</p>
-                <p class="fade_text">Follow Us</p>
-                <p class="fade_text">Contact Us</p>
+        </div>
+        <div class="tab-pane" id="rockford">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 lightgrey-background">
+              <div class="row-deep">
+                <div class="row">
+                  <div class="col-xs-9 fullscreen">
+                    <h3>North American Headquarters Virtual Tour</h3>
+                    <p>Please remember to turn your speaker sound on / connect your headphones.</p>
+                  </div>
+                  <div class="col-xs-3 fullscreen">
+                    <img src="images/icon/contains-audio.png" class="img-responsive" alt="Video Contains Audio" title="Video Contains Audio">
+                  </div>
+                </div>
+                <p>The North American Headquarters is a 50,000 square foot facility, set on 12 acres in the Stock Creek Development Center, just south of Knoxville. Take our virtual tour of this state of the art facility and view our capabilities.
+                </p>
+                <ul class="row list-unstyled text-center" roll="tablist">
+                  <li class="col-xs-6 col-sm-4 col-sm-offset-2" role="tabs"><a class="btn-lg btn-primary" data-toggle="tab" href="#us-int-tour"><i class="fas fa-film fa-lg"></i> View the summary video</a></li>
+                  <li class="col-xs-6 col-sm-4">
+                    <p><a class="btn-lg btn-primary" target="_blank" href="https://tourmkr.com/F1R7ZDVdPp/5734663p,220003m,24.58h,90.00t">Take the self guided tour</a></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="conatiner-fluid">
+                <div class="tab-content padding-top-2em">
+                  <div class="tab-pane active" id="vid-placeholder">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                          <img src="images/360-video-usa-rockford.jpg" class="img-responsive" alt="USA Placeholder" title="USA Video Tour" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="us-int-tour">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+                          <script src="https://fast.wistia.com/embed/medias/f5epqffjda.jsonp" async></script>
+                          <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                              <div class="wistia_embed wistia_async_f5epqffjda seo=false videoFoam=true" style="height:100%;position:relative;width:100%">
+                                <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/f5epqffjda/swatch"
+                                    style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </div>
+  </div>
 
+
+  <div class="content-block"></div>
+
+  <br>
+
+  <div class="container-fluid">
+    <div class="forest-background lazy" id="forestBackground">
+      <div class="row-eq-height">
+        <div class="col-sm-5 col-xs-12 white-background no-padding">
+          <br>
+          <div class="col-lg-9 col-lg-offset-3 col-sm-10 col-sm-offset-1">
+            <h2 class="text-center">Sustainable Engineering...</h2>
+          </div>
+        </div>
+        <div class="col-md-1 col-sm-2 hidden-xs no-padding">
+          <img class="img-responsive" src="images/wave-upper.svg" img="" alt="uppercurve" style="margin-top:-1px; margin-left:-1px;"></div>
+      </div>
+      <div class="row-eq-height" style="border-bottom:0.5em solid #002a5b;">
+        <div class="col-md-5 col-sm-2 hidden-xs">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
+          <br>
+          <h3 class="h2 text-center"><a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-dash" style="color:#002a5b">Download Report <i class="fas fa-caret-right fa-lg"></i></a></h3>
+        </div>
+        <div class="col-md-1 col-sm-2 hidden-xs no-padding">
+          <img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/blue-lower-wave.svg" img="" alt="lowerwave" style="margin-bottom:-1px;"></div>
+        <div class="col-sm-5 col-md-3 no-padding hidden-xs">
+          <div class="blue-background fit-space">
+            <div class="col-md-8 col-sm-8">
+              <div class="sustain-cover" style="position:absolute;z-index:5;bottom: 9.75em;height: 100%;">
+                <a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-underline"><img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Front-Cover.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row blue-background">
+      <div class="col-sm-10 col-lg-6 col-sm-offset-1 col-lg-offset-2">
+        <p class="white-text">AES Engineering is committed to providing safe and rewarding workplace, operating ethically, supporting its local communities, minimizing it's impact on the environment and engaging its stakeholders.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
     <div class="container-fluid">
       <div class="row">
-
-        <div class="row iceberg-sea top-white-lower-blue-background">
-          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-            <div class="virtual-tour-banner position-rel">
-              <script src="https://fast.wistia.com/embed/medias/3ku1yy4n44.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_3ku1yy4n44 popover=true popoverContent=link" style="display:inline;position:relative"><a class="center-block no-dash virtual-tour" href="#"><img src="images/360-tour-inverse-out.svg" class="center-block virtual-tour-logo img-responsive lazyload" alt="Click here to explore the AESSEAL interactive tour" title="Click here to explore the AESSEAL interactive tour"></a></span>
-            </div>
-            <p class="text-center white-text">Click here to explore the AESSEAL interactive tour</p>
-            </div>
-          </div>
-
-        <div class="col-sm-10 col-lg-8 col-sm-offset-1 col-lg-offset-2">
-          <h2>AESSEAL DE is currently under maintenance. You will be redirected in <span id="counter">5</span> second(s) <span id="replace">to the global website</span> <a href="https://www.aesseal.com/en" rel="nofollow">https://www.aesseal.com/en</a>
-          </h2>
-
-          <p>WARMAN</p>
-
-          <div>The Warman MSM-1 sensor is a wireless intelligent tri-axial vibration and temperature sensor (patent pending) which connects via a Bluetooth® enabled hand held device to the Warman® software.</div>
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row padding-bottom">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 no-padding">
-            <ul class="nav nav-tabs blue-tabs">
-              <li class="visible-md visible-lg visible-sm hidden-xs active" data-toggle="tooltip" data-placement="top" title="Global Technology Centre Virtual Tour"><a data-toggle="tab" href="#millclose" aria-expanded="true" title="Global Technology Centre Virtual Tour"><img class="country-icon" src="images/icon/flag/GB.svg">  Rotherham</a></li>
-
-              <li class="visible-md visible-lg visible-sm hidden-xs"data-toggle="tooltip" data-placement="top" title="North American Headquarters Virtual"><a data-toggle="tab" href="#rockford" aria-expanded="false" title="North American Headquarters Virtual Tour"><img class="country-icon" src="images/icon/flag/US.svg">  Rockford</a></li>
-
-              <li class="dropdown hidden-md hidden-lg hidden-sm visible-xs"><a href="#" role="dropdown-toggle" id="countryDropdown" data-toggle="dropdown" aria-controls="countryDropdown-contents">Choose Location <span class="caret"></span></a>
-                <ul class="dropdown-menu" id="countryDropdown-contents" aria-labelledby="countryDropdown">
-                  <li><a class="dropdown-item" data-toggle="tab" data-value="Rotherham" href="#millclose" title="Global Technology Centre Virtual Tour"><img class="country-icon" src="images/icon/flag/GB.svg">Rotherham</a></li>
-                  <li><a class="dropdown-item" data-toggle="tab" data-value="Rockford" href="#rockford" title="North American Headquarters Virtual Tour"><img class="country-icon" src="images/icon/flag/US.svg">Rockford</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="tab-content">
-          <div class="tab-pane active" id="millclose">
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 lightgrey-background">
-                <div class="row-deep">
-                  <div class="row">
-                    <div class="col-xs-9 fullscreen">
-                      <h3>Global Technology Centre Virtual Tour</h3>
-                      <p>Please remember to turn your speaker sound on / connect your headphones.</p>
-                    </div>
-                    <div class="col-xs-3 fullscreen">
-                      <img src="images/icon/contains-audio.png" class="img-responsive" alt="Video Contains Audio" title="Video Contains Audio">
-                    </div>
-                  </div>
-                  <p>The Global Technology Centre houses a world class manufacturing facility and is our corporate headquarters. Take our virtual tour to get an in depth look at our facility and see how we are able to deliver what is probably the best customer service in the industry.</p>
-                  <ul class="row list-unstyled text-center" roll="tablist">
-  	                 <li class="col-xs-6 col-sm-4 col-sm-offset-2" role="tabs"><a class="btn-lg btn-primary" data-toggle="tab" href="#uk-int-tour"><i class="fas fa-film fa-lg"></i>  View the summary video</a></li>
-  	                 <li class="col-xs-6 col-sm-4"><p><a class="btn-lg btn-primary" target="_blank" href="https://tourmkr.com/F1R7ZDVdPp/5734663p,220003m,24.58h,90.00t">Take the self guided tour</a></p></li>
-                  </ul>
-                </div>
-                <div class="conatiner-fluid">
-                  <div class="tab-content padding-top-2em">
-                    <div class="tab-pane active" id="vid-placeholder">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                            <img src="images/360-video-uk-millclose.jpg" class="img-responsive" alt="UK Placeholder" title="UK Video Tour" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="uk-int-tour">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                            <script src="https://fast.wistia.com/embed/medias/f5epqffjda.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_f5epqffjda videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/f5epqffjda/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="rockford">
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 lightgrey-background">
-                <div class="row-deep">
-                  <div class="row">
-                    <div class="col-xs-9 fullscreen">
-                      <h3>North American Headquarters Virtual Tour</h3>
-                      <p>Please remember to turn your speaker sound on / connect your headphones.</p>
-                    </div>
-                    <div class="col-xs-3 fullscreen">
-                      <img src="images/icon/contains-audio.png" class="img-responsive" alt="Video Contains Audio" title="Video Contains Audio">
-                    </div>
-                  </div>
-                  <p>The North American Headquarters is a 50,000 square foot facility, set on 12 acres in the Stock Creek Development Center, just south of Knoxville. Take our virtual tour of this state of the art facility and view our capabilities.</p>
-                  <ul class="row list-unstyled text-center" roll="tablist">
-                    <li class="col-xs-6 col-sm-4 col-sm-offset-2" role="tabs"><a class="btn-lg btn-primary" data-toggle="tab" href="#us-int-tour"><i class="fas fa-film fa-lg"></i>  View the summary video</a></li>
-                    <li class="col-xs-6 col-sm-4"><p><a class="btn-lg btn-primary" target="_blank" href="https://tourmkr.com/F1R7ZDVdPp/5734663p,220003m,24.58h,90.00t">Take the self guided tour</a></p></li>
-                  </ul>
-                </div>
-                <div class="conatiner-fluid">
-                  <div class="tab-content padding-top-2em">
-                    <div class="tab-pane active" id="vid-placeholder">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                            <img src="images/360-video-usa-rockford.jpg" class="img-responsive" alt="USA Placeholder" title="USA Video Tour" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="us-int-tour">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-                            <script src="https://fast.wistia.com/embed/medias/f5epqffjda.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_f5epqffjda seo=false videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/f5epqffjda/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-sm-12">
+          <div class="footer">
+            <p>Footer info here</p>
           </div>
         </div>
       </div>
     </div>
-
-
-      <div class="content-block"></div>
-
-      <br>
-
-      <div class="container-fluid">
-        <div class="forest-background lazy" id="forestBackground">
-          <div class="row-eq-height">
-            <div class="col-sm-5 col-xs-12 white-background no-padding">
-              <br><div class="col-lg-9 col-lg-offset-3 col-sm-10 col-sm-offset-1">
-              <h2 class="text-center">Sustainable Engineering...</h2>
-      </div>
-            </div>
-            <div class="col-md-1 col-sm-2 hidden-xs no-padding">
-              <img class="img-responsive" src="images/wave-upper.svg" img="" alt="uppercurve" style="margin-top:-1px; margin-left:-1px;"></div>
-          </div>
-          <div class="row-eq-height" style="border-bottom:0.5em solid #002a5b;">
-            <div class="col-md-5 col-sm-2 hidden-xs">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-3 col-xs-12">
-              <br><h3 class="h2 text-center"><a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-dash" style="color:#002a5b">Download Report <i class="fas fa-caret-right fa-lg"></i></a></h3>
-            </div>
-            <div class="col-md-1 col-sm-2 hidden-xs no-padding">
-              <img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/blue-lower-wave.svg" img="" alt="lowerwave" style="margin-bottom:-1px;"></div>
-            <div class="col-sm-5 col-md-3 no-padding hidden-xs">
-              <div class="blue-background fit-space">
-                <div class="col-md-8 col-sm-8">
-                  <div class="sustain-cover" style="position:absolute;z-index:5;bottom: 9.75em;height: 100%;">
-                    <a href="https://www.aesseal.com/en/resources/industry-guides/sustainability-report" class="no-underline"><img class="img-responsive" src="https://aesweb.s3-eu-west-1.amazonaws.com/hostinggrabs/Front-Cover.png"></a>
-                  </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row blue-background">
-          <div class="col-sm-10 col-lg-6 col-sm-offset-1 col-lg-offset-2">
-              <p class="white-text">AES Engineering is committed to providing safe and rewarding workplace, operating ethically, supporting its local communities, minimizing it's impact on the environment and engaging its stakeholders.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<footer>
-  <div class="container-fluid">
-		<div class="row">
-      <div class="col-sm-12">
-  <div class="footer">
-    <p>Footer info here</p>
-  </div>
-</div>
-</div>
-</div>
-</footer>
+  </footer>
 </body>
+
 </html>
