@@ -465,6 +465,8 @@ p a[target="_blank"]:after {
   margin-top: 0;
   background: #ffffff;
   border-bottom: none;
+  position: relative;
+  z-index: 1036;
 }
 
 .cust-portal {
