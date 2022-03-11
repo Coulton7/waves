@@ -1,6 +1,6 @@
 (function($){
-  var navbar = $('#autocollapse');
   function autocollapse() {
+    var navbar = $('#autocollapse');
     navbar.removeClass('collapsed');
     if(navbar.innerHeight() > 100) {
       navbar.addClass('collapsed');
