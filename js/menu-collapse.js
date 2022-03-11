@@ -34,14 +34,14 @@
     if($("#overlay-btn").hasClass("change")) {
       return;
     } else {
-      autocollapse;
+      autocollapse();
     }
   });
   $(window).on('resize', function() {
     if($("#overlay-btn").hasClass("change")) {
       return;
     } else {
-      menuItemOverlay;
+      menuItemOverlay();
     }
   });
 })(jQuery);
