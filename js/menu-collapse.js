@@ -14,8 +14,10 @@
   function menuItemOverlay() {
     let overlayBtn = document.querySelector('.overlay-btn').getBoundingClientRect();
     let overlayBtnLeft = overlayBtn.left;
+    let overlayBtnRight = overlayBtn.right;
 
     let menuItem = document.querySelector('.desktop-last').getBoundingClientRect();
+    let menuItemLeft = menuItem.left;
     let menuItemRight = menuItem.right;
 
     if ((menuItemRight > overlayBtnLeft)) {
