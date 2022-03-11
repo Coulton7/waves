@@ -28,16 +28,18 @@
     }
   }
 
+  var overlayNavbar = $('#autocollapse');
+
   $(document).on('ready', autocollapse);
   $(document).on('ready', menuItemOverlay);
   $(window).on('resize', function() {
     if($("#overlay-btn").hasClass("change")) {
       if(navbar.innerHeight() > 100) {
-        navbar.addClass('overlay-collapse');
+        overlayNavbar.addClass('overlay-collapse');
       }
     } else {
       autocollapse();
-      navbar.removeClass('overlay-collapse');
+      overlayNavbar.removeClass('overlay-collapse');
     }
   });
   $(window).on('resize', function() {
