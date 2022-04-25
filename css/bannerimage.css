@@ -1320,7 +1320,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   animation-delay: 8.25s
 }
 
-.menu li {
+.side-menu .menu li {
   width: 100%;
 }
 
