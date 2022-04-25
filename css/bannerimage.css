@@ -1320,6 +1320,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   animation-delay: 8.25s
 }
 
+.menu li {
+  width: 100%;
+}
+
 @keyframes spin {
   0% {
     visibility: hidden;
