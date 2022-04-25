@@ -1,0 +1,593 @@
+body {
+  font-size: 14px;
+  line-height: 1.618rem;
+  color: #535454;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 300;
+}
+
+.lead {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 300;
+  color: #002A5B;
+}
+
+/* sets the text color and base height and size*/
+p a[target="_blank"]:after {
+  font-family: 'Font Awesome 5 Free';
+  content: " \f35d";
+  font-weight: 700;
+}
+
+/*Adds the small square icon after a link*/
+.red-bullet {
+  color: inherit;
+}
+
+.standard-text{
+  color:#535454;
+  border-bottom: none;
+}
+
+a.standard-text:hover{
+  color:#a6aaad;
+  border-bottom: none
+}
+
+.red-bullet li::before {
+  content: "• ";
+  color: #dd1e25;
+}
+
+.black-text{
+  color: #000000;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.off-white-text{
+  color: #e7e7e7;
+}
+
+.red-text{
+  color: #dd1e25;
+}
+
+.blue-text{
+  color: #002a5b;
+}
+
+.lightblue-text{
+  color: #0073ab;
+}
+
+.green-text{
+  color: #006400;
+}
+
+.page-header {
+  color: #B5B6B9;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #DD1E25;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 300;
+}
+
+.h1-blue {
+  color: #002A5B;
+  text-align: left;
+}
+
+.carousel-title {
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 60%)
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 10.5px 0;
+  color: #002a5b;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
+  font-weight: 500;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 1px #000;
+}
+
+/*sets the color of the text and margin for all header tags above*/
+a {
+  color: #dd1e25;
+  text-decoration: none;
+}
+
+a:link {
+  color: #dd1e25;
+  border-bottom: 1px dashed #888c8f;
+}
+
+a:visited {
+  color: #dd1e25;
+  border-bottom: 1px dashed #b5b6b9;
+}
+
+a:hover {
+  color: #fa010a;
+  border-bottom: 1px dashed #fa010a;
+  text-decoration: none;
+}
+
+.no-underline a{
+  border-bottom: none;
+}
+
+.no-underline a:hover{
+  border-bottom: none;
+}
+
+.blue-background a {
+  color: #ffffff;
+}
+
+.blue-background a:hover {
+  color: #e5e5e5;
+}
+
+.blue-background a.btn-default:hover{
+  color: #535354;
+}
+
+a.no-dash{
+  border-bottom: none;
+}
+
+a.no-dash:hover{
+  border-bottom: none;
+}
+
+a.red-text {
+  color: #dd1e25;
+}
+
+a.red-text:hover {
+  color: #fa010a;
+}
+
+a.black-text{
+  color: #000000;
+}
+
+a.black-text:hover{
+  color: #262626;
+}
+
+a.white-text{
+  color: #ffffff;
+}
+
+a.white-text:hover{
+  color: #e7e7e7;
+}
+
+a.off-white-text{
+  color: #e7e7e7;
+}
+
+a.off-white-text:hover{
+    color: #ffffff;
+}
+
+a.lightblue-text{
+  color: #0073ab;
+}
+
+a.lightblue-text:hover{
+  color: #338FBC;
+}
+
+a.blue-text{
+  color: #002a5b;
+}
+
+a.blue-text:hover{
+  color: #004a8c;
+}
+
+a.panel-outline {
+    color: #ddd;
+}
+
+a.lightblue-white-text{
+  color: #338FBC;
+}
+
+a.lightblue-white-text{
+  color: #ffffff;
+}
+
+/*link text decoration and effects when clicked on or hover overed*/
+::selection {
+  background-color: #dd1e25;
+  color: white;
+}
+
+.block-title {
+  text-align: center;
+  color: #002A5B;
+}
+
+/*banner commands*/
+.banner-title {
+  color: #ffffff;
+  position: relative;
+}
+
+.banner-subtitle {
+  color: #ffffff;
+  position: relative;
+  top: 23%;
+}
+
+.img-adaptive {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.email-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #dd1e25;
+}
+
+.linkedin-font-colour{
+  color: #0077b5;
+}
+
+.linkedin-font-colour:hover{
+  color: #006ba2;
+}
+
+a.linkedin-font-colour{
+  color: #0077b5;
+}
+
+a.linkedin-font-colour:hover{
+  color: #006ba2;
+}
+
+.font-size-1em {
+  font-size: 1em;
+}
+
+.font-size-2em {
+  font-size: 2em;
+}
+
+.font-size-3em {
+  font-size: 3em;
+}
+
+/* xs < 768 Below is all to do with text size and spacing*/
+@media screen and (max-width: 767px) {
+  .banner-title {
+    font-size: 42px;
+    line-height: 67px;
+  }
+
+  .carousel-title {
+    font-size: 2.4em;
+    line-height: 1em;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%)
+  }
+
+  .slide-caption{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+
+  h1, .h1 {
+    font-size: 30px;
+    line-height: 49px;
+  }
+
+  h2, .h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  h3, .h3 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  h4, .h4 {
+    font-size: 19px;
+    line-height: 31px;
+  }
+
+  h5, .h5 {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  h6, .h6 {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  body, .hs-richtext {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .btn {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .banner-title {
+    top: 35%;
+  }
+
+  .banner-subtitle {
+    top: 35%;
+  }
+
+  .legal-consent-container .hs-richtext  {
+    font-size: 0.95em;
+    line-height: 1.75em;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  .banner-title {
+    font-size: 44px;
+    line-height: 71px;
+  }
+
+  .carousel-title {
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%)
+  }
+
+  .slide-caption{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+
+  h1, .h1 {
+    font-size: 31px;
+    line-height: 50px;
+  }
+
+  h2, .h2 {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  h3, .h3 {
+    font-size: 23px;
+    line-height: 37px;
+  }
+
+  h4, .h4 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  h5, .h5 {
+    font-size: 19px;
+    line-height: 31px;
+  }
+
+  h6, .h6 {
+    font-size: 19px;
+    line-height: 31px;
+  }
+
+  .lead {
+    font-size: 19px;
+    line-height: 31px;
+  }
+
+  body,.hs-richtext {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .btn {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .banner-title {
+    top: 23%;
+  }
+
+  .banner-subtitle {
+    top: 23%;
+  }
+
+  .legal-consent-container .hs-richtext  {
+    font-size: 0.9em;
+    line-height: 1.7em;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  .banner-title {
+    font-size: 49px;
+    line-height: 79px;
+  }
+
+  .flex-header, .tour-header {
+    font-size: 2.8em;
+    line-height: 58px;
+  }
+
+  .flex-caption {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  .slide-caption{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+
+  h1, .h1 {
+    font-size: 32px;
+    line-height: 52px;
+  }
+
+  h2, .h2 {
+    font-size: 27px;
+    line-height: 44px;
+  }
+
+  h3, .h3 {
+    font-size: 24px;
+    line-height: 39px;
+  }
+
+  h4, .h4 {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  h5, .h5 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  h6, .h6 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  body, .hs-richtext {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .btn {
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .legal-consent-container .hs-richtext  {
+    font-size: 0.88em;
+    line-height: 1.68em;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .banner-title {
+    font-size: 51px;
+    line-height: 82px;
+  }
+
+  .flex-header, .tour-header {
+    font-size: 2.8em;
+    line-height: 58px;
+  }
+
+  .flex-caption {
+    font-size: 1.2em;
+    line-height: 36px;
+  }
+
+  .slide-caption{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 10px;
+  }
+
+  h1, .h1 {
+    font-size: 33px;
+    line-height: 54px;
+  }
+
+  h2,.h2 {
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  h3, .h3 {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  h4, .h4 {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  h5, .h5 {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  h6, .h6 {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  .lead {
+    font-size: 21px;
+    line-height: 34px;
+  }
+
+  body, .hs-richtext {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .legal-consent-container .hs-richtext  {
+    font-size: 0.85em;
+    line-height: 1.65em;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  a:visited {
+    color: #dd1e25;
+  }
+}
