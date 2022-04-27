@@ -1,7 +1,6 @@
 (function($) {
 
   $(document).ready(function() {
-    "use strict";
     var block = $('.float-block'),
       nav = $('.side-menu'),
       windowScreen = $(window),
