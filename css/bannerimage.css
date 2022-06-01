@@ -1328,6 +1328,13 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: relative;
 }
 
+.center-play {
+  position: absolute;
+  top: 47%;
+  left: 47%;
+  border-bottom: none;
+}
+
 @keyframes spin {
   0% {
     visibility: hidden;
