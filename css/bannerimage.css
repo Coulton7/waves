@@ -1330,6 +1330,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
 .center-play {
   color: #002a5b;
+  text-shadow:  0 0 3px #ffffff;
   position: absolute;
   top: 47%;
   left: 47%;
