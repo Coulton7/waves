@@ -1329,10 +1329,15 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .center-play {
+  color: #002a5b;
   position: absolute;
   top: 47%;
   left: 47%;
   border-bottom: none;
+}
+
+.center-play:hover {
+  color: #004a8c;
 }
 
 @keyframes spin {
