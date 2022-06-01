@@ -1341,7 +1341,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   color: #004a8c;
 }
 
-.vid-thumb:hover .center-play {
+.vid-thumb:hover + .center-play {
   color: #004a8c;
 }
 
