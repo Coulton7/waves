@@ -1324,6 +1324,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   width: 100%;
 }
 
+.position-rel {
+  position: relative;
+}
+
 @keyframes spin {
   0% {
     visibility: hidden;
