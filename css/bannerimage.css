@@ -1345,6 +1345,20 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   color: #004a8c;
 }
 
+.oil-drip {
+  background-image: url(images/oil-drip.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.oil-splash {
+  background-image: url(images/oil-splash.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 @keyframes spin {
   0% {
     visibility: hidden;
