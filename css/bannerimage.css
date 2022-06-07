@@ -1349,20 +1349,26 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: relative;
 }
 
-.oil-drip p {
+.oil-drip p:nth-child(1) {
   color: #ffffff;
+  position: absolute;
+  top: 30%;
+}
+
+.oil-drip p:nth-child(2) {
+  color: #ffffff;
+  position: absolute;
+  top: 60%;
 }
 
 .oil-splash {
-  background-image: url(/waves/images/oil-splash.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  padding: 2em;
+  position: relative;
 }
 
 .oil-splash p{
   color: #ffffff;
+  position: absolute;
+  top: 25%;
 }
 
 @keyframes spin {
