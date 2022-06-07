@@ -1428,10 +1428,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: relative;
 }
 
-.oil-splash p{
+.oil-splash p {
   color: #ffffff;
   position: absolute;
-  top: 25%;
+  top: 11%;
   text-align: center;
 }
 
