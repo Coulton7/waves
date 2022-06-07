@@ -1346,17 +1346,19 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .oil-drip {
-  background-image: url(images/oil-drip.svg);
+  background-image: url(/waves/images/oil-drip.svg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  padding: 1em;
 }
 
 .oil-splash {
-  background-image: url(images/oil-splash.svg);
+  background-image: url(/waves/images/oil-splash.svg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  padding: 2em;
 }
 
 @keyframes spin {
