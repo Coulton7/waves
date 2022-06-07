@@ -1353,12 +1353,20 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   padding: 1em;
 }
 
+.oil-drip p {
+  color: #ffffff;
+}
+
 .oil-splash {
   background-image: url(/waves/images/oil-splash.svg);
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 2em;
+}
+
+.oil-splash p{
+  color: #ffffff;
 }
 
 @keyframes spin {
