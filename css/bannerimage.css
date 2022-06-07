@@ -1354,8 +1354,9 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: absolute;
   top: 40%;
   text-align: center;
-  left: 17%;
+  left: 15%;
   width: 65%;
+  margin: 0.5em;
 }
 
 .oil-drip p:nth-child(3) {
@@ -1365,6 +1366,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   text-align: center;
   width: 65%;
   left: 15%;
+  margin: 0.5em;
 }
 
 .oil-splash {
