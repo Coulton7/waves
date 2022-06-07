@@ -1431,8 +1431,9 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 .oil-splash p {
   color: #ffffff;
   position: absolute;
-  top: 11%;
+  top: 15%;
   text-align: center;
+  margin: 0 0.5em;
 }
 
 
