@@ -1349,16 +1349,16 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: relative;
 }
 
-.oil-drip p:nth-child(1) {
-  color: #ffffff;
-  position: absolute;
-  top: 30%;
-}
-
 .oil-drip p:nth-child(2) {
   color: #ffffff;
   position: absolute;
-  top: 60%;
+  top: 45%;
+}
+
+.oil-drip p:nth-child(3) {
+  color: #ffffff;
+  position: absolute;
+  top: 65%;
 }
 
 .oil-splash {
