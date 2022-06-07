@@ -1372,7 +1372,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   content: "";
   float: left;
   height: 7em;
-  width: 20%;
+  width: 15%;
   shape-outside: polygon(
     0 0,
     98% 0,
@@ -1393,7 +1393,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   content: "";
   float: right;
   height: 7em;
-  width: 20%;
+  width: 15%;
   shape-outside: polygon(
     2% 0%,
     100% 0%,
