@@ -1415,9 +1415,6 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: absolute;
   top: 40%;
   text-align: center;
-  /*left: 15%;
-  width: 65%;
-  margin: 0.5em;*/
 }
 
 .oil-drip p:nth-child(3) {
@@ -1425,9 +1422,6 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   position: absolute;
   top: 65%;
   text-align: center;
-  /*width: 65%;
-  left: 15%;
-  margin: 0.5em;*/
 }
 
 .oil-splash {
@@ -1440,6 +1434,49 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   top: 25%;
   text-align: center;
 }
+
+.oil-splash p::before {
+  content: "";
+  float: left;
+  height: 7em;
+  width: 15%;
+  shape-outside: polygon(
+    0 0,
+    98% 0,
+    50% 6%,
+    23.4% 17.3%,
+    6% 32.6%,
+    0 50%,
+    6% 65.6%,
+    23.4% 82.7%,
+    50% 94%,
+    98% 100%,
+    0 100%
+  );
+  shape-margin: 7%;
+}
+
+.oil-splash p span::before {
+  content: "";
+  float: right;
+  height: 7em;
+  width: 15%;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+    );
+  shape-margin: 7%;
+}
+
 
 @keyframes spin {
   0% {
