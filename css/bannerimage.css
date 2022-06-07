@@ -1346,11 +1346,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 }
 
 .oil-drip {
-  background-image: url(/waves/images/oil-drip.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  padding: 1em;
+  position: relative;
 }
 
 .oil-drip p {
