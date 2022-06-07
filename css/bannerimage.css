@@ -1352,8 +1352,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 .oil-drip p::before {
   content: "";
   float: left;
-  height: 100%;
-  width: 50%;
+  height: 6em;
+  width: 20%;
   shape-outside: polygon(
     0 0,
     98% 0,
@@ -1373,8 +1373,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 .oil-drip p span::before {
   content: "";
   float: right;
-  height: 100%;
-  width: 50%;
+  height: 6em;
+  width: 20%;
   shape-outside: polygon(
     2% 0%,
     100% 0%,
