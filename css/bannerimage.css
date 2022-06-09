@@ -1438,8 +1438,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
 .oil-splash::before{
   content: "";
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     position: absolute;
     background-color: rgb(29, 29, 28);
     border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
