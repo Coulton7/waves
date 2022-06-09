@@ -1442,11 +1442,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     height: 0px;
     position: absolute;
     border-left: 1em solid transparent;
-    border-right: 1em solid rgb(22, 22, 21);
-    border-top: 1em solid rgb(22, 22, 21);
-    border-bottom: 1em solid transparent;
-    left: 1em;
-    top: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid rgb(22, 22, 21);
+    left: 25%;
+    top: -15%;
 }
 
 
