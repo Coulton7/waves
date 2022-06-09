@@ -1440,9 +1440,9 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   width: 8em;
   height: 8em;
   position: absolute;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 100px solid rgb(29, 29, 28);
+  border-left: 2.5em solid transparent;
+  border-right: 2.5em solid transparent;
+  border-bottom: 3em solid rgb(29, 29, 28);
   border-radius: 50%;
   z-index: -1;
 }
