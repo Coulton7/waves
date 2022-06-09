@@ -1426,6 +1426,9 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
 .oil-splash {
   position: relative;
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
 }
 
 .oil-splash p {
