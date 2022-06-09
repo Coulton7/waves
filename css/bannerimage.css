@@ -1429,14 +1429,11 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   background: #000000;
   border: 1px solid #ffffff;
   border-radius: 30px;
+  padding: 1em;
 }
 
 .oil-splash p {
   color: #ffffff;
-  position: absolute;
-  top: 15%;
-  text-align: center;
-  margin: 0 2.5em;
 }
 
 
