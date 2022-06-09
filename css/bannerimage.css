@@ -1436,6 +1436,19 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   color: #ffffff;
 }
 
+.oil-splash::before{
+  content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 1em solid transparent;
+    border-right: 1em solid #000000;
+    border-top: 1em solid #000000;
+    border-bottom: 1em solid transparent;
+    left: 1em;
+    top: -1em;
+}
+
 
 @keyframes spin {
   0% {
