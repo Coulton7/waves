@@ -1443,7 +1443,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     position: absolute;
     background-color: rgb(29, 29, 28);
     border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-    border: 3px solid rgb(229, 29, 28);
+    border: 3px solid rgb(29, 29, 28);
     transform: rotate(-45deg);
     left: 25%;
     top: -40%;
