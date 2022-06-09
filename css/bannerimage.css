@@ -1426,7 +1426,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
 .oil-splash {
   position: relative;
-  background: #000000;
+  background: rgb(0,0,0);
+  background: linear-gradient(351deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 68%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%);
   border: 1px solid #ffffff;
   border-radius: 30px;
   padding: 1em;
