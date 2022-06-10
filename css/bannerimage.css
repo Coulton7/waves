@@ -1909,6 +1909,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     background-size: 50%;
   }
 
+  .oil-drip p:nth-child(2) {
+    top: 35%;
+  }
+
   .oil-splash::before{
     content: "";
     width: 10em;
@@ -2080,6 +2084,10 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .virtual-tour:hover {
     background-size: 33%;
+  }
+
+  .oil-drip p:nth-child(2) {
+    top: 40%;
   }
 
   .oil-splash::before{
