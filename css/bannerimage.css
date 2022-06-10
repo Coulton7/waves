@@ -1911,12 +1911,12 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .oil-splash::before{
     content: "";
-    width: 8em;
+    width: 10em;
     height: 3em;
     position: absolute;
     z-index: 1;
     top: -2em;
-    left: 13.5%;
+    left: 11%;
     background: #fff;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -1924,12 +1924,12 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .oil-splash::after{
     content: "";
-    width: 8em;
+    width: 10em;
     height: 3em;
     position: absolute;
     z-index: 1;
     top: -2em;
-    left: 26.5%;
+    left: 49%;
     background: #fff;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
