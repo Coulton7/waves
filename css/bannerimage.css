@@ -1910,11 +1910,29 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   }
 
   .oil-splash::before{
-    display: none;
+    content: "";
+    width: 8em;
+    height: 3em;
+    position: absolute;
+    z-index: 1;
+    top: -2em;
+    left: 13.5%;
+    background: #fff;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
   }
 
   .oil-splash::after{
-    display: none;
+    content: "";
+    width: 8em;
+    height: 3em;
+    position: absolute;
+    z-index: 1;
+    top: -2em;
+    left: 26.5%;
+    background: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
 }
 
