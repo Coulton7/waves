@@ -1444,8 +1444,8 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   top: -30%;
   left: 20%;
   background: #fff;
-    border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;:
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .oil-splash::after{
