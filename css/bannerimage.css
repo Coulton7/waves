@@ -1437,24 +1437,24 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
 .oil-splash::before{
   content: "";
-  width: 3em;
+  width: 6em;
   height: 3em;
   position: absolute;
   z-index: 1;
-  top: -31%;
-  left: 25%;
+  top: -30%;
+  left: 20%;
   border-bottom-right-radius: 50%;
   background: #fff;
 }
 
 .oil-splash::after{
   content: "";
-  width: 3em;
+  width: 6em;
   height: 3em;
   position: absolute;
   z-index: 1;
-  top: -31%;
-  left: 29%;
+  top: -30%;
+  left: 25%;
   background: #fff;
   border-bottom-left-radius: 50%;
 }
