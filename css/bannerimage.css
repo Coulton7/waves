@@ -2321,12 +2321,12 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 @media screen and (min-width: 2000px) {
   .oil-splash::before{
     content: "";
-    width: 9em;
+    width: 12em;
     height: 3em;
     position: absolute;
     z-index: 1;
     top: -35%;
-    left: 14%;
+    left: 15%;
     background: #fff;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -2334,12 +2334,12 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 
   .oil-splash::after{
     content: "";
-    width: 9em;
+    width: 12em;
     height: 3em;
     position: absolute;
     z-index: 1;
     top: -35%;
-    left: 26%;
+    left: 28%;
     background: #fff;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
