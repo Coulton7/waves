@@ -2268,7 +2268,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
     height: 3em;
     position: absolute;
     z-index: 1;
-    top: -30%;
+    top: -2em;
     left: 13.5%;
     background: #fff;
     border-bottom-right-radius: 50%;
