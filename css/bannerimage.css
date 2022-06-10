@@ -1348,6 +1348,7 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
 .oil-drip {
   position: relative;
   display: flex;
+  z-index: 2;
 }
 
 .oil-drip p:nth-child(2)::before {
