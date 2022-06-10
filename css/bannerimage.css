@@ -2318,6 +2318,34 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   }
 }
 
+@media screen and (min-width: 2000px) {
+  .oil-splash::before{
+    content: "";
+    width: 9em;
+    height: 3em;
+    position: absolute;
+    z-index: 1;
+    top: -25%;
+    left: 14%;
+    background: #fff;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+
+  .oil-splash::after{
+    content: "";
+    width: 9em;
+    height: 3em;
+    position: absolute;
+    z-index: 1;
+    top: -25%;
+    left: 26%;
+    background: #fff;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
 @media (max-width: 992px) {
   .uppercurve {
     display: none;
