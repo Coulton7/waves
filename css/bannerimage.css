@@ -1,6 +1,6 @@
 body {
-  font-size: :14px;
-  line-height: :1.618rem;
+  font-size :14px;
+  line-height :1.618rem;
   color: #535454;
   font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Arial", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", sans-serif;
   font-weight: 300
@@ -30,7 +30,6 @@ h2, h3, h4, h5, h6 {
 
 /*anything under the p tag colr*/
 li {
-  float: left;
   color: #535454;
   display: inline-block;
 }
@@ -137,6 +136,7 @@ p a[target="_blank"]:after {
 .flexslider .slides>li:first-child {
   display: block;
   -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
 
 .lightgrey-background {
@@ -431,7 +431,6 @@ p a[target="_blank"]:after {
   position: relative;
   bottom: -0.2em;
   margin-top: -7.9em;
-}
 }
 
 .navigation {
@@ -1625,7 +1624,6 @@ a.prod-image-slider:hover+.prod-image-slider-text p {
   color: #ffffff;
   position: fixed;
   font-size: 3em;
-  float: right;
   z-index: 1032;
   top: 2em;
   right: 1em;
