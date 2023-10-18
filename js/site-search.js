@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const langlistPanel = instantsearch.widgets.panel ({
         templates: {
-            header: 'Select your Language'
+            header: '<h4>Select your Language</h4>'
         }
     })(instantsearch.widgets.refinementList);
 
     const typelistPanel = instantsearch.widgets.panel ({
         templates: {
-            header: 'Filter by Content Type'
+            header: '<h4>Filter by Content Type</h4>'
         }
     })(instantsearch.widgets.refinementList);
 
