@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
             helper.search();
         }
     });
+
+    search.addWidgets([{
+        init: function(options) {
+          options.helper.toggleRefinement('search_api_language', 'en');
+        }
+      }]);
     
     search.addWidgets([
         instantsearch.widgets.configure({
@@ -43,21 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
             templates: {
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 header: '<h4>Select your Language</h4>'
-            },
-            transformItems(items) {
-                items.forEach(function(arrayItem){
-                    if (filterLang == "waves"){
-                        if(arrayItem.highlighted === "en") {
-                            arrayItem.isRefined = true
-                        }
-                    }
-                    else if (filterLang === "fr") {
-                        if(arrayItem.highlighted === "fr") {
-                            arrayItem.isRefined = true;
-                        }
-                    }
-                });
-                return items;
             },
         }),
     
