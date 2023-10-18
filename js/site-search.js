@@ -21,14 +21,53 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    const langlistPanel = instantsearch.widgets.panel ({
+        template: {
+            header: '<h4>Select your Language</h4>'
+        }
+    })(instantsearch.widgets.refinementList);
+
+    const typelistPanel = instantsearch.widgets.panel ({
+        template: {
+            header: '<h4>Filter by Content Type</h4>'
+        }
+    })(instantsearch.widgets.refinementList);
+
     search.addWidgets([{
         init: function(options) {
             if(filterLang == "waves")
             {
                 options.helper.toggleRefinement('search_api_language', 'en');
             }
+            else if(filterLang == "es")
+            {
+                options.helper.toggleRefinement('search_api_language', 'es');
+            }
             else if (filterLang === "fr") {
                 options.helper.toggleRefinement('search_api_language', 'fr');
+            }
+            else if (filterLang === "de") {
+                options.helper.toggleRefinement('search_api_language', 'de');
+            }
+            else if(filterLang == "it")
+            {
+                options.helper.toggleRefinement('search_api_language', 'iy');
+            }
+            else if(filterLang == "pl")
+            {
+                options.helper.toggleRefinement('search_api_language', 'pl');
+            }
+            else if(filterLang == "ru")
+            {
+                options.helper.toggleRefinement('search_api_language', 'ru');
+            }
+            else if(filterLang == "tr")
+            {
+                options.helper.toggleRefinement('search_api_language', 'tr');
+            }
+            else if(filterLang == "zh-hans")
+            {
+                options.helper.toggleRefinement('search_api_language', 'zh-hans');
             }
         }
       }]);
@@ -49,12 +88,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }),
 
-        instantsearch.widgets.refinementList({
+        langlistPanel({
             container: '#lang-list',
             attribute: 'search_api_language',
             templates: {
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
                 header: '<h4>Select your Language</h4>'
+            },
+        }),
+
+        typelistPanel({
+            container: '#type-list',
+            attribute: 'type',
+            templates: {
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+                header: '<h4>Filter Content</h4>'
             },
         }),
     
