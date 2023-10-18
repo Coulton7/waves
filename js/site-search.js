@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                 options.helper.toggleRefinement('search_api_language', 'en');
             }
+            else if (filterLang === "fr") {
+                options.helper.toggleRefinement('search_api_language', 'fr');
+            }
         }
       }]);
     
