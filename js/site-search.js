@@ -131,8 +131,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="search-result">
                     <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
-                    <p id="category" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
-                    <p id="category" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p id="category" class="lead field-type ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p id="category" class="lead field-type ${data.vid ? '' : 'display-none'}">${data.vid}</p>
                     <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
@@ -149,29 +149,30 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             transformData: {
                 allItems: function(results) {
-                    var contentType = document.getElementById('category').innerText;
+                    var contentType = document.getElementById('category').value;
+                    var type = document.querySelector('.field-type');
                     console.log(contentType);
                     switch(contentType){
                     case 'industry':
-                        contentType = "Industry";
+                        type = "Industry";
                     break;
                     case 'page':
-                        contentType = "Web Page";
+                        type = "Web Page";
                     break;
                     case 'article':
-                        contentType = "Article";
+                        type = "Article";
                     break;
                     case 'announcement':
-                        contentType = "Article";
+                        type = "Article";
                     break;
                     case 'video':
-                        contentType = "Video";
+                        type = "Video";
                     break;
                     case 'cartridgemechanicalseals':
-                        contentType = "Cartridge Mechanical Seals";
+                        type = "Cartridge Mechanical Seals";
                     break;
                     default:
-                        contentType = "Web Page";
+                        type = "Web Page";
                     break
                     }
                     
