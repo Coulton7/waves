@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
+    var contentType = document.getElementById('category').value;
 
     console.log(filterLang);
 
@@ -131,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="search-result">
                     <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
-                    <p class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
-                    <p class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p id="category" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p id="category" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
                     <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
@@ -149,6 +150,31 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     ]);
+
+    function categorySwitch() {
+        switch(true){
+        case(contentType == 'industry'):
+            contentType = "Industry";
+        break;
+        case(contentType == 'page'):
+            contentType = "Web Page";
+        break;
+        case(contentType == 'article'):
+            contentType = "Article";
+        break;
+        case(contentType == 'announcement'):
+            contentType = "Article";
+        break;
+        case(contentType == 'video'):
+            contentType = "Video";
+        break;
+        case(contentType == 'cartridgemechanicalseals'):
+            contentType = "Cartridge Mechanical Seals";
+        break;
+        }
+        
+    }
     
     search.start();
+    categorySwitch();
 });
