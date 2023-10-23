@@ -170,7 +170,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     case(contentType == 'cartridgemechanicalseals'):
                         contentType = "Cartridge Mechanical Seals";
                     break;
+                    default:
+                        contentType = "Web Page";
+                    break
                     }
+                    
                     return results;
                 }
             }
