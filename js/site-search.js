@@ -151,23 +151,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 allItems: function(results) {
                     var contentType = document.getElementById('category');
                     console.log(contentType);
-                    switch(true){
-                    case(contentType == 'industry'):
+                    switch(contentType){
+                    case 'industry':
                         contentType = "Industry";
                     break;
-                    case(contentType == 'page'):
+                    case 'page':
                         contentType = "Web Page";
                     break;
-                    case(contentType == 'article'):
+                    case 'article':
                         contentType = "Article";
                     break;
-                    case(contentType == 'announcement'):
+                    case 'announcement':
                         contentType = "Article";
                     break;
-                    case(contentType == 'video'):
+                    case 'video':
                         contentType = "Video";
                     break;
-                    case(contentType == 'cartridgemechanicalseals'):
+                    case 'cartridgemechanicalseals':
                         contentType = "Cartridge Mechanical Seals";
                     break;
                     default:
