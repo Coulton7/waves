@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
             transformData: {
                 item: function(item) {
                     var contentType = document.getElementById('category').innerHTML;
+                    console.log(contentType);
                     switch(true){
                     case(contentType == 'industry'):
                         contentType = "Industry";
