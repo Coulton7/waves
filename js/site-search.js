@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
-    var contentType = document.getElementById('category').value;
 
     console.log(filterLang);
 
@@ -152,6 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
 
     function categorySwitch() {
+        var contentType = document.getElementById('category').value;
         switch(true){
         case(contentType == 'industry'):
             contentType = "Industry";
