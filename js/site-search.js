@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
             },
             transformData: {
-                item: function(item) {
+                allItems: function(results) {
                     var contentType = document.getElementById('category').innerHTML;
                     console.log(contentType);
                     switch(true){
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         contentType = "Cartridge Mechanical Seals";
                     break;
                     }
-                    return item;
+                    return results;
                 }
             }
         })
