@@ -1,5 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    function categorySwitch() {
+        var contentType = document.getElementById('category').value;
+        switch(true){
+        case(contentType == 'industry'):
+            contentType = "Industry";
+        break;
+        case(contentType == 'page'):
+            contentType = "Web Page";
+        break;
+        case(contentType == 'article'):
+            contentType = "Article";
+        break;
+        case(contentType == 'announcement'):
+            contentType = "Article";
+        break;
+        case(contentType == 'video'):
+            contentType = "Video";
+        break;
+        case(contentType == 'cartridgemechanicalseals'):
+            contentType = "Cartridge Mechanical Seals";
+        break;
+        }
+        
+    }
+
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
     var filterLang = urlLang;
@@ -146,6 +171,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
+            },
+            transformData: {
+                allItems: categorySwitch()
             }
         })
     ]);
