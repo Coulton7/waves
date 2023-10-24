@@ -149,7 +149,8 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             transformData: {
                 allItems: function(results) {
-                    var contentType = document.getElementById('category').textContent;
+                    var contentType = document.querySelector('#category').textContent;
+                    consoloe.log(contentType)
 
                     if(contentType == 'article') {
                        contentType.textContent = "Article" 
