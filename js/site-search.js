@@ -149,6 +149,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     ]);
+
+    search.on("render", () => {
+        var contentType = document.querySelector('#category').textContent;
+        consoloe.log(contentType)
+
+        if(contentType == 'article') {
+            contentType.textContent = "Article" 
+        }
+    })
     
     search.start();
 });
