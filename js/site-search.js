@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     var contentType = document.getElementById('category').textContent;
 
                     if(contentType == 'article') {
-                       contentType.innerHTML = "Article" 
+                       contentType.textContent = "Article" 
                     }
                     
                     
