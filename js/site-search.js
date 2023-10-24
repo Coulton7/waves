@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     ]);
 
-    search.on("render", () => {
+    search.helper.on("result", function() {
         var contentType = document.querySelector('#category').textContent;
         console.log(contentType)
 
