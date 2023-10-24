@@ -131,8 +131,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="search-result">
                     <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
-                    <p id="category" class="lead field-type ${data.type ? '' : 'display-none'}">${data.type}</p>
-                    <p id="category" class="lead field-type ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p id="category" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p id="category" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
                     <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
@@ -149,32 +149,12 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             transformData: {
                 allItems: function(results) {
-                    var contentType = document.getElementById('category').value;
-                    var type = document.querySelector('.field-type');
-                    console.log(contentType);
-                    switch(contentType){
-                    case 'industry':
-                        type = "Industry";
-                    break;
-                    case 'page':
-                        type = "Web Page";
-                    break;
-                    case 'article':
-                        type = "Article";
-                    break;
-                    case 'announcement':
-                        type = "Article";
-                    break;
-                    case 'video':
-                        type = "Video";
-                    break;
-                    case 'cartridgemechanicalseals':
-                        type = "Cartridge Mechanical Seals";
-                    break;
-                    default:
-                        type = "Web Page";
-                    break
+                    var contentType = document.getElementById('category').textContent;
+
+                    if(contentType == 'article') {
+                       contentType.innerHTML = "Article" 
                     }
+                    
                     
                     return results;
                 }
