@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     search.on("render", () => {
         var contentType = document.querySelector('#category').innerHTML;
-        consoloe.log(contentType)
+        console.log(contentType)
 
         if(contentType == 'article') {
             contentType.textContent = "Article" 
