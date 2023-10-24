@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
 
     search.on("render", () => {
-        var contentType = document.querySelector('#category').innerHTML;
+        var contentType = document.querySelector('#category');
         console.log(contentType)
 
         if(contentType == 'article') {
