@@ -146,19 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
-            },
-            transformData: {
-                allItems: function(results) {
-                    var contentType = document.querySelector('#category').textContent;
-                    consoloe.log(contentType)
-
-                    if(contentType == 'article') {
-                       contentType.textContent = "Article" 
-                    }
-                    
-                    
-                    return results;
-                }
             }
         })
     ]);
