@@ -149,13 +149,14 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
 
     search.on("render", function() {
-        var contentType = document.querySelector('#category').textContent;
-        console.log(contentType)
+        var contentType = document.querySelector('#category');
+        for (var i = 0; i< contentType.clientHeight; i++) {
 
-        if(contentType == 'article') {
-            contentType.textContent = "Article" 
-        } else if (contentType == 'industry') {
-            contentType.textContent = "Industry"
+            if(contentType.textContent == 'article') {
+                contentType.textContent = "Article" 
+            } else if (contentType.textContent == 'industry') {
+                contentType.textContent = "Industry"
+            }
         }
     })
     
