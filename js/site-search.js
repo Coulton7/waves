@@ -4,6 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     var urlLang = urlArray[1];
     var filterLang = urlLang;
 
+    function contentType (){
+        var contentType = document.querySelector('#category');
+        for (var i = 0; i < contentType.length; i++) {
+
+            if(contentType.textContent == 'article') {
+                contentType.textContent = "Article" 
+            } else if (contentType.textContent == 'industry') {
+                contentType.textContent = "Industry"
+            } else if (contentType.textContent == 'page') {
+                contentType.textContent = "Web Page"
+            }
+        }
+    }
+
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     
     const search = instantsearch({
@@ -147,20 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     ]);
-
-    search.on("render", function() {
-        var contentType = document.querySelector('#category');
-        for (var i = 0; i < contentType.length; i++) {
-
-            if(contentType.textContent == 'article') {
-                contentType.textContent = "Article" 
-            } else if (contentType.textContent == 'industry') {
-                contentType.textContent = "Industry"
-            } else if (contentType.textContent == 'page') {
-                contentType.textContent = "Web Page"
-            }
-        }
-    })
     
     search.start();
+    contentType();
 });
