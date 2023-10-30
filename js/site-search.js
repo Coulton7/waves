@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     search.on("render", function() {
         var contentType = document.querySelector('#category');
-        for (var i = 0; i< contentType.length; i++) {
+        for (var i = 0; i < contentType.length; i++) {
 
             if(contentType.textContent == 'article') {
                 contentType.textContent = "Article" 
