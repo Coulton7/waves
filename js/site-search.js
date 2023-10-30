@@ -156,6 +156,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentType.textContent = "Article" 
             } else if (contentType.textContent == 'industry') {
                 contentType.textContent = "Industry"
+            } else if (contentType.textContent == 'page') {
+                contentType.textContent = "Web Page"
             }
         }
     })
