@@ -149,4 +149,18 @@ document.addEventListener("DOMContentLoaded", function() {
     ]);
     
     search.start();
+
+    search.on('render', function(){
+        var contentType = document.querySelector('#category');
+        for (var i = 0; i < contentType.length; i++) {
+
+            if(contentType.textContent == 'article') {
+                contentType.textContent = "Article" 
+            } else if (contentType.textContent == 'industry') {
+                contentType.textContent = "Industry"
+            } else if (contentType.textContent == 'page') {
+                contentType.textContent = "Web Page"
+            }
+        }
+    })
 });
