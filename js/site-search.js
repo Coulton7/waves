@@ -192,11 +192,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if(refineType[x].innerText.includes('article')) {
                 refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
             } else if (refineType[x].innerText.includes('page')) {
-                refineType[x].innerText = refineType[x].innerText.replace("page","Web Page");
+                refineType[x].innerText = refineType[x].replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
-                refineType[x].innerText = refineType[x].innerText.replace("apiplans","API Plans");
+                refineType[x].innerText = refineType[x].replace("apiplans","API Plans");
             } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
-                refineType[x].innerText = refineType[x].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+                refineType[x].innerText = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
             } else if (refineType[x].innerText.includes('gasseals')) {
                 refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
             } else if (refineType[x].innerText.includes('sealsupportsystems')) {
