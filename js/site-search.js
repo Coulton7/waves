@@ -95,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             cssClasses: {
                 list: ['language-list'],
+                item: ['lang-item']
             }
         }),
 
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             cssClasses: {
                 list: ['types-list'],
+                item: ['types-item']
             }
         }),
     
