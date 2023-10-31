@@ -93,6 +93,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 header: 'Select your Language',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
+            cssClasses: {
+                list: ['language-list'],
+            }
         }),
 
         typelistPanel({
@@ -102,6 +105,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 header: 'Filter by Content Type',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
+            cssClasses: {
+                list: ['types-list'],
+            }
         }),
     
         instantsearch.widgets.pagination({
