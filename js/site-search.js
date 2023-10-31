@@ -155,12 +155,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var vocabName = document.querySelectorAll("#vocabCat");
         for (var i = 0; i < contentType.length; i++) {
 
-            if(contentType.textContent == 'article') {
-                contentType.textContent.replace = "Article" 
-            } else if (contentType.textContent == 'page') {
-                contentType.textContent.replace = "Web Page"
-            } else if (contentType.textContent == 'undefined') {
-                contentType.textContent.replace = ""
+            if(contentType[i].innerText == 'article') {
+                contentType.innerText.replace = "Article" 
+            } else if (contentType[i].innerText == 'page') {
+                contentType.innerText.replace = "Web Page"
+            } else if (contentType[i].innerText == 'undefined') {
+                contentType.innerText.replace = ""
             }
             console.log(contentType[i].innerText);
         }
