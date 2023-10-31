@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (contentType.textContent == 'undefined') {
                 contentType.textContent.replace = ""
             }
+            console.log(contentType.textContent);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
