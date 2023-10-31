@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (contentType.textContent == 'undefined') {
                 contentType.textContent.replace = ""
             }
-            console.log(contentType.innerText);
+            console.log(contentType[i].innerText);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
