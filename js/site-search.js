@@ -156,11 +156,11 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType[i].innerText == 'article') {
-                contentType.replace = "Article" 
+                contentType.replace ("article", "Article"); 
             } else if (contentType[i].innerText == 'page') {
-                contentType.replace = "Web Page"
+                contentType.innerText = "Web Page"
             } else if (contentType[i].innerText == 'undefined') {
-                contentType.replace = ""
+                contentType.innerText = ""
             }
             console.log(contentType[i].innerText);
         }
