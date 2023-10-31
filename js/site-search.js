@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (contentType[i].innerText == 'page') {
                 contentType.innerText.replace = "Web Page"
             } else if (contentType[i].innerText == 'undefined') {
-                contentType.innerText.replace = ""
+                contentType.innerText.replace = "Undefined"
             }
             console.log(contentType[i].innerText);
         }
