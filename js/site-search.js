@@ -156,9 +156,9 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType[i].innerText == 'article') {
-                contentType.innerText.replace = "Article" 
+                contentType[i].innerText.replace = "Article" 
             } else if (contentType[i].innerText == 'page') {
-                contentType.innerText.replace = "Web Page"
+                contentType[i].innerText.replace = "Web Page"
             }
             console.log(contentType[i].innerText);
         }
