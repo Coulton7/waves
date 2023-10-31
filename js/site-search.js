@@ -159,12 +159,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentType.textContent = "Article" 
             } else if (contentType.textContent == 'page') {
                 contentType.textContent = "Web Page"
+            } else if (contentType.textContent == 'undefined') {
+                contentType.textContent = ""
             }
         }
 
         for (var y = 0; y < vocabName.length; y++) {
-            if(vocabName.textContent == ' industry') {
+            if(vocabName.textContent == 'industry') {
                 vocabName.textContent = "Industry"
+            } else if (vocabName.textContent == 'undefined') {
+                vocabName.textContent = ""
             }
         }
     })
