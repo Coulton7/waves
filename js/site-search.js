@@ -91,11 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'search_api_language',
             templates: {
                 header: 'Select your Language',
-                item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-            },
-            cssClasses: {
-                list: ['language-list'],
-                item: ['lang-item']
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             }
         }),
 
@@ -104,11 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'type',
             templates: {
                 header: 'Filter by Content Type',
-                item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-            },
-            cssClasses: {
-                list: ['types-list'],
-                item: ['types-item']
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox types-item" value="&nbsp; {{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             }
         }),
     
@@ -192,6 +184,37 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentType[i].innerText = contentType[i].innerText.replace("locations","Locations");
             } else if (contentType[i].innerText == 'undefined') {
                 contentType[i].innerText = contentType[i].innerText.replace("undefined","");
+            }
+        }
+
+        for (var x = 0; x < refineType.length; x++) {
+
+            if(refineType[x].innerText.includes('article')) {
+                refineType[x].textContent = refineType[x].textContent.replace("article", "Article");
+            } else if (refineType[x].innerText.includes('page')) {
+                refineType[x].textContent = refineType[x].textContent.replace("page","Web Page");
+            } else if (refineType[x].innerText.includes('apiplans')) {
+                refineType[x].textContent = refineType[x].textContent.replace("apiplans","API Plans");
+            } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
+                refineType[x].textContent = refineType[x].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (refineType[x].innerText.includes('gasseals')) {
+                refineType[x].textContent = refineType[x].textContent.replace("gasseals","Gas Seals");
+            } else if (refineType[x].innerText.includes('sealsupportsystems')) {
+                refineType[x].textContent = refineType[x].textContent.replace("sealsupportsystems","Seal Support Systems");
+            } else if (refineType[x].innerText.includes('bearingprotection')) {
+                refineType[x].textContent = refineType[x].textContent.replace("bearingprotection","Bearing Protection");
+            } else if (refineType[x].innerText.includes('componentseals')) {
+                refineType[x].textContent = refineType[x].textContent.replace("componentseals","Component Seals");
+            } else if (refineType[x].innerText.includes('glandpacking')) {
+                refineType[x].textContent = refineType[x].textContent.replace("glandpacking","Gland Packing");
+            } else if (refineType[x].innerText.includes('elastomers')) {
+                refineType[x].textContent = refineType[x].textContent.replace("elastomers","Elastomers");
+            } else if (refineType[x].innerText.includes('video')) {
+                refineType[x].textContent = refineType[x].textContent.replace("video","Video");
+            } else if (refineType[x].innerText.includes('academy')) {
+                refineType[x].textContent = refineType[x].textContent.replace("academy","Academy");
+            } else if (refineType[x].innerText.includes('locations')) {
+                refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
             }
         }
 
