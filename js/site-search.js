@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
-                vocabName[y].innerText = vocabName[y].innerText.replace("industry","Industry");
+                vocabName[y].innerText = vocabName[y].innerText.replace("industry","Industry")
             } else if (vocabName[y].textContent == 'undefined') {
                 vocabName.innerText = ""
             }
