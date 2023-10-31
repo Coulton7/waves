@@ -151,8 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
     search.start();
 
     search.on('render', function() {
-        var contentType = document.querySelector('#contentCat');
-        var vocabName = document.querySelector("#vocabCat");
+        var contentType = document.querySelectorAll('#contentCat');
+        var vocabName = document.querySelectorAll("#vocabCat");
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType.textContent == 'article') {
