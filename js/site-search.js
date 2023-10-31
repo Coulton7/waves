@@ -190,38 +190,38 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var x = 0; x < refineType.length; x++) {
 
             if(refineType[x].innerText.includes('article')) {
-                refineType[x].textContent = refineType[x].textContent.replace("article", "Article");
+                refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
             } else if (refineType[x].innerText.includes('page')) {
-                refineType[x].textContent = refineType[x].textContent.replace("page","Web Page");
+                refineType[x].innerText = refineType[x].innerText.replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
-                refineType[x].textContent = refineType[x].textContent.replace("apiplans","API Plans");
+                refineType[x].innerText = refineType[x].innerText.replace("apiplans","API Plans");
             } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
-                refineType[x].textContent = refineType[x].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+                refineType[x].innerText = refineType[x].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
             } else if (refineType[x].innerText.includes('gasseals')) {
-                refineType[x].textContent = refineType[x].textContent.replace("gasseals","Gas Seals");
+                refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
             } else if (refineType[x].innerText.includes('sealsupportsystems')) {
-                refineType[x].textContent = refineType[x].textContent.replace("sealsupportsystems","Seal Support Systems");
+                refineType[x].innerText = refineType[x].innerText.replace("sealsupportsystems","Seal Support Systems");
             } else if (refineType[x].innerText.includes('bearingprotection')) {
-                refineType[x].textContent = refineType[x].textContent.replace("bearingprotection","Bearing Protection");
+                refineType[x].innerText = refineType[x].innerText.replace("bearingprotection","Bearing Protection");
             } else if (refineType[x].innerText.includes('componentseals')) {
-                refineType[x].textContent = refineType[x].textContent.replace("componentseals","Component Seals");
+                refineType[x].innerText = refineType[x].innerText.replace("componentseals","Component Seals");
             } else if (refineType[x].innerText.includes('glandpacking')) {
-                refineType[x].textContent = refineType[x].textContent.replace("glandpacking","Gland Packing");
+                refineType[x].innerText = refineType[x].innerText.replace("glandpacking","Gland Packing");
             } else if (refineType[x].innerText.includes('elastomers')) {
-                refineType[x].textContent = refineType[x].textContent.replace("elastomers","Elastomers");
+                refineType[x].innerText = refineType[x].innerText.replace("elastomers","Elastomers");
             } else if (refineType[x].innerText.includes('video')) {
-                refineType[x].textContent = refineType[x].textContent.replace("video","Video");
+                refineType[x].innerText = refineType[x].innerText.replace("video","Video");
             } else if (refineType[x].innerText.includes('academy')) {
-                refineType[x].textContent = refineType[x].textContent.replace("academy","Academy");
+                refineType[x].innerText = refineType[x].innerText.replace("academy","Academy");
             } else if (refineType[x].innerText.includes('locations')) {
-                refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
+                refineType[x].innerText = refineType[x].innerText.replace("locations","Locations");
             }
         }
 
         for (var y = 0; y < vocabName.length; y++) {
-            if(vocabName[y].textContent == 'industry') {
+            if(vocabName[y].innerText == 'industry') {
                 vocabName[y].innerText = vocabName[y].innerText.replace("industry","Industry")
-            } else if (vocabName[y].textContent == 'undefined') {
+            } else if (vocabName[y].innerText == 'undefined') {
                 vocabName.innerText = ""
             }
         }
