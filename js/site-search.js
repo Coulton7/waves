@@ -168,10 +168,10 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
                 vocabName.innerText = "Industry"
+                console.log('industry found');
             } else if (vocabName[y].textContent == 'undefined') {
                 vocabName.innerText = ""
             }
-            console.log(vocabName[y].innerText);
         }
     })
 });
