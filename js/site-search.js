@@ -156,13 +156,13 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType[i].innerText == 'article') {
-                contentType.innerText.replace("article", "Article"); 
+                contentType.innerText.replace("article", "Article");
+                console.log('article found');
             } else if (contentType[i].innerText == 'page') {
                 contentType.innerText = "Web Page"
             } else if (contentType[i].innerText == 'undefined') {
                 contentType.innerText = ""
             }
-            console.log(contentType[i].innerText);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
