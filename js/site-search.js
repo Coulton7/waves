@@ -159,8 +159,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 contentType.innerText.replace = "Article" 
             } else if (contentType[i].innerText == 'page') {
                 contentType.innerText.replace = "Web Page"
-            } else if (contentType[i].innerText == 'undefined') {
-                contentType.innerText.replace = "Undefined"
             }
             console.log(contentType[i].innerText);
         }
