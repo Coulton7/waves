@@ -129,8 +129,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="search-result">
                     <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
-                    <p id="category" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
-                    <p id="category" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
+                    <p id="contentCat" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
+                    <p id="vocabCat" class="lead ${data.vid ? '' : 'display-none'}">${data.vid}</p>
                     <p class=${data.description ? '' : 'display-none'}>${instantsearch.snippet({
                         attribute: "description",
                         hit: data
@@ -150,16 +150,21 @@ document.addEventListener("DOMContentLoaded", function() {
     
     search.start();
 
-    search.on('render', function(){
-        var contentType = document.querySelector('#category');
+    search.on('render', function() {
+        var contentType = document.querySelector('#contentCat');
+        var vocabName = document.querySelector("#vocabCat");
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType.textContent == 'article') {
                 contentType.textContent = "Article" 
-            } else if (contentType.textContent == 'industry') {
-                contentType.textContent = "Industry"
             } else if (contentType.textContent == 'page') {
                 contentType.textContent = "Web Page"
+            }
+        }
+
+        for (var y = 0; y < vocabName.length; y++) {
+            if(vocabName.textContent == ' industry') {
+                vocabName.textContent = "Industry"
             }
         }
     })
