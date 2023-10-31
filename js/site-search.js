@@ -166,11 +166,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         for (var y = 0; y < vocabName.length; y++) {
-            if(vocabName.textContent == 'industry') {
+            if(vocabName[y].textContent == 'industry') {
                 vocabName.textContent.replace = "Industry"
-            } else if (vocabName.textContent == 'undefined') {
+            } else if (vocabName[y].textContent == 'undefined') {
                 vocabName.textContent.replace = ""
             }
+            console.log(vocabName[y].innerText);
         }
     })
 });
