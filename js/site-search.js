@@ -198,31 +198,31 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var x = 0; x < refineType.length; x++) {
 
             if(refineType[x].innerText.includes('article')) {
-                refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
+                refineType[x].textContent = refineType[x].textContent.replace("article", "Article");
             } else if (refineType[x].innerText.includes('page')) {
-                refineType[x].innerText = refineType[x].innerText.replace("page","Web Page");
+                refineType[x].textContent = refineType[x].textContent.replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
-                refineType[x].innerText = refineType[x].innerText.replace("apiplans","API Plans");
+                refineType[x].textContent = refineType[x].textContent.replace("apiplans","API Plans");
             } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
-                refineType[x].innerText = refineType[x].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+                refineType[x].textContent = refineType[x].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
             } else if (refineType[x].innerText.includes('gasseals')) {
-                refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
+                refineType[x].textContent = refineType[x].textContent.replace("gasseals","Gas Seals");
             } else if (refineType[x].innerText.includes('sealsupportsystems')) {
-                refineType[x].innerText = refineType[x].innerText.replace("sealsupportsystems","Seal Support Systems");
+                refineType[x].textContent = refineType[x].textContent.replace("sealsupportsystems","Seal Support Systems");
             } else if (refineType[x].innerText.includes('bearingprotection')) {
-                refineType[x].innerText = refineType[x].innerText.replace("bearingprotection","Bearing Protection");
+                refineType[x].textContent = refineType[x].textContent.replace("bearingprotection","Bearing Protection");
             } else if (refineType[x].innerText.includes('componentseals')) {
-                refineType[x].innerText = refineType[x].innerText.replace("componentseals","Component Seals");
+                refineType[x].textContent = refineType[x].textContent.replace("componentseals","Component Seals");
             } else if (refineType[x].innerText.includes('glandpacking')) {
-                refineType[x].innerText = refineType[x].innerText.replace("glandpacking","Gland Packing");
+                refineType[x].textContent = refineType[x].textContent.replace("glandpacking","Gland Packing");
             } else if (refineType[x].innerText.includes('elastomers')) {
-                refineType[x].innerText = refineType[x].innerText.replace("elastomers","Elastomers");
+                refineType[x].textContent = refineType[x].textContent.replace("elastomers","Elastomers");
             } else if (refineType[x].innerText.includes('video')) {
-                refineType[x].innerText = refineType[x].innerText.replace("video","Video");
+                refineType[x].textContent = refineType[x].textContent.replace("video","Video");
             } else if (refineType[x].innerText.includes('academy')) {
-                refineType[x].innerText = refineType[x].innerText.replace("academy","Academy");
+                refineType[x].textContent = refineType[x].textContent.replace("academy","Academy");
             } else if (refineType[x].innerText.includes('locations')) {
-                refineType[x].innerText = refineType[x].innerText.replace("locations","Locations");
+                refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
             }
         }
 
