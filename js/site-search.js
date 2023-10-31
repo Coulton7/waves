@@ -167,9 +167,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
-                vocabName.textContent.replace = "Industry"
+                vocabName.innerText = "Industry"
             } else if (vocabName[y].textContent == 'undefined') {
-                vocabName.textContent.replace = ""
+                vocabName.innerText = ""
             }
             console.log(vocabName[y].innerText);
         }
