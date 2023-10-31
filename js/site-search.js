@@ -199,29 +199,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if(refineType[x].innerText.includes('article')) {
                 refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
-            } else if (refineType[x].includes('page')) {
+            } else if (refineType[x].innerText.includes('page')) {
                 refineType[x].innerText = refineType[x].innerText.replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
                 refineType[x].innerText = refineType[x].innerText.replace("apiplans","API Plans");
-            } else if (refineType[x].innerText == 'cartridgemechanicalseals') {
+            } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
                 refineType[x].innerText = refineType[x].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (refineType[x].innerText == 'gasseals') {
+            } else if (refineType[x].innerText.includes('gasseals')) {
                 refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
-            } else if (refineType[x].innerText == 'sealsupportsystems') {
+            } else if (refineType[x].innerText.includes('sealsupportsystems')) {
                 refineType[x].innerText = refineType[x].innerText.replace("sealsupportsystems","Seal Support Systems");
-            } else if (refineType[x].innerText == 'bearingprotection') {
+            } else if (refineType[x].innerText.includes('bearingprotection')) {
                 refineType[x].innerText = refineType[x].innerText.replace("bearingprotection","Bearing Protection");
-            } else if (refineType[x].innerText == 'componentseals') {
+            } else if (refineType[x].innerText.includes('componentseals')) {
                 refineType[x].innerText = refineType[x].innerText.replace("componentseals","Component Seals");
-            } else if (refineType[x].innerText == 'glandpacking') {
+            } else if (refineType[x].innerText.includes('glandpacking')) {
                 refineType[x].innerText = refineType[x].innerText.replace("glandpacking","Gland Packing");
-            } else if (refineType[x].innerText == 'elastomers') {
+            } else if (refineType[x].innerText.includes('elastomers')) {
                 refineType[x].innerText = refineType[x].innerText.replace("elastomers","Elastomers");
-            } else if (refineType[x].innerText == 'video') {
+            } else if (refineType[x].innerText.includes('video')) {
                 refineType[x].innerText = refineType[x].innerText.replace("video","Video");
-            } else if (refineType[x].innerText == 'academy') {
+            } else if (refineType[x].innerText.includes('academy')) {
                 refineType[x].innerText = refineType[x].innerText.replace("academy","Academy");
-            } else if (refineType[x].innerText == 'locations') {
+            } else if (refineType[x].innerText.includes('locations')) {
                 refineType[x].innerText = refineType[x].innerText.replace("locations","Locations");
             }
             console.log(refineType[x].innerText)
