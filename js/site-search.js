@@ -156,19 +156,19 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType.textContent == 'article') {
-                contentType.textContent = "Article" 
+                contentType.textContent.replace = "Article" 
             } else if (contentType.textContent == 'page') {
-                contentType.textContent = "Web Page"
+                contentType.textContent.replace = "Web Page"
             } else if (contentType.textContent == 'undefined') {
-                contentType.textContent = ""
+                contentType.textContent.replace = ""
             }
         }
 
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName.textContent == 'industry') {
-                vocabName.textContent = "Industry"
+                vocabName.textContent.replace = "Industry"
             } else if (vocabName.textContent == 'undefined') {
-                vocabName.textContent = ""
+                vocabName.textContent.replace = ""
             }
         }
     })
