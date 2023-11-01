@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var x = 0; x < refineType.length; x++) {
 
             if(refineType[x].innerText.includes('article')) {
-                refineType[x].replace("article", "Article");
+                refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
             } else if (refineType[x].innerText.includes('page')) {
                 refineType[x].innerText = refineType[x].replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
