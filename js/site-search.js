@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (refineType[x].innerHTML.includes('academy')) {
                 refineType[x].innerHTML = refineType[x].innerHTML.replace("academy","Academy");
             } else if (refineType[x].innerHTML.includes('locations')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations","Locations");
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations",'Locations">Locations');
             }
         }
 
