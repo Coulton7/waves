@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
             }
 
-            console.log(refineType[x]);
+            console.log(refineType[x].textContent);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
