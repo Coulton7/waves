@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var x = 0; x < refineType.length; x++) {
 
             if(refineType[x].innerText.includes('article')) {
-                refineType[x].innerText = refineType[x].textContent('article', 'Article');
+                refineType[x].innerText = refineType[x].childNodes[0].innerText('article', 'Article');
             } else if (refineType[x].innerText.includes('page')) {
                 refineType[x].innerText = refineType[x].innerText.replace("page","Web Page");
             } else if (refineType[x].innerText.includes('apiplans')) {
