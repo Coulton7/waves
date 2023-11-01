@@ -189,8 +189,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (var x = 0; x < refineType.length; x++) {
 
-            if(refineType[x].includes('article')) {
-                refineType[x].replace("article", "Article").textContent;
+            if(refineType[x].innerText.includes('article')) {
+                refineType[x].textContent = refineType[x].textContent.replace("article", "Article");
             } else if (refineType[x].innerHTML.includes('page')) {
                 refineType[x].innerHTML = refineType[x].replace("page","Web Page");
             } else if (refineType[x].innerHTML.includes('apiplans')) {
