@@ -151,62 +151,79 @@ document.addEventListener("DOMContentLoaded", function() {
     search.start();
 
     search.on('render', function() {
+        var contentType = document.querySelectorAll('#contentCat');
+        var vocabName = document.querySelectorAll("#vocabCat");
+        var refineType = document.querySelectorAll(".types-item");
+        for (var i = 0; i < contentType.length; i++) {
 
-        const articleType = 'article'
-        const article = articleType.replace(/article/gi, 'Article');
-        const apiplanType = 'apiplans'
-        const apiplan = apiplanType.replace(/apiplans/gi, 'API Plans');
-        const locationType = 'locations'
-        const location = locationType.replace(/locations/gi, 'Location');
-        const sealSupportType = 'sealsupportsystems'
-        const sealSupport = sealSupportType.replace(/sealsupportsystems/gi, 'Seal Support Systems');
-        const pageType = 'page'
-        const page = pageType.replace(/page/gi, 'Web Page');
-        const cartridgeType = 'cartridgemechanicalseals';
-        const cartridgeSeal = cartridgeType.replace(/cartridgemechanicalseals/gi, 'Cartridge Mechanical Seals');
-        const glandType = 'glandpacking'
-        const glandPacking = glandType.replace(/glandpacking/gi, 'Gland Packing');
-        const industryVid = 'industry'
-        const industry = industryVid.replace(/industry/gi , 'Industry');
+            if(contentType[i].innerText == 'article') {
+                contentType[i].innerText = contentType[i].innerText.replace("article", "Article");
+            } else if (contentType[i].innerText == 'page') {
+                contentType[i].innerText = contentType[i].innerText.replace("page","Web Page");
+            } else if (contentType[i].innerText == 'apiplans') {
+                contentType[i].innerText = contentType[i].innerText.replace("apiplans","API Plans");
+            } else if (contentType[i].innerText == 'cartridgemechanicalseals') {
+                contentType[i].innerText = contentType[i].innerText.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (contentType[i].innerText == 'gasseals') {
+                contentType[i].innerText = contentType[i].innerText.replace("gasseals","Gas Seals");
+            } else if (contentType[i].innerText == 'sealsupportsystems') {
+                contentType[i].innerText = contentType[i].innerText.replace("sealsupportsystems","Seal Support Systems");
+            } else if (contentType[i].innerText == 'bearingprotection') {
+                contentType[i].innerText = contentType[i].innerText.replace("bearingprotection","Bearing Protection");
+            } else if (contentType[i].innerText == 'componentseals') {
+                contentType[i].innerText = contentType[i].innerText.replace("componentseals","Component Seals");
+            } else if (contentType[i].innerText == 'glandpacking') {
+                contentType[i].innerText = contentType[i].innerText.replace("glandpacking","Gland Packing");
+            } else if (contentType[i].innerText == 'elastomers') {
+                contentType[i].innerText = contentType[i].innerText.replace("elastomers","Elastomers");
+            } else if (contentType[i].innerText == 'video') {
+                contentType[i].innerText = contentType[i].innerText.replace("video","Video");
+            } else if (contentType[i].innerText == 'academy') {
+                contentType[i].innerText = contentType[i].innerText.replace("academy","Academy");
+            } else if (contentType[i].innerText == 'locations') {
+                contentType[i].innerText = contentType[i].innerText.replace("locations","Locations");
+            } else if (contentType[i].innerText == 'undefined') {
+                contentType[i].innerText = contentType[i].innerText.replace("undefined","");
+            }
+        }
 
-        function recurse(element) {
-            if (element.childNodes.length > 0) {
-              for (var i = 0; i < element.childNodes.length; i++) {
-                recurse(element.childNodes[i]);
-              }
+        for (var x = 0; x < refineType.length; x++) {
+
+            if(refineType[x].innerText.includes('article')) {
+                refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
+            } else if (refineType[x].innerText.includes('page')) {
+                refineType[x].innerText = refineType[x].replace("page","Web Page");
+            } else if (refineType[x].innerText.includes('apiplans')) {
+                refineType[x].innerText = refineType[x].replace("apiplans","API Plans");
+            } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
+                refineType[x].innerText = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (refineType[x].innerText.includes('gasseals')) {
+                refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
+            } else if (refineType[x].innerText.includes('sealsupportsystems')) {
+                refineType[x].innerText = refineType[x].innerText.replace("sealsupportsystems","Seal Support Systems");
+            } else if (refineType[x].innerText.includes('bearingprotection')) {
+                refineType[x].innerText = refineType[x].innerText.replace("bearingprotection","Bearing Protection");
+            } else if (refineType[x].innerText.includes('componentseals')) {
+                refineType[x].innerText = refineType[x].innerText.replace("componentseals","Component Seals");
+            } else if (refineType[x].innerText.includes('glandpacking')) {
+                refineType[x].innerText = refineType[x].innerText.replace("glandpacking","Gland Packing");
+            } else if (refineType[x].innerText.includes('elastomers')) {
+                refineType[x].innerText = refineType[x].innerText.replace("elastomers","Elastomers");
+            } else if (refineType[x].innerText.includes('video')) {
+                refineType[x].innerText = refineType[x].innerText.replace("video","Video");
+            } else if (refineType[x].innerText.includes('academy')) {
+                refineType[x].innerText = refineType[x].innerText.replace("academy","Academy");
+            } else if (refineType[x].innerText.includes('locations')) {
+                refineType[x].innerText = refineType[x].innerText.replace("locations","Locations");
             }
-            if (element.nodeType == 3 && /\S/.test(element.nodeValue)) {
-              doReplacements(element, element.parentElement);
+        }
+
+        for (var y = 0; y < vocabName.length; y++) {
+            if(vocabName[y].innerText == 'industry') {
+                vocabName[y].innerText = vocabName[y].innerText.replace("industry","Industry")
+            } else if (vocabName[y].innerText == 'undefined') {
+                vocabName.innerText = ""
             }
-          }
-          var html = document.getElementById('searchOverlay')[0];
-          recurse(html);
-          function doReplacements(element, parent) {
-            var html = element.data;
-            if (element.nextSibling) {
-              if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
-                return;
-              }
-            }
-            html = article
-            html = apiplan
-            html = location
-            html = sealSupport
-            html= page
-            html = cartridgeSeal
-            html = glandPacking
-            html = industry
-            var frag = (function() {
-              var wrap = document.createElement('div'),
-                frag = document.createDocumentFragment();
-              wrap.innerHTML = html;
-              while (wrap.firstChild) {
-                frag.appendChild(wrap.firstChild);
-              }
-              return frag;
-            })();
-            parent.insertBefore(frag, element);
-            parent.removeChild(element);
-          }
+        }
     })
 });
