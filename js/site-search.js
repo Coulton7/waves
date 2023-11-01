@@ -192,11 +192,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if(refineType[x].innerText.includes('article')) {
                 refineType[x].textContent = refineType[x].textContent.replace("article", "Article");
             } else if (refineType[x].innerText.includes('page')) {
-                refineType[x].textContent = refineType[x].replace("page","Web Page");
-            } else if (refineType[x].textContent.includes('apiplans')) {
-                refineType[x].innerText = refineType[x].replace("apiplans","API Plans");
-            } else if (refineType[x].textContent.textContent.includes('cartridgemechanicalseals')) {
-                refineType[x].textContent = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+                refineType[x].textContent = refineType[x].textContent.replace("page","Web Page");
+            } else if (refineType[x].innerText.includes('apiplans')) {
+                refineType[x].textContent = refineType[x].textContent.replace("apiplans","API Plans");
+            } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
+                refineType[x].textContent = refineType[x].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
             } else if (refineType[x].innerText.includes('gasseals')) {
                 refineType[x].textContent = refineType[x].textContent.replace("gasseals","Gas Seals");
             } else if (refineType[x].innerText.includes('sealsupportsystems')) {
@@ -216,8 +216,6 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (refineType[x].innerText.includes('locations')) {
                 refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
             }
-
-            console.log(refineType[x]);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
