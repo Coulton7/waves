@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
             cssClasses: {
-                item: [types-item]
+                item: ['types-item']
             }
         }),
     
