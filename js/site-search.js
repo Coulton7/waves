@@ -191,30 +191,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if(refineType[x].innerText.includes('article')) {
                 refineType[x].innerText = refineType[x].innerText.replace("article", "Article");
-            } else if (refineType[x].innerHTML.includes('page')) {
-                refineType[x].innerHTML = refineType[x].replace("page","Web Page");
-            } else if (refineType[x].innerHTML.includes('apiplans')) {
-                refineType[x].innerHTML = refineType[x].replace("apiplans","API Plans");
-            } else if (refineType[x].innerHTML.includes('cartridgemechanicalseals')) {
-                refineType[x].innerHTML = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (refineType[x].innerHTML.includes('gasseals')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("gasseals","Gas Seals");
-            } else if (refineType[x].innerHTML.includes('sealsupportsystems')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("sealsupportsystems","Seal Support Systems");
-            } else if (refineType[x].innerHTML.includes('bearingprotection')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("bearingprotection","Bearing Protection");
-            } else if (refineType[x].innerHTML.includes('componentseals')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("componentseals","Component Seals");
-            } else if (refineType[x].innerHTML.includes('glandpacking')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("glandpacking","Gland Packing");
-            } else if (refineType[x].innerHTML.includes('elastomers')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("elastomers","Elastomers");
-            } else if (refineType[x].innerHTML.includes('video')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("video","Video");
-            } else if (refineType[x].innerHTML.includes('academy')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("academy","Academy");
-            } else if (refineType[x].innerHTML.includes('locations')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations","Locations");
+            } else if (refineType[x].innerText.includes('page')) {
+                refineType[x].innerText = refineType[x].replace("page","Web Page");
+            } else if (refineType[x].innerText.includes('apiplans')) {
+                refineType[x].innerText = refineType[x].replace("apiplans","API Plans");
+            } else if (refineType[x].innerText.includes('cartridgemechanicalseals')) {
+                refineType[x].innerText = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (refineType[x].innerText.includes('gasseals')) {
+                refineType[x].innerText = refineType[x].innerText.replace("gasseals","Gas Seals");
+            } else if (refineType[x].innerText.includes('sealsupportsystems')) {
+                refineType[x].innerText = refineType[x].innerText.replace("sealsupportsystems","Seal Support Systems");
+            } else if (refineType[x].innerText.includes('bearingprotection')) {
+                refineType[x].innerText = refineType[x].innerText.replace("bearingprotection","Bearing Protection");
+            } else if (refineType[x].innerText.includes('componentseals')) {
+                refineType[x].innerText = refineType[x].innerText.replace("componentseals","Component Seals");
+            } else if (refineType[x].innerText.includes('glandpacking')) {
+                refineType[x].innerText = refineType[x].innerText.replace("glandpacking","Gland Packing");
+            } else if (refineType[x].innerText.includes('elastomers')) {
+                refineType[x].innerText = refineType[x].innerText.replace("elastomers","Elastomers");
+            } else if (refineType[x].innerText.includes('video')) {
+                refineType[x].innerText = refineType[x].innerText.replace("video","Video");
+            } else if (refineType[x].innerText.includes('academy')) {
+                refineType[x].innerText = refineType[x].innerText.replace("academy","Academy");
+            } else if (refineType[x].innerText.includes('locations')) {
+                refineType[x].innerText = refineType[x].innerText.replace("locations","Locations");
             }
 
             console.log(refineType[x]);
