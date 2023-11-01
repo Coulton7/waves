@@ -92,7 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
             templates: {
                 header: 'Select your Language',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
-            }
+            },
+            sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
 
         typelistPanel({
@@ -104,7 +105,8 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             cssClasses: {
                 item: ['types-item']
-            }
+            },
+            sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
     
         instantsearch.widgets.pagination({
