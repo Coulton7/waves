@@ -153,8 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
     search.on('render', function() {
         var contentType = document.querySelectorAll('#contentCat');
         var vocabName = document.querySelectorAll("#vocabCat");
-        var refineTypes = document.querySelectorAll(".types-item");
-        var refineType = refineTypes.getAttribute('label')
+        var refineType = document.querySelectorAll(".types-item");
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType[i].textContent == 'article') {
@@ -190,8 +189,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         for (var x = 0; x < refineType.length; x++) {
 
-            if(refineType[x].innerHTML.includes('article')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("article", "Article");
+            if(refineType[x].getAttribute('label').includes('article')) {
+                refineType[x].getAttribute('label') = refineType[x].getAttribute('label').replace("article", "Article");
             } else if (refineType[x].innerHTML.includes('page')) {
                 refineType[x].innerHTML = refineType[x].replace("page","Web Page");
             } else if (refineType[x].innerHTML.includes('apiplans')) {
