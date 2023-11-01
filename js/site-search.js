@@ -151,6 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
     search.start();
 
     search.on('render', function() {
+
         const articleType = 'article'
         const article = articleType.replace(/article/gi, 'Article');
         const apiplanType = 'apiplans'
@@ -167,5 +168,45 @@ document.addEventListener("DOMContentLoaded", function() {
         const glandPacking = glandType.replace(/glandpacking/gi, 'Gland Packing');
         const industryVid = 'industry'
         const industry = industryVid.replace(/industry/gi , 'Industry');
+
+        function recurse(element) {
+            if (element.childNodes.length > 0) {
+              for (var i = 0; i < element.childNodes.length; i++) {
+                recurse(element.childNodes[i]);
+              }
+            }
+            if (element.nodeType == 3 && /\S/.test(element.nodeValue)) {
+              doReplacements(element, element.parentElement);
+            }
+          }
+          var html = document.getElementById('searchOverlay')[0];
+          recurse(html);
+          function doReplacements(element, parent) {
+            var html = element.data;
+            if (element.nextSibling) {
+              if (element.nextSibling.nodeName.toLowerCase() === 'sup') {
+                return;
+              }
+            }
+            html = article
+            html = apiplan
+            html = location
+            html = sealSupport
+            html= page
+            html = cartridgeSeal
+            html = glandPacking
+            html = industry
+            var frag = (function() {
+              var wrap = document.createElement('div'),
+                frag = document.createDocumentFragment();
+              wrap.innerHTML = html;
+              while (wrap.firstChild) {
+                frag.appendChild(wrap.firstChild);
+              }
+              return frag;
+            })();
+            parent.insertBefore(frag, element);
+            parent.removeChild(element);
+          }
     })
 });
