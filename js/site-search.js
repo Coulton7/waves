@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 refineType[x].textContent = refineType[x].replace("page","Web Page");
             } else if (refineType[x].textContent.includes('apiplans')) {
                 refineType[x].innerText = refineType[x].replace("apiplans","API Plans");
-            } else if (refineType[x].textContent.includes('cartridgemechanicalseals')) {
+            } else if (refineType[x].textContent.textContent.includes('cartridgemechanicalseals')) {
                 refineType[x].textContent = refineType[x].replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
             } else if (refineType[x].innerText.includes('gasseals')) {
                 refineType[x].textContent = refineType[x].textContent.replace("gasseals","Gas Seals");
