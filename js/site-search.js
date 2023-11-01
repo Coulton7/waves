@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'search_api_language',
             templates: {
                 header: 'Select your Language',
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             }
         }),
 
@@ -99,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
             attribute: 'type',
             templates: {
                 header: 'Filter by Content Type',
+                item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
             },
             cssClasses: {
                 item: ['types-item']
