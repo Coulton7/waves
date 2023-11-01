@@ -216,6 +216,8 @@ document.addEventListener("DOMContentLoaded", function() {
             } else if (refineType[x].textContent.includes('locations')) {
                 refineType[x].textContent = refineType[x].textContent.replace("locations","Locations");
             }
+
+            console.log(refineType[x]);
         }
 
         for (var y = 0; y < vocabName.length; y++) {
