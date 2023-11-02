@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const facetMapping = {
+    const typeMapping = {
         'article': 'Article',
         'apiplans': 'API Plans',
         'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
@@ -34,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
         'academy': 'Academy',
         'elastomers': 'Elastomers',
         'productbrochure': 'Product Brochure'
+    }
+
+    const vidMapping ={
+        'industry': 'Industry'
     }
 
     const langlistPanel = instantsearch.widgets.panel ({
@@ -123,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
             transformItems(items){
                 return items.map(item => ({
                     ...item,
-                    label: facetMapping[item.label],
+                    label: typeMapping[item.label],
                 }));
             },
             cssClasses: {
@@ -172,55 +176,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
                 <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
+            },
+            transformItems(items){
+                return items.map(item => ({
+                    ...item,
+                    type: typeMapping[item.type],
+                    vid: vidMapping[item.vid]
+                }))
             }
         })
     ]);
     
     search.start();
-
-    search.on('render', function() {
-        var contentType = document.querySelectorAll('#contentCat');
-        var vocabName = document.querySelectorAll("#vocabCat");
-        var refineType = document.querySelectorAll(".types-item");
-        for (var i = 0; i < contentType.length; i++) {
-
-            if(contentType[i].textContent == 'article') {
-                contentType[i].textContent = contentType[i].textContent.replace("article", "Article");
-            } else if (contentType[i].textContent == 'page') {
-                contentType[i].textContent = contentType[i].textContent.replace("page","Web Page");
-            } else if (contentType[i].textContent == 'apiplans') {
-                contentType[i].textContent = contentType[i].textContent.replace("apiplans","API Plans");
-            } else if (contentType[i].textContent == 'cartridgemechanicalseals') {
-                contentType[i].textContent = contentType[i].textContent.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (contentType[i].textContent == 'gasseals') {
-                contentType[i].textContent = contentType[i].textContent.replace("gasseals","Gas Seals");
-            } else if (contentType[i].textContent == 'sealsupportsystems') {
-                contentType[i].textContent = contentType[i].textContent.replace("sealsupportsystems","Seal Support Systems");
-            } else if (contentType[i].textContent == 'bearingprotection') {
-                contentType[i].textContent = contentType[i].textContent.replace("bearingprotection","Bearing Protection");
-            } else if (contentType[i].textContent == 'componentseals') {
-                contentType[i].textContent = contentType[i].textContent.replace("componentseals","Component Seals");
-            } else if (contentType[i].textContent == 'glandpacking') {
-                contentType[i].textContent = contentType[i].textContent.replace("glandpacking","Gland Packing");
-            } else if (contentType[i].textContent == 'elastomers') {
-                contentType[i].textContent = contentType[i].textContent.replace("elastomers","Elastomers");
-            } else if (contentType[i].textContent == 'video') {
-                contentType[i].textContent = contentType[i].textContent.replace("video","Video");
-            } else if (contentType[i].textContent == 'academy') {
-                contentType[i].textContent = contentType[i].textContent.replace("academy","Academy");
-            } else if (contentType[i].textContent == 'locations') {
-                contentType[i].textContent = contentType[i].textContent.replace("locations","Locations");
-            } else if (contentType[i].textContent == 'undefined') {
-                contentType[i].textContent = contentType[i].textContent.replace("undefined","");
-            }
-        }
-
-        for (var y = 0; y < vocabName.length; y++) {
-            if(vocabName[y].textContent == 'industry') {
-                vocabName[y].textContent = vocabName[y].textContent.replace("industry","Industry")
-            } else if (vocabName[y].textContent == 'undefined') {
-                vocabName.textContent = ""
-            }
-        }
-    })
 });
