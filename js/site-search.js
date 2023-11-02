@@ -192,33 +192,36 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-            if(refineType.innerHTML.includes('article')) {
-                refineType.innerHTML = refineType.innerHTML.replace('article', 'Article');
-            } else if (refineType.innerHTML.includes('page')) {
-                refineType.innerHTML = refineType.innerHTML.replace("page","Web Page");
-            } else if (refineType.innerHTML.includes('apiplans')) {
-                refineType.innerHTML = refineType.innerHTML.replace("apiplans","API Plans");
-            } else if (refineType.innerHTML.includes('cartridgemechanicalseals')) {
-                refineType.innerHTML = refineType.innerHTML.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (refineType.innerHTML.includes('gasseals')) {
-                refineType.innerHTML = refineType.innerHTML.replace("gasseals","Gas Seals");
-            } else if (refineType.innerHTML.includes('sealsupportsystems')) {
-                refineType.innerHTML = refineType.innerHTML.replace("sealsupportsystems","Seal Support Systems");
-            } else if (refineType.innerHTML.includes('bearingprotection')) {
-                refineType.innerHTML = refineType.innerHTML.replace("bearingprotection","Bearing Protection");
-            } else if (refineType.innerHTML.includes('componentseals')) {
-                refineType.innerHTML = refineType.innerHTML.replace("componentseals","Component Seals");
-            } else if (refineType.innerHTML.includes('glandpacking')) {
-                refineType.innerHTML = refineType.innerHTML.replace("glandpacking","Gland Packing");
-            } else if (refineType.innerHTML.includes('elastomers')) {
-                refineType.innerHTML = refineType.innerHTML.replace("elastomers","Elastomers");
-            } else if (refineType.innerHTML.includes('video')) {
-                refineType.innerHTML = refineType.innerHTML.replace("video","Video");
-            } else if (refineType.innerHTML.includes('academy')) {
-                refineType.innerHTML = refineType.innerHTML.replace("academy","Academy");
-            } else if (refineType.innerHTML.includes('locations')) {
-                refineType.innerHTML = refineType.innerHTML.replace("locations",'Locations');
+        for (var x = 0; x < refineType.length; x++) {
+
+            if(refineType[x].innerHTML.includes('article')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace('article', 'Article');
+            } else if (refineType[x].innerHTML.includes('page')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("page","Web Page");
+            } else if (refineType[x].innerHTML.includes('apiplans')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("apiplans","API Plans");
+            } else if (refineType[x].innerHTML.includes('cartridgemechanicalseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
+            } else if (refineType[x].innerHTML.includes('gasseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("gasseals","Gas Seals");
+            } else if (refineType[x].innerHTML.includes('sealsupportsystems')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("sealsupportsystems","Seal Support Systems");
+            } else if (refineType[x].innerHTML.includes('bearingprotection')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("bearingprotection","Bearing Protection");
+            } else if (refineType[x].innerHTML.includes('componentseals')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("componentseals","Component Seals");
+            } else if (refineType[x].innerHTML.includes('glandpacking')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("glandpacking","Gland Packing");
+            } else if (refineType[x].innerHTML.includes('elastomers')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("elastomers","Elastomers");
+            } else if (refineType[x].innerHTML.includes('video')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("video","Video");
+            } else if (refineType[x].innerHTML.includes('academy')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("academy","Academy");
+            } else if (refineType[x].innerHTML.includes('locations')) {
+                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations",'Locations');
             }
+        }
 
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
