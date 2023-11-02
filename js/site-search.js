@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         refineType.forEach(function(item){
-            item.innerHTML = item.innerHTML.replace(/article/g, 'Article');
+            item.textContent = item.textContent.replace(/article/g, 'Article');
         })
     })
 });
