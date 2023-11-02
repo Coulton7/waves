@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
         'gasseals': 'Gas Seals Category',
         'componentseals': 'Component Seals Category',
-
     }
 
     const langlistPanel = instantsearch.widgets.panel ({
