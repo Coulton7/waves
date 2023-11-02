@@ -199,9 +199,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 vocabName.textContent = ""
             }
         }
-
-        refineType.forEach(function(item){
-            item.textContent = item.textContent.replace(/article/g, 'Article');
-        })
     })
 });
