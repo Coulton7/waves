@@ -192,37 +192,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        for (var x = 0; x < refineType.length; x++) {
-
-            if(refineType[x].innerHTML.includes('article')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace('article', 'Article');
-            } else if (refineType[x].innerHTML.includes('page')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("page","Web Page");
-            } else if (refineType[x].innerHTML.includes('apiplans')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("apiplans","API Plans");
-            } else if (refineType[x].innerHTML.includes('cartridgemechanicalseals')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("cartridgemechanicalseals","Cartridge Mechanical Seals");
-            } else if (refineType[x].innerHTML.includes('gasseals')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("gasseals","Gas Seals");
-            } else if (refineType[x].innerHTML.includes('sealsupportsystems')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("sealsupportsystems","Seal Support Systems");
-            } else if (refineType[x].innerHTML.includes('bearingprotection')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("bearingprotection","Bearing Protection");
-            } else if (refineType[x].innerHTML.includes('componentseals')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("componentseals","Component Seals");
-            } else if (refineType[x].innerHTML.includes('glandpacking')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("glandpacking","Gland Packing");
-            } else if (refineType[x].innerHTML.includes('elastomers')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("elastomers","Elastomers");
-            } else if (refineType[x].innerHTML.includes('video')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("video","Video");
-            } else if (refineType[x].innerHTML.includes('academy')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("academy","Academy");
-            } else if (refineType[x].innerHTML.includes('locations')) {
-                refineType[x].innerHTML = refineType[x].innerHTML.replace("locations",'Locations');
-            }
-        }
-
         for (var y = 0; y < vocabName.length; y++) {
             if(vocabName[y].textContent == 'industry') {
                 vocabName[y].textContent = vocabName[y].textContent.replace("industry","Industry")
@@ -230,5 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 vocabName.textContent = ""
             }
         }
+
+        document.getElementById('searchOverlay').innerHTML = document.getElementById('searchOverlay').innerHTML.replace(/article/g, 'Article'); 
     })
 });
