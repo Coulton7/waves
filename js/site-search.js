@@ -20,20 +20,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const typeMapping = {
-        'article': 'Article',
+        '3dmodels': '3D Models',
+        'academy': 'Academy',
         'apiplans': 'API Plans',
+        'article': 'Article',
+        'bearingprotection': 'Bearing Protection',
         'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
-        'sealsupportsystems': 'Seal Support Systems',
+        'casestudies': 'Case Studies',
+        'componentseals': 'Component Seals',
+        'elastomers': 'Elastomers',
+        'gasseals': 'Gas Seals',
         'glandpacking': 'Gland Packing',
         'locations': 'Locations',
         'page': 'Web Page',
+        'productbrochure': 'Product Brochure',
+        'sealsupportsystems': 'Seal Support Systems',
         'video': 'Video',
-        'gasseals': 'Gas Seals',
-        'componentseals': 'Component Seals',
-        'bearingprotection': 'Bearing Protection',
-        'academy': 'Academy',
-        'elastomers': 'Elastomers',
-        'productbrochure': 'Product Brochure'
+        'whitepaper': 'Whitepaper',
     }
 
     const vidMapping ={
@@ -113,6 +116,12 @@ document.addEventListener("DOMContentLoaded", function() {
             templates: {
                 header: 'Select your Language',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox lang-item" value="{{label}}" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+            },
+            transformItems(items){
+                return items.map(item => ({
+                    ...item,
+                    label: item.label.upperCase(),
+                }));
             },
             sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
