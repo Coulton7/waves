@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function() {
     search.on('render', function() {
         var contentType = document.querySelectorAll('#contentCat');
         var vocabName = document.querySelectorAll("#vocabCat");
-        var refineType = document.querySelector("types-list");
+        var refineType = document.querySelector("#types-list");
         for (var i = 0; i < contentType.length; i++) {
 
             if(contentType[i].textContent == 'article') {
@@ -200,6 +200,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-            console.log(refineType.textContent);
+            refineType.innerHTML = refineType.innerHTML.replace(/article/g, 'Article'); 
     })
 });
