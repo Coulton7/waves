@@ -41,13 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const vidMapping ={
         'industry': 'Industry',
-        'glandpacking': 'Gland Packing Type',
-        'producttypes': 'Product Type',
-        'sealsupportsystems': 'Seal Support Systems Type',
-        'bearingprotectioncategories': 'Bearing Protection Categories',
-        'cartridgemechanicalseals': 'Cartridge Mechanical Seals Type',
-        'gasseals': 'Gas Seals Type',
-        'componentseals': 'Component Seals Type',
+        'glandpacking': 'Gland Packing Category',
+        'sealsupportsystems': 'Seal Support Systems Category',
+        'bearingprotectioncategories': 'Bearing Protection Category',
+        'cartridgemechanicalseals': 'Cartridge Mechanical Seals Category',
+        'gasseals': 'Gas Seals Category',
+        'componentseals': 'Component Seals Category',
 
     }
 
