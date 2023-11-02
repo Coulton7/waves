@@ -200,6 +200,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-            refineType.innerHTML = refineType.innerHTML.replace(/article/g, 'Article'); 
+            console.log(refineType.textContent);
     })
 });
