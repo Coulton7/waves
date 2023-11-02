@@ -200,6 +200,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        document.getElementById('searchOverlay').innerHTML = document.getElementById('searchOverlay').innerHTML.replace(/article/g, 'Article'); 
     })
 });
