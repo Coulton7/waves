@@ -40,7 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const vidMapping ={
-        'industry': 'Industry'
+        'industry': 'Industry',
+        'glandpacking': 'Gland Packing Type',
+        'producttypes': 'Product Type',
+        'sealsupportsystems': 'Seal Support Systems Type',
+        'bearingprotectioncategories': 'Bearing Protection Categories',
+        'cartridgemechanicalseals': 'Cartridge Mechanical Seals Type',
+        'gasseals': 'Gas Seals Type',
+        'componentseals': 'Component Seals Type',
+
     }
 
     const langlistPanel = instantsearch.widgets.panel ({
