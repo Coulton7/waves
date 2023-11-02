@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
             transformItems(items){
                 return items.map(item => ({
                     ...item,
-                    label: item.label.upperCase(),
+                    label: item.label.toUpperCase(),
                 }));
             },
             sortBy: ['isRefined', 'count:desc', 'name:asc']
