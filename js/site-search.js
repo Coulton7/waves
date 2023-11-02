@@ -19,6 +19,23 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    const facetMapping = {
+        'article': 'Article',
+        'apiplans': 'API Plans',
+        'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
+        'sealsupportsystems': 'Seal Support Systems',
+        'glandpacking': 'Gland Packing',
+        'locations': 'Locations',
+        'page': 'Web Page',
+        'video': 'Video',
+        'gasseals': 'Gas Seals',
+        'componentseals': 'Component Seals',
+        'bearingprotection': 'Bearing Protection',
+        'academy': 'Academy',
+        'elastomers': 'Elastomers',
+        'productbrochure': 'Product Brochure'
+    }
+
     const langlistPanel = instantsearch.widgets.panel ({
         templates: {
             header: '<h4>Select your Language</h4>'
@@ -102,6 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
             templates: {
                 header: 'Filter by Content Type',
                 item: '<input type="checkbox" class="ais-refinement-list--checkbox" {{#isRefined}}checked="true"{{/isRefined}}> {{label}} <span class="ais-refinement-list--count">({{count}})</span>',
+            },
+            transformItems(items){
+                return items.map(item => ({
+                    ...item,
+                    label: facetMapping[item.label],
+                }));
             },
             cssClasses: {
                 item: ['types-item']
