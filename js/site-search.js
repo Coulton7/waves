@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        for (var x = 0; x < contentType.length; x++) {
+        refineType.forEach(function(item){
             refineType[x].innerHTML = refineType[x].innerHTML.replace(/article/g, 'Article');
-        }
+        })
     })
 });
