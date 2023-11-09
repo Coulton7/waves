@@ -58,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const typelistPanel = instantsearch.widgets.panel ({
         templates: {
             header: '<h4>Filter by Content Type</h4>'
+        },
+        cssClasses: {
+            root: 'pt-3'
         }
     })(instantsearch.widgets.refinementList);
 
@@ -129,10 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     label: item.label.toUpperCase(),
                 }));
             },
-            sortBy: ['isRefined', 'count:desc', 'name:asc'],
-            cssClasses: {
-                root: 'pt-3'
-            }
+            sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
 
         typelistPanel({
