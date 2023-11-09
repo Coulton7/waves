@@ -129,7 +129,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     label: item.label.toUpperCase(),
                 }));
             },
-            sortBy: ['isRefined', 'count:desc', 'name:asc']
+            sortBy: ['isRefined', 'count:desc', 'name:asc'],
+            cssClasses: {
+                root: 'pt-3'
+            }
         }),
 
         typelistPanel({
