@@ -146,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }));
             },
             cssClasses: {
-                root: 'pt-3',
                 item: ['types-item']
             },
             sortBy: ['isRefined', 'count:desc', 'name:asc']
