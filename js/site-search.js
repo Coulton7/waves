@@ -19,24 +19,46 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const typeMapping = {
-        '3dmodels': '3D Models',
-        'academy': 'Academy',
-        'apiplans': 'API Plans',
-        'article': 'Article',
-        'bearingprotection': 'Bearing Protection',
-        'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
-        'casestudies': 'Case Studies',
-        'componentseals': 'Component Seals',
-        'elastomers': 'Elastomers',
-        'gasseals': 'Gas Seals',
-        'glandpacking': 'Gland Packing',
-        'locations': 'Locations',
-        'page': 'Web Page',
-        'productbrochure': 'Product Brochure',
-        'sealsupportsystems': 'Seal Support Systems',
-        'video': 'Video',
-        'whitepaper': 'Whitepaper',
+    if (filterLang == "en") {
+        const typeMapping = {
+            '3dmodels': '3D Models',
+            'academy': 'Academy',
+            'apiplans': 'API Plans',
+            'article': 'Article',
+            'bearingprotection': 'Bearing Protection',
+            'cartridgemechanicalseals': 'Cartridge Mechanical Seals',
+            'casestudies': 'Case Studies',
+            'componentseals': 'Component Seals',
+            'elastomers': 'Elastomers',
+            'gasseals': 'Gas Seals',
+            'glandpacking': 'Gland Packing',
+            'locations': 'Locations',
+            'page': 'Web Page',
+            'productbrochure': 'Product Brochure',
+            'sealsupportsystems': 'Seal Support Systems',
+            'video': 'Video',
+            'whitepaper': 'Whitepaper',
+        }
+    } else if (filterLang == "fr") {
+        const typeMapping = {
+            '3dmodels': 'Modèles 3D',
+            'academy': 'Académie',
+            'apiplans': 'API Plans',
+            'article': 'Article',
+            'bearingprotection': 'Protections de Paliers',
+            'cartridgemechanicalseals': 'Garnitures cartouches',
+            'casestudies': 'Études de cas',
+            'componentseals': 'Garnitures mécaniques bi-composants',
+            'elastomers': 'Elastomers',
+            'gasseals': 'Garnitures gaz',
+            'glandpacking': 'Tresses d’étanchéité',
+            'locations': 'Emplacement',
+            'page': 'Web Page',
+            'productbrochure': 'Brochures des produits',
+            'sealsupportsystems': 'Seal Support Systems',
+            'video': 'Vidéos',
+            'whitepaper': 'Whitepaper',
+        }
     }
 
     const vidMapping ={
@@ -52,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const langlistPanel = instantsearch.widgets.panel ({
         templates: {
             header: '<h4>Select your Language</h4>'
+        },cssClasses: {
+            root: 'pt-5'
         }
     })(instantsearch.widgets.refinementList);
 
@@ -66,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     search.addWidgets([{
         init: function(options) {
-            if(filterLang == "waves")
+            if(filterLang == "en")
             {
                 options.helper.toggleRefinement('search_api_language', 'en');
             }
@@ -113,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
         instantsearch.widgets.clearRefinements({
             container: '#clear-refinements',
             cssClasses:{
+                root: 'pt-5',
                 button: [
                     'btn btn-primary text-white'
                 ]
@@ -171,12 +196,31 @@ document.addEventListener("DOMContentLoaded", function() {
                 submitIcon: 'text-white'
             }
         }),
+
+        instantsearch.widgets.stats({
+            container: '#stats',
+            templates: {
+                text(data, { html }) {
+                    let count = '';
+                    if (data.hasManyResults) {
+                        count += `${data.nbHits} results`
+                    } else if (data.hasOneResult) {
+                        count += `1 result`
+                    } else {
+                        count += `no result`;
+                    }
+
+                    return html`<span class="stat-text">${count} found in ${data.processingTimeMS}ms</span>`;
+                }
+            }
+        }),
     
         instantsearch.widgets.hits ({
             container: '#hits',
             templates:{
                 item: data => `
                 <div class="search-result">
+                    <small>${data.url}</small>
                     <p class="h3 ${data.title ? '' : 'display-none'}">${data.title}</p>
                     <p class="h3 ${data.name_1 ? '' : 'display-none'}">${data.name_1}</p>
                     <p id="contentCat" class="lead ${data.type ? '' : 'display-none'}">${data.type}</p>
@@ -189,22 +233,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         attribute: "body",
                         hit: data
                     })}</p>
-                    <a href="${data.url}">Read More</a>
+                    <a class="btn btn-primary align-self-end" href="${data.url}">Read More</a>
                 </div>`,
                 empty: `<p class="h3">No results found matching {{query}}</p>
                 <p>Sorry we couldn’t find a result for your search. Try to search again by, checking your search for spelling mistakes and/or reducing the number of keywords used. You can also try using a broader search phrase.</p>'
-                <p class="h3">Are you searching for a Part Number or Serial Number?</p>
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                <script>
-                        hbspt.forms.create({
-                        region: "na1",
-                        portalId: "2248916",
-                        formId: "efc759e5-1c3d-403f-9122-dec74bf892ea",
-                        css:"",
-                        cssClass:"blue-background hs-visible-form padding-2em margin-bottom",
-                        submitButtonClass:"btn btn-primary hs-button",
-                    });
-                </script>`,
+                <p class="h3">Are you searching for a Part Number or Serial Number?</p>`,
             },
             transformItems(items){
                 return items.map(item => ({
