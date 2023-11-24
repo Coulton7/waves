@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    let typeMapping;
+
     if (filterLang == "en") {
-        const typeMapping = {
+         typeMapping = {
             '3dmodels': '3D Models',
             'academy': 'Academy',
             'apiplans': 'API Plans',
@@ -40,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'whitepaper': 'Whitepaper',
         }
     } else if (filterLang == "waves") {
-        const typeMapping = {
+         typeMapping = {
             '3dmodels': 'Modèles 3D',
             'academy': 'Académie',
             'apiplans': 'API Plans',
