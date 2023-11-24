@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             'video': 'Video',
             'whitepaper': 'Whitepaper',
         }
-    } else if (filterLang == "fr") {
+    } else if (filterLang == "waves") {
         const typeMapping = {
             '3dmodels': 'Modèles 3D',
             'academy': 'Académie',
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
         init: function(options) {
             if(filterLang == "en")
             {
-                options.helper.toggleRefinement('search_api_language', 'en');
+                options.helper.toggleRefinement('search_api_language', 'waves');
             }
             else if(filterLang == "es")
             {
