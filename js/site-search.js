@@ -92,9 +92,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     search.addWidgets([{
         init: function(options) {
-            if(filterLang == "en")
+            if(filterLang == "waves")
             {
-                options.helper.toggleRefinement('search_api_language', 'waves');
+                options.helper.toggleRefinement('search_api_language', 'en');
             }
             else if(filterLang == "es")
             {
