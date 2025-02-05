@@ -7,12 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     const indexName = 'aesseal'
 
-    const searchRouter = historyRouter();
     
     const search = instantsearch({
         searchClient,
         indexName: indexName,
-        routing: searchRouter,
+        routing:{
+        router: history(),
+        },
         searchFunction(helper) {
             if (helper.state.query === '')
             {
