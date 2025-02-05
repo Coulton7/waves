@@ -1,5 +1,5 @@
 import { autocomplete } from 'https://cdn.jsdelivr.net/npm/autocomplete-js@2.7.1/dist/autocomplete.min.js';
-import { liteClient as algoliasearch } from 'https://cdn.jsdelivr.net/npm/algoliasearch@4.19.1/dist/algoliasearch-lite.umd.js';
+import { liteClient as algoliasearch } from 'https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.7/dist/instantsearch.production.min.js';
 import instantsearch from 'https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.7/dist/instantsearch.production.min.js';
 import historyRouter from 'https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.7/dist/instantsearch.production.min.js';
 import { connectSearchBox } from 'https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.7/dist/instantsearch.production.min.js';
