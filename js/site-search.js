@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         searchClient,
         indexName: indexName,
         routing:{
-        router: history(),
+            router: instantsearch.routers.history(),
+            stateMapping: instantsearch.stateMappings.simple(),
         },
         searchFunction(helper) {
             if (helper.state.query === '')
