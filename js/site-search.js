@@ -1,4 +1,11 @@
+import { autocomplete } from '@algolia/autocomplete-js';
+import { liteClient as algoliasearch } from 'algoliasearch/lite';
+import instantsearch from 'instantsearch.js';
+import historyRouter from 'instantsearch.js/es/lib/routers/history';
+import { connectSearchBox } from 'instantsearch.js/es/connectors';
+import { hits, pagination } from 'instantsearch.js/es/widgets';
 document.addEventListener("DOMContentLoaded", function() {
+
 
     var urlArray = window.location.pathname.split('/');
     var urlLang = urlArray[1];
@@ -6,15 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     const indexName = 'aesseal'
+    const instantSearchRouter = historyRouter();
+
 
     
     const search = instantsearch({
         searchClient,
         indexName: indexName,
-        routing:{
-            router: instantsearch.routers.history(),
-            stateMapping: instantsearch.stateMappings.simple(),
-        },
+        routing: instantSearchRouter,
         searchFunction(helper) {
             if (helper.state.query === '')
             {
