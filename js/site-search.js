@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
-    const globalLanglistPanel = instantsearch.widgets.panel ({
+    const langlistPanel = instantsearch.widgets.panel ({
         hidden(options) {
             return options.results.nbHits === 0;
         },
