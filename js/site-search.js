@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const virtualSearchBox = connectSearchBox(() => {});
-        
+
     search.addWidgets([
         virtualSearchBox({}),
         pagination({
