@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const customAutocomplete = connectAutocomplete(
+    const customAutocomplete = instantsearch.connectors.connectAutocomplete(
         renderSearchBox
     );
 
