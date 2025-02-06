@@ -8,42 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchClient = algoliasearch('ZUQNGEX563', '23e29710cc4469dec35bd50bc2164b3a');
     const indexName = 'aesseal'
 
-    const renderSearchBox = (renderOptions, isFirstRender) => {
-        const { query, refine, clear, isSearchStalled, widgetParams } = renderOptions;
-
-        if (isFirstRender) {
-            const input = document.createElement('input');
-            input.classList.add('ais-SearchBox-input');
-            input.classList.add('form-control');
-
-            const searchButton = document.createElement('button');
-            searchButton.classList.add('ais-SearchBox-submit');
-            searchButton.classList.add('btn');
-            searchButton.classList.add('btn-danger');
-            searchButton.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i>';
-
-            const loadingIndicator = document.createElement('span');
-            loadingIndicator.textContent = 'Loading...';
-
-            searchButton.addEventListener('click', event => {
-                refine(input.value);
-            });
-
-            input.addEventListener('keydown', function(e){
-                if(e.code === "Enter") {
-                    refine(input.value);
-                }
-            });
-
-            widgetParams.container.appendChild(input);
-            widgetParams.container.appendChild(searchButton);
-            widgetParams.container.appendChild(loadingIndicator);
-        }
-
-        widgetParams.container.querySelector('input').value = query;
-        widgetParams.container.querySelector('span').hidden = !isSearchStalled;
-    };
-
     
     const search = instantsearch({
         searchClient,
@@ -61,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    const virtualSearchBox = connectSearchBox(
-        renderSearchBox
-    );
+    const customAutocomplete = instantsearch.connectors.connectAutocomplete(
+        renderAutocomplete
+      );
 
     search.addWidgets([
-        virtualSearchBox({}),
+        customAutocomplete({}),
         pagination({
             container: '#pagination',
             totalPages: 3,
