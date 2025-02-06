@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function getInstantSearchUiState () {
-        const uiState = instantSearchRouter.read();
+        const uiState = instantsearch.routers.history().read();
 
         return(uiState && uiState[indexName]) || {};
     }
