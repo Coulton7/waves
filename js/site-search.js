@@ -44,6 +44,53 @@ document.addEventListener("DOMContentLoaded", function() {
         widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
+    const globalLanglistPanel = instantsearch.widgets.panel ({
+        hidden(options) {
+            return options.results.nbHits === 0;
+        },
+        templates: {
+            header( options, { html }) {
+                if (filterLang == 'en'){
+                    return html `<h4>Select your Language</h4>`
+                } else if (filterLang == ''){
+                    return html `<h4>Select your Language</h4>`
+                } else if (filterLang == 'es'){
+                    return html `<h4>Seleccione su idioma</h4>`
+                } else if (filterLang == 'fr'){
+                    return html `<h4>Sélectionnez votre langue</h4>`
+                } else if (filterLang == 'de'){
+                    return html `<h4>Wählen Sie Ihre Sprache</h4>`
+                } else if (filterLang == 'it'){
+                    return html `<h4>Selezionare la lingua</h4>`
+                } else if (filterLang == 'pl'){
+                    return html `<h4>Wybierz język</h4>`
+                } else if (filterLang == 'ru'){
+                    return html `<h4>Выберите язык</h4>`
+                } else if (filterLang == 'zh-hans'){
+                    return html `<h4>选择语言</h4>`
+                } else if (filterLang == 'ar'){
+                    return html `<h4>اختر لغتك</h4>`
+                } else if (filterLang == 'nb'){
+                    return html `<h4>Velg språk</h4>`
+                } else if (filterLang == 'pt-br'){
+                    return html `<h4>Selecione seu idioma</h4>`
+                } else if (filterLang == 'pt'){
+                    return html `<h4>Selecione o seu idioma</h4>`
+                } else if (filterLang == 'cz'){
+                    return html `<h4>Vyberte jazyk</h4>`
+                } else if (filterLang == 'nl'){
+                    return html `<h4>Selecteer uw taal</h4>`
+                }
+            },
+        },cssClasses: {
+            root: 'pt-5'
+        }
+    })(instantsearch.widgets.refinementList);
+
+    const pagination = instantsearch.widgets.panel ({
+        hidden: ({ results }) => results.nbPages === 1,
+    })(instantsearch.widgets.pagination)
+
     
     const search = instantsearch({
         searchClient,
@@ -72,12 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPages: 3,
             scrollTo: '#searchbox'
         }),
-        configure({
+        instantsearch.widgets.configure({
             hitsPerPage: 20,
             attributesToSnippet: ['description:80', 'body:80'],
             page: 0,
         }),
-        clearRefinements({
+        instantsearch.widgets.clearRefinements({
             container: '#clear-refinements',
             cssClasses:{
                 root: 'pt-5',
@@ -100,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             sortBy: ['isRefined', 'count:desc', 'name:asc']
         }),
-        stats({
+        instantsearch.widgets.stats({
             container: '#stats',
             templates: {
                 text(data, { html }) {
@@ -117,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
         }),
-        hits({
+        instantsearch.widgets.hits({
             container: '#hits',
             templates:{
                     item(data, { html, components }){
