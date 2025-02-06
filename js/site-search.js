@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
         pagination({
             container: '#pagination',
             totalPages: 3,
-            scrollTo: '#searchbox'
+            scrollTo: '#autocomplete'
         }),
         instantsearch.widgets.configure({
             hitsPerPage: 20,
