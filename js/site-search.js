@@ -35,9 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
-            
-            widgetParams.container.appendChild(searchButton);
-            widgetParams.container.appendChild(loadingIndicator);
         }
 
         widgetParams.container.querySelector('input').value = query;
