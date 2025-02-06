@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
-            widgetParams.container.appendChild(input);
+            
             widgetParams.container.appendChild(searchButton);
             widgetParams.container.appendChild(loadingIndicator);
         }
