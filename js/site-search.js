@@ -36,9 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
         }
-
-        widgetParams.container.querySelector('input').value = query;
-        widgetParams.container.querySelector('span').hidden = !isSearchStalled;
     };
 
     const langlistPanel = instantsearch.widgets.panel ({
