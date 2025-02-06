@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     const virtualSearchBox = connectSearchBox(() => {});
-    const instantSearchRouter = historyRouter();
-    
+        
     search.addWidgets([
         virtualSearchBox({}),
         pagination({
